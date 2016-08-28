@@ -1,7 +1,7 @@
 ﻿using System.Web.Mvc;
 using System.Web.Routing;
 
-namespace EduSims.Web
+namespace EduSim.Web
 {
 	public class RouteConfig
 	{

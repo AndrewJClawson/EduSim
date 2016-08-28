@@ -4,7 +4,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ItemType>GenericProject</ItemType>
-    <ProjectGuid>{F7463500-49F7-47AC-8635-F387CC4B7260}</ProjectGuid>
+    <ProjectGuid>{A0D706E1-2DBB-4944-98DF-05918C48B08C}</ProjectGuid>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Default|AnyCPU' ">
     <OutputPath>.\</OutputPath>

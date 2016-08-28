@@ -3,7 +3,7 @@ using System.Web.Mvc;
 using System.Web.Routing;
 using System.Web.Http;
 
-namespace EduSims.Web
+namespace EduSim.Web
 {
 	public class Global : HttpApplication
 	{

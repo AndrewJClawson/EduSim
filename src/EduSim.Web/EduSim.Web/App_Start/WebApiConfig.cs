@@ -1,6 +1,6 @@
 ﻿using System.Web.Http;
 
-namespace EduSims.Web
+namespace EduSim.Web
 {
 	public static class WebApiConfig
 	{
