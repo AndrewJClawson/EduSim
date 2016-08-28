@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EduSim.Web.Tests", "EduSim.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EduSim.Console", "EduSim.Console\EduSim.Console\EduSim.Console.csproj", "{77580DE2-9887-48E3-95B9-4131709F86E1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EduSim.Tests", "EduSim.Tests\EduSim.Tests\EduSim.Tests.csproj", "{5C8F6EC1-C9F6-41A5-8527-156C6B1AB838}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -56,5 +58,11 @@ Global
 		{77580DE2-9887-48E3-95B9-4131709F86E1}.Release|Any CPU.Build.0 = Release|Any CPU
 		{77580DE2-9887-48E3-95B9-4131709F86E1}.Default|Any CPU.ActiveCfg = Debug|Any CPU
 		{77580DE2-9887-48E3-95B9-4131709F86E1}.Default|Any CPU.Build.0 = Debug|Any CPU
+		{5C8F6EC1-C9F6-41A5-8527-156C6B1AB838}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C8F6EC1-C9F6-41A5-8527-156C6B1AB838}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C8F6EC1-C9F6-41A5-8527-156C6B1AB838}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C8F6EC1-C9F6-41A5-8527-156C6B1AB838}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C8F6EC1-C9F6-41A5-8527-156C6B1AB838}.Default|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C8F6EC1-C9F6-41A5-8527-156C6B1AB838}.Default|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 EndGlobal
