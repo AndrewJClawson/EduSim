@@ -4,11 +4,41 @@ namespace EduSim.Models
 {
 	public class DataModel : IValidatable
 	{
+		private int id { get; set; }
+		public int ID
+		{
+			get
+			{
+				return id;
+			}
+			set
+			{
+				this.id = value;
+			}
+		}
+
+		private string tablename {get;set;}
+		public string Tablname
+		{
+			get{
+				return this.tablename;
+			}
+			set{
+				this.tablename = value;
+			}
+		}
+
+
+		#region - Constructor
 		public DataModel()
 		{
 		}
+		#endregion
 
-		public List<string> GetValidationErrors()
+
+
+		#region - Validation Methods
+		public virtual List<string> GetValidationErrors()
 		{
 			List<string> _validationErrors = new List<string>();
 
@@ -23,6 +53,8 @@ namespace EduSim.Models
 			}
 			return false;
 		}
+
+		#endregion
 	}
 }
 
