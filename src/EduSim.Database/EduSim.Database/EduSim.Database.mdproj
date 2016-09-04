@@ -11,5 +11,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Folder Include="Tables\" />
+    <Folder Include="Views\" />
+    <Folder Include="StoredProcedures\" />
+    <Folder Include="Scripts\" />
+    <Folder Include="ReferenceData\" />
+    <Folder Include="Security\" />
   </ItemGroup>
 </Project>
