@@ -8,7 +8,7 @@ using System.Data.Linq.Mapping;
 
 namespace EduSim.Models
 {
-	[Table (Name="Users")]
+	[Table (Name="User")]
 	public class User : DataModel
 	{
 		#region - Member variables

@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+
 namespace EduSim.Models
 {
 	public class DataModel : IValidatable
@@ -16,18 +18,6 @@ namespace EduSim.Models
 				this.id = value;
 			}
 		}
-
-		private string tablename {get;set;}
-		public string Tablname
-		{
-			get{
-				return this.tablename;
-			}
-			set{
-				this.tablename = value;
-			}
-		}
-
 
 		#region - Constructor
 		public DataModel()
