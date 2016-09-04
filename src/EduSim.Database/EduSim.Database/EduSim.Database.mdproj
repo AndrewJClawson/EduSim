@@ -9,4 +9,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Default|AnyCPU' ">
     <OutputPath>.\</OutputPath>
   </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Tables\" />
+  </ItemGroup>
 </Project>
