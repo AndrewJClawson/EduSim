@@ -1,9 +1,10 @@
 ﻿using System.Data.Linq.Mapping;
+using EduSim.ModelInterfaces;
 
 namespace EduSim.Models
 {
 	[Table(Name="accounts")]
-	public class Account
+	public class Account : SyncColumns, IAccount
 	{
 		[Column(IsPrimaryKey = true, Name = "pk_account_id")]
 		public int AccountId { get; set;}

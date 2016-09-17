@@ -65,4 +65,11 @@ Global
 		{5C8F6EC1-C9F6-41A5-8527-156C6B1AB838}.Default|Any CPU.ActiveCfg = Debug|Any CPU
 		{5C8F6EC1-C9F6-41A5-8527-156C6B1AB838}.Default|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		Policies = $0
+		$0.DotNetNamingPolicy = $1
+		$1.DirectoryNamespaceAssociation = None
+		$1.ResourceNamePolicy = FileFormatDefault
+		version = 0.0.1
+	EndGlobalSection
 EndGlobal

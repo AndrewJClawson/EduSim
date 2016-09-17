@@ -5,6 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ItemType>GenericProject</ItemType>
     <ProjectGuid>{A0D706E1-2DBB-4944-98DF-05918C48B08C}</ProjectGuid>
+    <ReleaseVersion>0.0.1</ReleaseVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Default|AnyCPU' ">
     <OutputPath>.\</OutputPath>
@@ -16,5 +17,11 @@
     <Folder Include="Scripts\" />
     <Folder Include="ReferenceData\" />
     <Folder Include="Security\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Tables\accounts.sql" />
+    <None Include="Tables\users.sql" />
+    <None Include="Tables\_account_types.sql" />
+    <None Include="Tables\_user_roles.sql" />
   </ItemGroup>
 </Project>
