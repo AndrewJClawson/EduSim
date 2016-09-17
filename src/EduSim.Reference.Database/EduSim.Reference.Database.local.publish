@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Project ToolsVersion="14.0" xmlns="https://schemas.microsoft.com/developer/msbuild/2003">
+	<PropertyGroup>
+		<IncludeCompositeObjects>True</IncludeCompositeObjects>
+
+	</PropertyGroup>s
+</Project>
