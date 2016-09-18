@@ -1,8 +1,11 @@
 ﻿<Properties StartupConfiguration="{862C8A85-3708-4C3E-917C-340AC9BBFB85}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="EduSim.Database/EduSim.Database/publish_database.sql">
+  <MonoDevelop.Ide.Workbench ActiveDocument="EduSim.Database/EduSim.Database/Tables/users.sql">
     <Files>
-      <File FileName="EduSim.Database/EduSim.Database/Scripts/create_reference_tables.sql" Line="1" Column="36" />
-      <File FileName="EduSim.Database/EduSim.Database/publish_database.sql" Line="4" Column="44" />
+      <File FileName="EduSim.Database/EduSim.Database/Scripts/create_reference_tables.sql" Line="1" Column="1" />
+      <File FileName="EduSim.Database/EduSim.Database/publish_database.sql" Line="1" Column="1" />
+      <File FileName="EduSim.Database/EduSim.Database/Tables/_account_types.sql" Line="7" Column="57" />
+      <File FileName="EduSim.Database/EduSim.Database/Tables/accounts.sql" Line="5" Column="2" />
+      <File FileName="EduSim.Database/EduSim.Database/Tables/users.sql" Line="1" Column="28" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
