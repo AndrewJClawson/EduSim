@@ -1,6 +1,7 @@
 ﻿@using System.Web
 @using System.Configuration
-
+@using EduSim.Web.ViewModels
+@model LoginViewModel
 @*
 @using EduSim.Web.ViewModels;
 @model EduSim.Web.ViewModels.LoginViewModel;
@@ -33,21 +34,44 @@
 	    @Scripts.Render("~/Scripts/jquery-3.1.0.min.js")
 
 	</head>
-	<body>
-		<div id="login-body">
-			<div class="row">
-				<div class="col-sm-3 col-md-3">
-					<label>Email: </label>
-					<input type="text" id="loginEmail"/>
-					<p id="emailError">* Required</p>
-				</div>
-				<div class="col-sm-3 col-md-3">
-					<label>Password: </label>
-					<input type="password" id="loginPassword"/>
-					<p id="passwordError">* Required</p>
-				</div>
+	<body class="login-body">
+		<div class="col-md-6 offset-md-3">
+		<section id="loginForm">
+				<h2>Login to EduSIM</h2>
+                @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+                {
+                    @Html.AntiForgeryToken()
+                    <h4 style="color: #ffffff;">Use a local account to log in.</h4>
+                    <hr />
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                    <div class="form-group email">
+                        @*@Html.LabelFor(m => m.UserName, new { @class = "col-md-2 control-label" })*@
+                        @Html.LabelFor(m => m.Email, "Email", new { @class = "col-md-2 control-label", data_toggle = "tooltip" })
+                        <div class="col-md-6">
+                            @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.Password, new { @class = "col-md-2 control-label" })
+                        <div class="col-md-6">
+                            @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-md-offset-2 col-md-6">
+                            <input type="submit" value="Log in" class="btn btn-danger pull-right" />
+                        </div>
+                    </div>
+                    @* Enable this once you have account confirmation enabled for password reset functionality
+                        <p>
+                            @Html.ActionLink("Forgot your password?", "ForgotPassword")
+                        </p>*@
+                }
+            </section>
 			</div>
-		</div>
 	</body>
 </html>
 
