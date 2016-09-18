@@ -29,5 +29,8 @@
     <None Include="Scripts\populate_reference_data.sql" />
     <None Include="Scripts\delete_application_database.sql" />
     <None Include="Scripts\create_application_tables.sql" />
+    <None Include="Tables\schools.sql" />
+    <None Include="Tables\campuses.sql" />
+    <None Include="Scripts\initial_develop_data.sql" />
   </ItemGroup>
 </Project>

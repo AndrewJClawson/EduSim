@@ -11,5 +11,8 @@ use edusim;
 source Scripts/create_reference_tables.sql;
 source Scripts/populate_reference_data.sql;
 
+/* create application tables */
+source Scripts/create_application_tables.sql;
+
 
 
