@@ -1,13 +1,53 @@
-﻿@{
+﻿@using System.Web
+@using System.Configuration
+
+@*
+@using EduSim.Web.ViewModels;
+@model EduSim.Web.ViewModels.LoginViewModel;
+*@
+
+@{
     Layout = null;
 }
 
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Login</title>
-</head>
-<body>
-</body>
+	<head>
+	    <title>Login</title>
+		@Styles.Render("~/Content/css")
+	    
+	    @Styles.Render("~/Content/Site.css")
+	    @Styles.Render("~/Content/bootstrap.css")
+	    @Styles.Render("~/Content/bootstrap.css.map")
+	    @Styles.Render("~/Content/bootstrap.min.css")
+	    @Styles.Render("~/Content/bootstrap-theme.css")
+	    @Styles.Render("~/Content/bootstrap-theme.min.css")
+	    @Styles.Render("~/Content/boostrap-theme.min.css.map")
+	    @Styles.Render("~/Content/bootstrap-tagsinput")
+
+	    @Scripts.Render("~/bundles/jquery")
+	    @Scripts.Render("~/bundles/modernizr")
+	    @Scripts.Render("~/bundles/jqueryval")
+	    @Scripts.Render("~/Scripts/bootstrap.js")
+	    @Scripts.Render("~/Scripts/jquery-3.1.0.js")
+	    @Scripts.Render("~/Scripts/jquery-3.1.0.min.js")
+
+	</head>
+	<body>
+		<div id="login-body">
+			<div class="row">
+				<div class="col-sm-3 col-md-3">
+					<label>Email: </label>
+					<input type="text" id="loginEmail"/>
+					<p id="emailError">* Required</p>
+				</div>
+				<div class="col-sm-3 col-md-3">
+					<label>Password: </label>
+					<input type="password" id="loginPassword"/>
+					<p id="passwordError">* Required</p>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>
 
