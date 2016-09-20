@@ -1,10 +1,16 @@
 ﻿using System;
+using System.Data.Entity;
+using EduSim.Models;
+
 namespace EduSim.DataModel.EF
 {
-	public class EduSimContext
+	public partial class EduSimContext : DbContext
 	{
-		public EduSimContext()
+		public DbSet<User> Users {get;set;}
+
+		public EduSimContext() : base(nameOrConnectionString: "LocalDBContext")
 		{
+			
 		}
 	}
 }

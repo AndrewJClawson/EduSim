@@ -53,6 +53,7 @@
     <Compile Include="Contexts\EduSimDBContext.cs" />
     <Compile Include="Interfaces\IEduSimDBContext.cs" />
     <Compile Include="Contexts\EduSimContext.cs" />
+    <Compile Include="Interfaces\IApplicationContext.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -61,6 +62,12 @@
   <ItemGroup>
     <Folder Include="Contexts\" />
     <Folder Include="Interfaces\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\EduSim\EduSim\EduSim.csproj">
+      <Project>{2F9142E3-8B85-4CD4-A6E5-14571F6F9247}</Project>
+      <Name>EduSim</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

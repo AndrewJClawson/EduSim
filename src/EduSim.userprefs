@@ -1,10 +1,13 @@
 ﻿<Properties StartupConfiguration="{862C8A85-3708-4C3E-917C-340AC9BBFB85}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="EduSim.DataModel.EF/EduSim.DataModel.EF/Contexts/EduSimContext.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="EduSim/EduSim/ModelInterfaces/IAccount.cs">
     <Files>
-      <File FileName="EduSim.DataModel.EF/EduSim.DataModel.EF/App.config" Line="8" Column="124" />
-      <File FileName="EduSim.DataModel.EF/EduSim.DataModel.EF/Contexts/EduSimDBContext.cs" Line="1" Column="1" />
+      <File FileName="EduSim.DataModel.EF/EduSim.DataModel.EF/App.config" Line="8" Column="21" />
+      <File FileName="EduSim.DataModel.EF/EduSim.DataModel.EF/Contexts/EduSimDBContext.cs" Line="10" Column="53" />
       <File FileName="../../LegacyApps/LegacyChildrenAPI/App.config" Line="8" Column="204" />
-      <File FileName="EduSim.DataModel.EF/EduSim.DataModel.EF/Contexts/EduSimContext.cs" Line="1" Column="1" />
+      <File FileName="EduSim.DataModel.EF/EduSim.DataModel.EF/Contexts/EduSimContext.cs" Line="11" Column="73" />
+      <File FileName="EduSim.DataModel.EF/EduSim.DataModel.EF/Interfaces/IApplicationContext.cs" Line="14" Column="4" />
+      <File FileName="EduSim/EduSim/Models/User.cs" Line="13" Column="31" />
+      <File FileName="EduSim/EduSim/ModelInterfaces/IAccount.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

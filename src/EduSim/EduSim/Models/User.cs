@@ -12,8 +12,9 @@ namespace EduSim.Models
 	public class User : DataModel
 	{
 		#region - Member variables
-		[Column(Name = "id")]
+		[Column(Name = "pk_user_id")]
 		private int id { get; set;}
+
 		public int ID
 		{
 			get
@@ -23,6 +24,21 @@ namespace EduSim.Models
 			set 
 			{
 				id = value;
+			}
+		}
+
+		[Column(Name = "fk_account_id")]
+		private int account_id { get; set;  }
+
+		public int AccountID
+		{
+			get
+			{
+				return account_id;
+			}
+			set
+			{
+				account_id = value;
 			}
 		}
 
