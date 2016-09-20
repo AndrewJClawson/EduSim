@@ -1,7 +1,8 @@
 ﻿<Properties StartupConfiguration="{862C8A85-3708-4C3E-917C-340AC9BBFB85}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="EduSim.Web/EduSim.Web/Services/Abstraction/BaseService.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="EduSim.DataModel.EF/EduSim.DataModel.EF/App.config">
     <Files>
       <File FileName="EduSim.Web/EduSim.Web/Services/Abstraction/BaseService.cs" Line="6" Column="3" />
+      <File FileName="EduSim.DataModel.EF/EduSim.DataModel.EF/App.config" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

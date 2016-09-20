@@ -1,5 +1,5 @@
 ﻿using System;
-using Edusim.
+
 namespace EduSim.Web
 {
 	public abstract class BaseService
