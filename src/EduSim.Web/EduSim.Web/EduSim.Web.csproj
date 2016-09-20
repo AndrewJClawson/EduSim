@@ -145,6 +145,7 @@
     <Content Include="Scripts\jquery-3.1.0.slim.min.js" />
     <Content Include="Views\Account\Login.cshtml" />
     <Content Include="Content\App.css" />
+    <Content Include="Content\images\login-background.jpg" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\EduSim\EduSim\EduSim.csproj">
@@ -168,6 +169,7 @@
     <None Include="fonts\glyphicons-halflings-regular.woff2" />
     <None Include="Scripts\jquery-3.1.0.min.map" />
     <None Include="Scripts\jquery-3.1.0.slim.min.map" />
+    <None Include="Content\images\.DS_Store" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>

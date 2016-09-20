@@ -29,7 +29,7 @@
 
 	</head>
 	<body class="login-body">
-		<div class="col-xs-6 col-sm-6 offset-sm-3 col-md-10 offset-md-4 col-lg-10 col-xl-10">
+		<div class="col-xs-6 col-sm-6 offset-sm-3 col-md-8 offset-md-4"">
 		<section id="loginForm">
 				<h2>EduSIM Login</h2>
                 @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
@@ -41,19 +41,20 @@
                     <div class="form-group email">
                         @*@Html.LabelFor(m => m.UserName, new { @class = "col-md-2 control-label" })*@
                         @Html.LabelFor(m => m.Email, "Email", new { @class = "col-sm-2 col-md-2 control-label", data_toggle = "tooltip" })
-                        <div class="col-sm-8 col-md-10 col-lg-10">
+                        <div class="col-sm-8 col-md-8">
                             @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
                             @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
                         </div>
                     </div>
                     <div class="form-group">
                         @Html.LabelFor(m => m.Password, new { @class = "col-sm-2 col-md-2 control-label" })
-                        <div class="col-sm-8 col-md-10 col-lg-10">
+                        <div class="col-sm-8 col-md-8">
                             @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
-                            @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })<br />
-                    		<button id="loginButton" class="btn btn-danger pull-right">Login</button>
+                            @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" }) <br />
+                            <button id="loginButton" class="btn btn-default pull-right">Login</button>
 
                         </div>
+					
 					
                     </div>
 
