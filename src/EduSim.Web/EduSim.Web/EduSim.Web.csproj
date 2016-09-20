@@ -105,6 +105,9 @@
     <Folder Include="Models\ViewModels\" />
     <Folder Include="Views\Account\" />
     <Folder Include="Models\ViewModels\Abstraction\" />
+    <Folder Include="Services\" />
+    <Folder Include="Services\Abstraction\" />
+    <Folder Include="Models\Abstraction\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\HomeController.cs" />
@@ -117,6 +120,9 @@
     <Compile Include="Models\ViewModels\AccountViewModel.cs" />
     <Compile Include="Models\ViewModels\Abstraction\BaseViewModel.cs" />
     <Compile Include="Models\ViewModels\LoginViewModel.cs" />
+    <Compile Include="Services\Abstraction\BaseService.cs" />
+    <Compile Include="Models\Abstraction\IWebAppState.cs" />
+    <Compile Include="Models\WebAppState.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Web.config" />
