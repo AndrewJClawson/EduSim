@@ -30,12 +30,12 @@
 	</head>
 	<body class="login-body">
 		<div class="col-xs-6 col-sm-6 offset-sm-3 col-md-8 offset-md-4"">
-		<section id="loginForm">
-				<h2>EduSIM Login</h2>
+		<section id="loginForm">	
+				<h2 class="login-header">EduSIM Login</h2>
                 @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
                 {
                     @Html.AntiForgeryToken()
-                    <h4 style="color: #ffffff;">Use a local account to log in.</h4>
+                    <h4 class="login-header">Use a local account to log in.</h4>
                     <hr />
                     @Html.ValidationSummary(true, "", new { @class = "text-danger" })
                     <div class="form-group email">
@@ -51,7 +51,7 @@
                         <div class="col-sm-8 col-md-8">
                             @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
                             @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" }) <br />
-                            <button id="loginButton" class="btn btn-default pull-right">Login</button>
+                            <button id="loginButton" class="btn btn-success pull-right">Login</button>
 
                         </div>
 					
