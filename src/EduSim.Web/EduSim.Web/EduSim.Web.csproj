@@ -144,6 +144,7 @@
     <Content Include="Scripts\jquery-3.1.0.slim.js" />
     <Content Include="Scripts\jquery-3.1.0.slim.min.js" />
     <Content Include="Views\Account\Login.cshtml" />
+    <Content Include="Content\App.css" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\EduSim\EduSim\EduSim.csproj">
