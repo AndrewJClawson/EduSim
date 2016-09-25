@@ -2,7 +2,7 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="EduSim/EduSim/Models/AccountType.cs">
     <Files>
       <File FileName="EduSim.Console/EduSim.Console/Program.cs" Line="17" Column="1" />
-      <File FileName="EduSim/EduSim/Models/AccountType.cs" Line="3" Column="44" />
+      <File FileName="EduSim/EduSim/Models/AccountType.cs" Line="12" Column="3" />
       <File FileName="EduSim/EduSim/Models/Account.cs" Line="9" Column="15" />
       <File FileName="EduSim/EduSim/Contexts/EduSimContext.cs" Line="8" Column="26" />
     </Files>
