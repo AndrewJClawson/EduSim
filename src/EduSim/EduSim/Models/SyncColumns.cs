@@ -2,7 +2,7 @@
 using System.Data.Linq.Mapping;
 using EduSim.ModelInterfaces;
 
-namespace EduSim
+namespace EduSim.Models
 {
 	public class SyncColumns : ISyncColumns
 	{

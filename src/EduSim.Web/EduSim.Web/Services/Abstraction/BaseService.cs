@@ -4,7 +4,7 @@ namespace EduSim.Web
 {
 	public abstract class BaseService
 	{
-		public IWebAppState 
+		public IWebAppState appState;
 		// TODO: Add IAuthorizationService
 		public BaseService()
 		{

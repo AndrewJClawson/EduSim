@@ -5,3 +5,8 @@
 /Volumes/Storage/Development/EduSim/src/EduSim/EduSim/obj/Debug/EduSim.dll
 /Volumes/Storage/Development/EduSim/src/EduSim/EduSim/obj/Debug/EduSim.dll.mdb
 /Volumes/Storage/Development/EduSim/src/EduSim/EduSim/bin/Debug/MySql.Data.dll
+/Volumes/Storage/Development/EduSim/src/EduSim/EduSim/bin/Debug/EntityFramework.dll
+/Volumes/Storage/Development/EduSim/src/EduSim/EduSim/bin/Debug/EntityFramework.SqlServer.dll
+/Volumes/Storage/Development/EduSim/src/EduSim/EduSim/bin/Debug/MySql.Data.Entity.EF6.dll
+/Volumes/Storage/Development/EduSim/src/EduSim/EduSim/obj/Debug/.NETFramework,Version=v4.5.2.AssemblyAttribute.cs
+/Volumes/Storage/Development/EduSim/src/EduSim/EduSim/obj/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs

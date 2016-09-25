@@ -3,27 +3,28 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 using System.Data.Linq.Mapping;
+using EduSim.ModelInterfaces;
 //using MySql.Data.Entity;
 
 
 namespace EduSim.Models
 {
-	[Table (Name="User")]
+	[Table (Name="Users")]
 	public class User : DataModel
 	{
 		#region - Member variables
 		[Column(Name = "pk_user_id")]
-		private int id { get; set;}
+		private int user_id { get; set;}
 
-		public int ID
+		public int UserID
 		{
 			get
 			{
-				return id;
+				return user_id;
 			}
 			set 
 			{
-				id = value;
+				user_id = value;
 			}
 		}
 
