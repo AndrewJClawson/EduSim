@@ -62,6 +62,8 @@
     <Compile Include="Interfaces\IEduSimDBContext.cs" />
     <Compile Include="Repository\Abstractions\IRepository.cs" />
     <Compile Include="Repository\Repository.cs" />
+    <Compile Include="Constants\Constant.cs" />
+    <Compile Include="Constants\AccountType.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
