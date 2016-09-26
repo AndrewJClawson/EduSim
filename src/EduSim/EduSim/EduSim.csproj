@@ -60,8 +60,8 @@
     <Compile Include="Contexts\EduSimContext.cs" />
     <Compile Include="Interfaces\IApplicationContext.cs" />
     <Compile Include="Interfaces\IEduSimDBContext.cs" />
-    <Compile Include="DataRepository\Abstractions\IRepository.cs" />
-    <Compile Include="DataRepository\Repository.cs" />
+    <Compile Include="Repository\Abstractions\IRepository.cs" />
+    <Compile Include="Repository\Repository.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
@@ -70,8 +70,8 @@
     <Folder Include="Enum\" />
     <Folder Include="Contexts\" />
     <Folder Include="Interfaces\" />
-    <Folder Include="DataRepository\" />
-    <Folder Include="DataRepository\Abstractions\" />
+    <Folder Include="Repository\" />
+    <Folder Include="Repository\Abstractions\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
