@@ -45,7 +45,8 @@ namespace EduSim.DataRepository
 
 		public virtual void Delete(object id)
 		{
-			TRepoItem deleteItem = _dbSet.Find(id);
+			T deleteItem = _dbSet.Find(id);
+
 			//TODO - Check for null object????
 			Delete(deleteItem);
 

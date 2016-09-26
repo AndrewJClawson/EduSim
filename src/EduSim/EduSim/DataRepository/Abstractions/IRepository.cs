@@ -7,14 +7,14 @@ using System.Threading.Tasks;
 
 namespace EduSim.DataRepository
 {
-	public interface IRepository<TRepoItem> where TRepoItem : class
+	public interface IRepository<T> where T : class
 	{
-		TRepoItem GetById(object id);
-		IQueryable<TRepoItem> GetAll(params string[] navigationProperties);
-		IQueryable<TRepoItem> FindBy(Expression<Func<TRepoItem, bool>> predicate, params string[] navigationProperties);
-		void Add(TRepoItem item);
-		void Delete(TRepoItem item);
+		T GetById(object id);
+		IQueryable<T> GetAll(params string[] navigationProperties);
+		//IQueryable<T> FindBy(Expression<Func<T, bool>> predicate, params string[] navigationProperties);
+		void Add(T item);
+		void Delete(T item);
 		void Delete(object id);
-		void Update(TRepoItem item);
+		void Update(T item);
 	}
 }
