@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace EduSim.DataRepository
 {
-	public interface IDataRepository<TRepoItem> where TRepoItem : class
+	public interface IRepository<TRepoItem> where TRepoItem : class
 	{
 		TRepoItem GetById(object id);
 		IQueryable<TRepoItem> GetAll(params string[] navigationProperties);

@@ -12,24 +12,24 @@ using EduSim.Contexts;
 
 namespace EduSim.DataRepository
 {
-	public class DataRepository<TRepoItem> : IDataRepository<TRepoItem> where TRepoItem : class
+	public class Repository<T> : IRepository<T> where T : class
 	{
 		protected EduSimContext _edusimContext;
-		private readonly DbSet<TRepoItem> _dbSet;
-		public DataRepository(DbContext dbContext)
+		private readonly DbSet<T> _dbSet;
+		public Repository(DbContext dbContext)
 		{
 			_edusimContext = (EduSimContext)dbContext;
-			_dbSet = _edusimContext.Set<TRepoItem>();
+			_dbSet = _edusimContext.Set<T>();
 		}
 
-		public TRepoItem GetById(object id)
+		public T GetById(object id)
 		{
 			return _dbSet.Find(id);
 		}
 
-		public IQueryable<TRepoItem> GetAll(params string[] navigationProperties)
+		public IQueryable<T> GetAll(params string[] navigationProperties)
 		{
-			IQueryable<TRepoItem> dbQuery = _edusimContext.Set<TRepoItem>();
+			IQueryable<T> dbQuery = _edusimContext.Set<T>();
 			foreach (string navigationProperty in navigationProperties)
 			{
 				dbQuery = dbQuery.Include(navigationProperty);
@@ -37,7 +37,7 @@ namespace EduSim.DataRepository
 			return dbQuery;
 		}
 
-		public virtual void Add(TRepoItem item)
+		public virtual void Add(T item)
 		{
 			_dbSet.Add(item);
 			_edusimContext.Entry(item).State = EntityState.Added;
@@ -52,14 +52,14 @@ namespace EduSim.DataRepository
 			//TODO - Update state ??
 		}
 
-		public virtual void Delete(TRepoItem item)
+		public virtual void Delete(T item)
 		{
 			// More here check if item state is detached. If it is, attach it.
 			_dbSet.Remove(item);
 			_edusimContext.Entry(item).State = EntityState.Deleted;
 		}
 
-		public virtual void Update(TRepoItem item)
+		public virtual void Update(T item)
 		{
 			//TODO - null checks on item????
 			_dbSet.Attach(item);

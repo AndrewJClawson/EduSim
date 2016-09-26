@@ -60,8 +60,8 @@
     <Compile Include="Contexts\EduSimContext.cs" />
     <Compile Include="Interfaces\IApplicationContext.cs" />
     <Compile Include="Interfaces\IEduSimDBContext.cs" />
-    <Compile Include="DataRepository\Abstractions\IDataRepository.cs" />
-    <Compile Include="DataRepository\DataRepository.cs" />
+    <Compile Include="DataRepository\Abstractions\IRepository.cs" />
+    <Compile Include="DataRepository\Repository.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
