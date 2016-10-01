@@ -8,7 +8,7 @@ using EduSim.ModelInterfaces;
 namespace EduSim.Models
 {
 	[Table("accounts")]
-	public class Account : SyncColumns, IAccount
+	public class Account
 	{
 		[Column("pk_account_id")]
 		public int AccountId { get; set;}

@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Linq;
+using System.Collections.Generic;
 using System.Data.Entity;
 using MySql.Data.Entity;
 using MySql.Data.MySqlClient;
@@ -14,9 +16,10 @@ namespace EduSim.Console
 		{
 			using (EduSimContext context = new EduSimContext())
 			{
-				foreach(AccountType type in context.AccountTypes)
+				var accounts = context.Accounts.ToList();
+				foreach (Account account in accounts)
 				{
-					System.Console.WriteLine(type.Name);
+					System.Console.WriteLine(account.AccountName);
 				}
 			}
 

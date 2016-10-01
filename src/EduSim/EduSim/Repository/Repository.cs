@@ -17,9 +17,16 @@ namespace EduSim.Repository
 	{
 		protected EduSimContext _edusimContext;
 		private readonly DbSet<T> _dbSet;
+
 		public Repository(DbContext dbContext)
 		{
 			_edusimContext = (EduSimContext)dbContext;
+			_dbSet = _edusimContext.Set<T>();
+		}
+
+		public Repository()
+		{
+			_edusimContext = new Contexts.EduSimContext();
 			_dbSet = _edusimContext.Set<T>();
 		}
 
