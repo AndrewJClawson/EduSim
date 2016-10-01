@@ -64,6 +64,7 @@
     <Compile Include="Repository\Repository.cs" />
     <Compile Include="Constants\Constant.cs" />
     <Compile Include="Constants\AccountType.cs" />
+    <Compile Include="Services\AccountService.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
@@ -74,6 +75,7 @@
     <Folder Include="Interfaces\" />
     <Folder Include="Repository\" />
     <Folder Include="Repository\Abstractions\" />
+    <Folder Include="Services\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

@@ -1,20 +1,22 @@
-﻿using System.Data.Entity;
-using System.Data.Linq.Mapping;
+﻿using System;
+using System.Data.Entity;
+//using System.Data.Linq.Mapping;
+using System.ComponentModel.DataAnnotations.Schema;
 using MySql.Data.Entity;
 using EduSim.ModelInterfaces;
 
 namespace EduSim.Models
 {
-	[Table(Name="accounts")]
+	[Table("accounts")]
 	public class Account : SyncColumns, IAccount
 	{
-		[Column(Name = "pk_account_id", IsPrimaryKey=true)]
+		[Column("pk_account_id")]
 		public int AccountId { get; set;}
 
-		[Column(Name = "fk_account_type_id")]
+		[Column("fk_account_type_id")]
 		public int AccountTypeId { get; set;}
 
-		[Column(Name = "account_name")]
+		[Column("account_name")]
 		public string AccountName { get; set;}
 	}
 }

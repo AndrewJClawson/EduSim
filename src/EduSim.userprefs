@@ -1,14 +1,12 @@
 ﻿<Properties StartupConfiguration="{77580DE2-9887-48E3-95B9-4131709F86E1}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="EduSim/EduSim/Constants/Constant.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="EduSim/EduSim/Services/AccountService.cs">
     <Files>
-      <File FileName="EduSim.Console/EduSim.Console/Program.cs" Line="8" Column="1" />
-      <File FileName="EduSim/EduSim/Models/Account.cs" Line="1" Column="1" />
-      <File FileName="EduSim/EduSim/Contexts/EduSimContext.cs" Line="1" Column="1" />
-      <File FileName="EduSim/EduSim/Models/SyncColumns.cs" Line="1" Column="1" />
-      <File FileName="EduSim.Database/EduSim.Database/Tables/accounts.sql" Line="1" Column="1" />
-      <File FileName="EduSim.Database/EduSim.Database/Tables/users.sql" Line="1" Column="1" />
-      <File FileName="EduSim/EduSim/Constants/Constant.cs" Line="2" Column="18" />
-      <File FileName="EduSim/EduSim/Constants/AccountType.cs" Line="2" Column="27" />
+      <File FileName="EduSim.Console/EduSim.Console/Program.cs" Line="1" Column="1" />
+      <File FileName="EduSim/EduSim/Models/Account.cs" Line="20" Column="41" />
+      <File FileName="EduSim/EduSim/Contexts/EduSimContext.cs" Line="12" Column="5" />
+      <File FileName="EduSim/EduSim/Models/AccountType.cs" Line="6" Column="30" />
+      <File FileName="EduSim/EduSim/Repository/Abstractions/IRepository.cs" Line="1" Column="1" />
+      <File FileName="EduSim/EduSim/Services/AccountService.cs" Line="2" Column="13" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
@@ -19,5 +17,6 @@
   <MonoDevelop.Ide.ItemProperties.EduSim.Console PreferredExecutionTarget="MonoDevelop.Default" />
   <DisabledProjects>
     <String>EduSims/EduSims/EduSim.csproj</String>
+    <String>EduSim.Database/EduSim.Database/EduSim.Database.mdproj</String>
   </DisabledProjects>
 </Properties>
