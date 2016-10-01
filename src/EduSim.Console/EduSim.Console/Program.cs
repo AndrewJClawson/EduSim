@@ -19,7 +19,8 @@ namespace EduSim.Console
 				var accounts = context.Accounts.ToList();
 				foreach (Account account in accounts)
 				{
-					System.Console.WriteLine(account.AccountName);
+					System.Console.WriteLine("Account ID: " + account.AccountId);
+					System.Console.WriteLine("Name: " + account.AccountName);
 				}
 			}
 
