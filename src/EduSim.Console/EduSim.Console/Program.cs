@@ -3,7 +3,7 @@ using System.Data.Entity;
 using MySql.Data.Entity;
 using MySql.Data.MySqlClient;
 using EduSim.Models;
-using EduSim.DataModel.EF;
+
 using EduSim.Contexts;
 
 namespace EduSim.Console

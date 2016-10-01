@@ -11,7 +11,7 @@ using EduSim.Models;
 using System.Web;
 using EduSim.Contexts;
 
-namespace EduSim.DataRepository
+namespace EduSim.Repository
 {
 	public class Repository<T> : IRepository<T> where T : class
 	{
