@@ -27,6 +27,42 @@ namespace EduSim.Services
 			_accountRepository = new Repository<Account>(Context);
 		}
 
+		public void Create(string firstname, string lastname, string email, string password)
+		{
+			User userToAdd = new User();
+			userToAdd.FirstName = firstname;
+			userToAdd.LastName = lastname;
+			userToAdd.Email = email;
+			userToAdd.Password = password;
 
+			_userRepository.Add(userToAdd);
+		}
+
+		public void Delete(User user)
+		{
+			_userRepository.Delete(user);
+		}
+
+		public void Delete(int id)
+		{
+			_userRepository.Delete(id);
+		}
+
+		public List<User> GetAll()
+		{
+			List<User> users = _userRepository.GetAll().ToList();
+			return users;
+		}
+
+		public User GetById(int id)
+		{
+			User returnUser = _userRepository.GetById(id);
+			return returnUser;
+		}
+
+		public void Update(User user)
+		{
+			_userRepository.Update(user);
+		}
 	}
 }
