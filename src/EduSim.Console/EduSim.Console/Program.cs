@@ -15,33 +15,26 @@ namespace EduSim.Console
 	class MainClass
 	{
 		private static AccountService _accountService = new AccountService();
-
+		private static UserService _userService = new UserService();
 		static void Main()
 		{
 			List<Account> accounts = _accountService.GetAll();
 
 			foreach (Account account in accounts)
 			{
+				System.Console.WriteLine("Account Name: ");
+
 				System.Console.WriteLine(account.AccountName);
-			}
+				System.Console.WriteLine("");
+				System.Console.WriteLine("User List: ");
 
-			System.Console.WriteLine("\n");
-			_accountService.Create("New Test Account", Constants.AccountType.Homeschool.Id);
-
-			accounts = _accountService.GetAll();
-			foreach(Account account in accounts)
-			{
-				System.Console.WriteLine(account.AccountName);
-			}
-
-			using (EduSimContext edContext = new EduSimContext())
-			{
-				var users = edContext.Users.ToList();
-				foreach (User user in users)
+				foreach(User user in account.Users)
 				{
-					System.Console.WriteLine(user.FirstName);
+					System.Console.WriteLine(user.FirstName + " " + user.LastName);
 				}
+				System.Console.WriteLine("");
 			}
+
 		}
 	}
 }

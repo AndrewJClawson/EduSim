@@ -24,12 +24,13 @@ namespace EduSim.Services
 		public UserService(DbContext context)
 		{
 			_userRepository = new Repository<User>(context);
-			_accountRepository = new Repository<Account>(Context);
+			_accountRepository = new Repository<Account>(context);
 		}
 
-		public void Create(string firstname, string lastname, string email, string password)
+		public void Create(int accountId, string firstname, string lastname, string email, string password)
 		{
 			User userToAdd = new User();
+			userToAdd.AccountId = accountId;
 			userToAdd.FirstName = firstname;
 			userToAdd.LastName = lastname;
 			userToAdd.Email = email;
