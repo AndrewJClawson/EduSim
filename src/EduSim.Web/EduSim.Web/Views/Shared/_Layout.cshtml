@@ -2,9 +2,26 @@
 <html>
 <head>
     <title>@ViewBag.Title</title>
+
+	@Styles.Render("~/Content/bootstrap.css")
+	@Styles.Render("~/Content/bootstrap.css.map")
+	@Styles.Render("~/Content/bootstrap.min.css")
+	@Styles.Render("~/Content/bootstrap.min.css.map")
+	@Styles.Render("~/Content/bootstrap-theme.css")
+	@Styles.Render("~/Content/bootstrap-theme.css.map")
+	@Styles.Render("~/Content/bootstrap-theme.min.css")
+	@Styles.Render("~/Content/bootstrap-theme.min.css.map")
+	@Styles.Render("~/Content/App.css")
 </head>
 <body>
 	@RenderBody()
+	<div class="navbar navbar-inverse navbar-fixed-top">
+
+	</div>
+
+	<div class="container body-content">
+
+	</div>
 </body>
 </html>
 

@@ -1,12 +1,14 @@
 ﻿<Properties StartupConfiguration="{77580DE2-9887-48E3-95B9-4131709F86E1}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="EduSim/EduSim/Services/AccountService.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="EduSim.Web/EduSim.Web/Views/Home/Dashboard.cshtml">
     <Files>
-      <File FileName="EduSim.Console/EduSim.Console/Program.cs" Line="42" Column="47" />
+      <File FileName="EduSim.Console/EduSim.Console/Program.cs" Line="37" Column="1" />
       <File FileName="EduSim/EduSim/Models/Account.cs" Line="7" Column="30" />
       <File FileName="EduSim/EduSim/Services/AccountService.cs" Line="63" Column="4" />
-      <File FileName="EduSim/EduSim/Repository/Repository.cs" Line="23" Column="36" />
-      <File FileName="EduSim/EduSim/Models/User.cs" Line="50" Column="3" />
-      <File FileName="EduSim/EduSim/Services/UserService.cs" Line="54" Column="17" />
+      <File FileName="EduSim/EduSim/Repository/Repository.cs" Line="1" Column="1" />
+      <File FileName="EduSim/EduSim/Models/User.cs" Line="1" Column="1" />
+      <File FileName="EduSim/EduSim/Services/UserService.cs" Line="1" Column="1" />
+      <File FileName="EduSim.Web/EduSim.Web/Views/Shared/_Layout.cshtml" Line="14" Column="37" />
+      <File FileName="EduSim.Web/EduSim.Web/Views/Home/Dashboard.cshtml" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
