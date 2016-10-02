@@ -65,6 +65,7 @@
     <Compile Include="Constants\Constant.cs" />
     <Compile Include="Constants\AccountType.cs" />
     <Compile Include="Services\AccountService.cs" />
+    <Compile Include="ModelInterfaces\IUser.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />

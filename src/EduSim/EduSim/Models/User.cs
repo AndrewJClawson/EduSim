@@ -1,19 +1,21 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
+//using System.Data.Linq.Mapping;
 using System.ComponentModel.DataAnnotations;
-
-using System.Data.Linq.Mapping;
+using System.ComponentModel.DataAnnotations.Schema;
+using MySql.Data.Entity;
 using EduSim.ModelInterfaces;
 //using MySql.Data.Entity;
 
 
 namespace EduSim.Models
 {
-	[Table (Name="Users")]
+	[Table("Users")]
 	public class User : DataModel
 	{
 		#region - Member variables
-		[Column(Name = "pk_user_id")]
+		[Column("pk_user_id")]
 		private int user_id { get; set;}
 
 		public int UserID
@@ -28,10 +30,10 @@ namespace EduSim.Models
 			}
 		}
 
-		[Column(Name = "fk_account_id")]
-		private int account_id { get; set;  }
+		[Column("fk_account_id")]
+		private int? account_id { get; set;  }
 
-		public int AccountID
+		public int? AccountID
 		{
 			get
 			{
@@ -43,7 +45,7 @@ namespace EduSim.Models
 			}
 		}
 
-		[Column(Name="first_name")]
+		[Column("first_name")]
 		private string first_name { get; set;}
 		public string FirstName
 		{
@@ -55,7 +57,7 @@ namespace EduSim.Models
 			}
 		}
 
-		[Column(Name = "last_name")]
+		[Column("last_name")]
 		private string last_name { get; set;}
 		public string LastName
 		{
@@ -67,7 +69,7 @@ namespace EduSim.Models
 			}
 		}
 
-		[Column(Name = "email")]
+		[Column("email")]
 		private string email { get; set;}
 		public string Email
 		{
@@ -79,7 +81,7 @@ namespace EduSim.Models
 			}
 		}
 
-		[Column(Name = "password")]
+		[Column("password")]
 		private string password;
 		public string Password
 		{
@@ -90,7 +92,42 @@ namespace EduSim.Models
 				password = value;
 			}
 		}
+
+		[Column("is_admin"), MaxLength(1)]
+		private string is_admin;
+		public string IsAdmin
+		{
+			get { return is_admin;}
+			set{
+				is_admin = value;
+			}
+		}
+
+		[Column("is_instructor"), MaxLength(1)]
+		private string is_instructor;
+		public string IsInstructor
+		{
+			get { return is_instructor; }
+			set
+			{
+				is_instructor = value;
+			}
+		}
+
+		[Column("is_volunteer"), MaxLength(1)]
+		private string is_volunteer;
+		public string IsVolunteer
+		{
+			get { return is_volunteer; }
+			set
+			{
+				is_volunteer = value;
+			}
+		}
+
+
 		#endregion
+
 
 		//Constructor
 		public User()
@@ -98,21 +135,7 @@ namespace EduSim.Models
 			
 		}
 
-
-
-
-
-		#region - Validation Methods
-		public override List<string> GetValidationErrors()
-		{
-			List<string> _validationErrors = new List<string>();
-
-			return _validationErrors;
-		}
-
-
-		#endregion
-
+		public virtual Account Account { get; set; }
 	}
 }
 
