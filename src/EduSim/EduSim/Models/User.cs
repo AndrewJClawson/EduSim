@@ -11,122 +11,43 @@ using EduSim.ModelInterfaces;
 
 namespace EduSim.Models
 {
-	[Table("Users")]
-	public class User : DataModel
+	[Table("users")]
+	public class User
 	{
-		#region - Member variables
 		[Column("pk_user_id")]
-		private int user_id { get; set;}
-
-		public int UserID
-		{
-			get
-			{
-				return user_id;
-			}
-			set 
-			{
-				user_id = value;
-			}
-		}
+		public int UserId { get; set;}
 
 		[Column("fk_account_id")]
-		private int? account_id { get; set;  }
+		public int AccountId { get; set; }
 
-		public int? AccountID
-		{
-			get
-			{
-				return account_id;
-			}
-			set
-			{
-				account_id = value;
-			}
-		}
+		[Column("fk_school_id")]
+		public int? SchoolId { get; set; }
+
+		[Column("fk_campus_id")]
+		public int? CampusId { get; set; }
 
 		[Column("first_name")]
-		private string first_name { get; set;}
-		public string FirstName
-		{
-			get{
-				return first_name;
-			}
-			set{
-				first_name = value;
-			}
-		}
+		public string FirstName { get; set; }
 
 		[Column("last_name")]
-		private string last_name { get; set;}
-		public string LastName
-		{
-			get{
-				return last_name;
-			}
-			set{
-				last_name = value;
-			}
-		}
+		public string LastName { get; set; }
 
 		[Column("email")]
-		private string email { get; set;}
-		public string Email
-		{
-			get{
-				return email;
-			}
-			set{
-				email = value;
-			}
-		}
+		public string Email { get; set; }
 
 		[Column("password")]
-		private string password;
-		public string Password
-		{
-			get{
-				return password;
-			}
-			set{
-				password = value;
-			}
-		}
+		public string Password { get; set; }
 
-		[Column("is_admin"), MaxLength(1)]
-		private string is_admin;
-		public string IsAdmin
-		{
-			get { return is_admin;}
-			set{
-				is_admin = value;
-			}
-		}
+		[Column("is_admin")]
+		public string IsAdmin { get; set; }
 
-		[Column("is_instructor"), MaxLength(1)]
-		private string is_instructor;
-		public string IsInstructor
-		{
-			get { return is_instructor; }
-			set
-			{
-				is_instructor = value;
-			}
-		}
+		[Column("is_instructor")]
+		public string IsInstructor { get; set; }
 
-		[Column("is_volunteer"), MaxLength(1)]
-		private string is_volunteer;
-		public string IsVolunteer
-		{
-			get { return is_volunteer; }
-			set
-			{
-				is_volunteer = value;
-			}
-		}
+		[Column("is_volunteer")]
+		public string IsVolunteer { get; set; }
 
 
-		#endregion
 
 
 		//Constructor
