@@ -12,8 +12,21 @@ namespace EduSim.Services
 {
 	public class UserService
 	{
+		private readonly Repository<User> _userRepository;
+		private readonly Repository<Account> _accountRepository;
+
 		public UserService()
 		{
+			_userRepository = new Repository<User>();
+			_accountRepository = new Repository<Account>();
 		}
+
+		public UserService(DbContext context)
+		{
+			_userRepository = new Repository<User>(context);
+			_accountRepository = new Repository<Account>(Context);
+		}
+
+
 	}
 }
