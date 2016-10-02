@@ -19,10 +19,12 @@ namespace EduSim.Console
 		static void Main()
 		{
 			List<Account> accounts = _accountService.GetAll();
-			foreach(Account account in accounts)
+
+			foreach (Account account in accounts)
 			{
 				System.Console.WriteLine(account.AccountName);
 			}
+
 			System.Console.WriteLine("\n");
 			_accountService.Create("New Test Account", Constants.AccountType.Homeschool.Id);
 
