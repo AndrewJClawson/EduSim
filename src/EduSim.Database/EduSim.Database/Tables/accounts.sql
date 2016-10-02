@@ -3,7 +3,7 @@
 	pk_account_id int(11) unsigned NOT NULL AUTO_INCREMENT,
 	fk_account_type_id int(11) unsigned NOT NULL,
 
-	account_name varchar(20) DEFAULT NULL,
+	account_name varchar(100) DEFAULT NULL,
 
 	PRIMARY KEY (pk_account_id),
 	KEY account_type (fk_account_type_id),

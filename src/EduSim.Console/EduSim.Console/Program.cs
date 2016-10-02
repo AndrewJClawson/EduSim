@@ -4,32 +4,32 @@ using System.Collections.Generic;
 using System.Data.Entity;
 using MySql.Data.Entity;
 using MySql.Data.MySqlClient;
+using EduSim.Constants;
 using EduSim.Models;
 using EduSim.Contexts;
 using EduSim.Repository;
+using EduSim.Services;
 
 namespace EduSim.Console
 {
 	class MainClass
 	{
-		private static Repository<Account> _accountRepository = new Repository<Account>();
-		private static Repository<AccountType> _accountTypeRepository = new Repository<AccountType>();
+		private static AccountService _accountService = new AccountService();
+
 		static void Main()
 		{
-			var accountList = _accountRepository.GetAll().ToList();
-			foreach (Account account in accountList)
+			List<Account> accounts = _accountService.GetAll();
+			foreach(Account account in accounts)
 			{
 				System.Console.WriteLine(account.AccountName);
 			}
+			System.Console.WriteLine("\n");
+			_accountService.Create("New Test Account", Constants.AccountType.Homeschool.Id);
 
-			var accountTypeList = _accountTypeRepository.GetAll();
-			foreach (AccountType type in accountTypeList)
+			foreach(Account account in accounts)
 			{
-				System.Console.WriteLine(type.Name);
+				System.Console.WriteLine(account.AccountName);
 			}
-
-
-
 		}
 	}
 }

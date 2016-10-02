@@ -5,7 +5,6 @@ using System.Data.Entity;
 using System.ComponentModel.DataAnnotations.Schema;
 using MySql.Data.Entity;
 using EduSim.ModelInterfaces;
-
 namespace EduSim.Models
 {
 	[Table("accounts")]
@@ -20,7 +19,7 @@ namespace EduSim.Models
 		[Column("account_name")]
 		public string AccountName { get; set;}
 
-
+		public virtual ICollection<User> Users { get; set; }
 
 	}
 }

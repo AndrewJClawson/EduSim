@@ -50,6 +50,7 @@ namespace EduSim.Repository
 			
 			_dbSet.Add(item);
 			_edusimContext.Entry(item).State = EntityState.Added;
+			_edusimContext.SaveChangesAsync();
 		}
 
 		public virtual void Delete(object id)
@@ -58,7 +59,8 @@ namespace EduSim.Repository
 
 			//TODO - Check for null object????
 			Delete(deleteItem);
-
+			_edusimContext.Entry(deleteItem).State = EntityState.Deleted;
+			_edusimContext.SaveChangesAsync();
 			//TODO - Update state ??
 		}
 
@@ -67,6 +69,7 @@ namespace EduSim.Repository
 			// More here check if item state is detached. If it is, attach it.
 			_dbSet.Remove(item);
 			_edusimContext.Entry(item).State = EntityState.Deleted;
+			_edusimContext.SaveChangesAsync();
 		}
 
 		public virtual void Update(T item)
@@ -74,6 +77,7 @@ namespace EduSim.Repository
 			//TODO - null checks on item????
 			_dbSet.Attach(item);
 			_edusimContext.Entry(item).State = EntityState.Modified;
+			_edusimContext.SaveChangesAsync();
 		}
 	}
 }
