@@ -33,6 +33,15 @@ namespace EduSim.Console
 			{
 				System.Console.WriteLine(account.AccountName);
 			}
+
+			using (EduSimContext edContext = new EduSimContext())
+			{
+				var users = edContext.Users.ToList();
+				foreach (User user in users)
+				{
+					System.Console.WriteLine(user.FirstName);
+				}
+			}
 		}
 	}
 }
