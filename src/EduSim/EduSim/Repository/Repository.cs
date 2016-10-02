@@ -61,6 +61,7 @@ namespace EduSim.Repository
 			Delete(deleteItem);
 			_edusimContext.Entry(deleteItem).State = EntityState.Deleted;
 			_edusimContext.SaveChangesAsync();
+
 			//TODO - Update state ??
 		}
 
