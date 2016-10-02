@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Data.Entity;
 //using System.Data.Linq.Mapping;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -18,6 +19,8 @@ namespace EduSim.Models
 
 		[Column("account_name")]
 		public string AccountName { get; set;}
+
+		public virtual ICollection<User> Users { get; set; }
 	}
 }
 
