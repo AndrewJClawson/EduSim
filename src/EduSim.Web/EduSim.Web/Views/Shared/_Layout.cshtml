@@ -16,7 +16,34 @@
 <body>
 	@RenderBody()
 	<div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				@Html.ActionLink("EduSim", "Dashboard", "Account", new {@class = "navbar-brand"})
+			</div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li role="presentation" class="dropdown">
+						<a id="accountAdminDropdown" data-toggle="dropdown" role="button">Account Admin</a>
+						<ul class="dropdown-menu">
+							<li>Account Settings</li>
+							<li>User Management</li>
+							<li>Financial Management</li>
+						</ul>
+					</li>
 
+					<li role="presentation" class="dropdown">
+						<a id="instructorDropdown" data-toggle="dropdown" role="button">Instructor</a>
+						<ul class="dropdown-menu">
+							<li>Gradebook</li>
+							<li>Attendance</li>
+							<li>Student Records</li>
+							<li>Reports</li>
+						</ul>
+					</li>
+				</ul>
+				@Html.Partial("_UserPartial")
+			</div>
+		</div>
 	</div>
 
 	<div class="container body-content">
@@ -24,11 +51,10 @@
 	</div>
 </body>
 </html>
-
-@Scripts.Render("~/Scripts/bootstrap.min.js")
-@Scripts.Render("~/Scripts/jquery-3.1.0.min.js")
-@Scripts.Render("~/Scripts/bootstrap.js")
 @Scripts.Render("~/Scripts/jquery-3.1.0.js")
 @Scripts.Render("~/Scripts/jquery-3.1.0.min.js")
-@Scripts.Render("~/Scripts/EduSim.js")
+@Scripts.Render("~/Scripts/bootstrap.min.js")
+@Scripts.Render("~/Scripts/bootstrap.js")
+
+
 

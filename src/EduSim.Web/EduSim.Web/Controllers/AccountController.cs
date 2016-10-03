@@ -15,7 +15,28 @@ namespace EduSim.Web.Controllers
 			return View("Login");
         }
 
-		public ActionResult Login(LoginViewModel viewModel)
+		[HttpPost]
+		public JsonResult Authenticate(string email, string password)
+		{
+			bool success = false;
+			string message = string.Empty;
+			string url = string.Empty;
+			try
+			{
+				success = true;
+				UrlHelper u = new UrlHelper(this.ControllerContext.RequestContext);
+				url = u.Action("Dashboard", "Account");
+			}
+			catch (Exception e)
+			{
+				message = e.GetBaseException().Message;
+				success = false;
+			}
+			var result = new { Success = success, Message = message, Url = url };
+			return Json(result, JsonRequestBehavior.AllowGet);
+		}
+
+		public ActionResult Dashboard(LoginViewModel viewModel)
 		{
 			return View("~/Views/Home/Dashboard.cshtml");
 		}
