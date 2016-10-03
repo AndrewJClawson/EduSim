@@ -9,10 +9,15 @@ namespace EduSim.Web.Controllers
 {
     public class AccountController : Controller
     {
-        public ActionResult Login()
+        public ActionResult Index()
         {
 			//var loginModel = new LoginViewModel();
-			return View();
+			return View("Login");
         }
+
+		public ActionResult Login(LoginViewModel viewModel)
+		{
+			return View("~/Views/Home/Dashboard.cshtml");
+		}
     }
 }

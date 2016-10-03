@@ -152,6 +152,7 @@
     <Content Include="Content\App.css" />
     <Content Include="Content\images\login-background.jpg" />
     <Content Include="Views\Home\Dashboard.cshtml" />
+    <Content Include="Scripts\EduSim.js" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\EduSim\EduSim\EduSim.csproj">

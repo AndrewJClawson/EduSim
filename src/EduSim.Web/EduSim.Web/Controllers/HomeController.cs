@@ -20,5 +20,6 @@ namespace EduSim.Web.Controllers
 			return View();
 		}
 	}
+
 }
 
