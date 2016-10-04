@@ -21,19 +21,20 @@
 	    @Styles.Render("~/Content/bootstrap-theme.min.css")
 	    @Styles.Render("~/Content/bootstrap-theme.min.css.map")
 
+		@Scripts.Render("~/Scripts/jquery-3.1.0.js")
+	    @Scripts.Render("~/Scripts/jquery-3.1.0.min.js")
 	    @Scripts.Render("~/Scripts/bootstrap.min.js")
 	    @Scripts.Render("~/Scripts/jquery-3.1.0.min.js")
 	    @Scripts.Render("~/Scripts/bootstrap.js")
-	    @Scripts.Render("~/Scripts/jquery-3.1.0.js")
-	    @Scripts.Render("~/Scripts/jquery-3.1.0.min.js")
+
 
 
 	</head>
 	<body class="login-body">
 		<div class="col-xs-12 col-sm-10 offset-sm-2 col-md-8 offset-md-4"">
-		<section id="loginForm">	
+		<section id="login-form-container">	
 				<h2 class="login-header">EduSIM Login</h2>
-                @using (Html.BeginForm("Dashboard", "Account", FormMethod.Post, new { @class = "form-horizontal", role = "form", id="loginForm"}))
+                @using (Html.BeginForm("Dashboard", "Account", FormMethod.Post, new { @class = "form-horizontal", role = "form", id="login-form"}))
                 {
                     @Html.AntiForgeryToken()
                     <h4 class="login-header">Use a local account to log in.</h4>
@@ -79,14 +80,7 @@
 				url:'@Url.Action("Authenticate","Account")',
 				type:'POST',
 				data: {'email':email,'password':password},
-				success: function (response) {
-					if (response.Success == true) {
-						$("#loginForm").submit();
-					}
-					else {
-						alert("Login Error");
-					}
-				},
+				success: LoadDashboard(),
 				error: function (response) {
 					alert(response.Message);
 				}
@@ -95,11 +89,8 @@
 		});
 	});
 
-	function LoadDashboard(data)
+	function LoadDashboard()
 	{
-		if (data.Success)
-		{
-			$("#loginForm").submit();
-		}
+		$("#login-form").submit();
 	}
 </script>
