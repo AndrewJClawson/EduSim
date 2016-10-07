@@ -46,7 +46,7 @@ namespace EduSim.Services
 
 		public List<Account> GetAll()
 		{
-			List<Account> accounts = _accountRepository.GetAll().ToList();
+				List<Account> accounts = _accountRepository.GetAll().ToList();
 
 			return accounts;
 		}

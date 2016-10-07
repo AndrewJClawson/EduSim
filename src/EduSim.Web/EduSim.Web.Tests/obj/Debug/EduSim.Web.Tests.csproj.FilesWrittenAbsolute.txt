@@ -1,4 +1,6 @@
 /Volumes/Storage/Development/EduSim/src/EduSim.Web/EduSim.Web.Tests/obj/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/Volumes/Storage/Development/EduSim/src/EduSim.Web/EduSim.Web.Tests/bin/Debug/EduSim.Web.Tests.dll.mdb
+/Volumes/Storage/Development/EduSim/src/EduSim.Web/EduSim.Web.Tests/bin/Debug/EduSim.Web.Tests.dll
 /Volumes/Storage/Development/EduSim/src/EduSim.Web/EduSim.Web.Tests/obj/Debug/EduSim.Web.Tests.dll
 /Volumes/Storage/Development/EduSim/src/EduSim.Web/EduSim.Web.Tests/obj/Debug/EduSim.Web.Tests.dll.mdb
 /Volumes/Storage/Development/EduSim/src/EduSim.Web/EduSim.Web.Tests/bin/Debug/Microsoft.Web.Infrastructure.dll
@@ -15,3 +17,6 @@
 /Volumes/Storage/Development/EduSim/src/EduSim.Web/EduSim.Web.Tests/bin/Debug/Newtonsoft.Json.dll
 /Volumes/Storage/Development/EduSim/src/EduSim.Web/EduSim.Web.Tests/bin/Debug/EduSim.Web.dll
 /Volumes/Storage/Development/EduSim/src/EduSim.Web/EduSim.Web.Tests/bin/Debug/EduSim.Web.dll.mdb
+/Volumes/Storage/Development/EduSim/src/EduSim.Web/EduSim.Web.Tests/bin/Debug/EduSim.dll
+/Volumes/Storage/Development/EduSim/src/EduSim.Web/EduSim.Web.Tests/bin/Debug/EduSim.dll.mdb
+/Volumes/Storage/Development/EduSim/src/EduSim.Web/EduSim.Web.Tests/bin/Debug/EntityFramework.dll

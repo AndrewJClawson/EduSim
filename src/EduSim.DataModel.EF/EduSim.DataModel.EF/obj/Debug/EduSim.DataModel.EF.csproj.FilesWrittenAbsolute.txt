@@ -1,5 +1,4 @@
-/Volumes/Storage/Development/EduSim/src/EduSim.DataModel.EF/EduSim.DataModel.EF/obj/Debug/.NETFramework,Version=v4.6.1.AssemblyAttribute.cs
-/Volumes/Storage/Development/EduSim/src/EduSim.DataModel.EF/EduSim.DataModel.EF/bin/Debug/EduSim.DataModel.EF.dll.config
+/Volumes/Storage/Development/EduSim/src/EduSim.DataModel.EF/EduSim.DataModel.EF/obj/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
 /Volumes/Storage/Development/EduSim/src/EduSim.DataModel.EF/EduSim.DataModel.EF/bin/Debug/EduSim.DataModel.EF.dll.mdb
 /Volumes/Storage/Development/EduSim/src/EduSim.DataModel.EF/EduSim.DataModel.EF/bin/Debug/EduSim.DataModel.EF.dll
 /Volumes/Storage/Development/EduSim/src/EduSim.DataModel.EF/EduSim.DataModel.EF/obj/Debug/EduSim.DataModel.EF.dll
@@ -10,5 +9,3 @@
 /Volumes/Storage/Development/EduSim/src/EduSim.DataModel.EF/EduSim.DataModel.EF/bin/Debug/EntityFramework.SqlServer.dll
 /Volumes/Storage/Development/EduSim/src/EduSim.DataModel.EF/EduSim.DataModel.EF/bin/Debug/EduSim.dll
 /Volumes/Storage/Development/EduSim/src/EduSim.DataModel.EF/EduSim.DataModel.EF/bin/Debug/EduSim.dll.mdb
-/Volumes/Storage/Development/EduSim/src/EduSim.DataModel.EF/EduSim.DataModel.EF/obj/Debug/.NETFramework,Version=v4.5.2.AssemblyAttribute.cs
-/Volumes/Storage/Development/EduSim/src/EduSim.DataModel.EF/EduSim.DataModel.EF/obj/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs

@@ -47,9 +47,6 @@ namespace EduSim.Models
 		[Column("is_volunteer")]
 		public string IsVolunteer { get; set; }
 
-
-
-
 		//Constructor
 		public User()
 		{
