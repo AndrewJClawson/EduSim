@@ -17,6 +17,3 @@
 /Volumes/Storage/Development/EduSim/src/EduSim.Web/EduSim.Web.Tests/bin/Debug/Newtonsoft.Json.dll
 /Volumes/Storage/Development/EduSim/src/EduSim.Web/EduSim.Web.Tests/bin/Debug/EduSim.Web.dll
 /Volumes/Storage/Development/EduSim/src/EduSim.Web/EduSim.Web.Tests/bin/Debug/EduSim.Web.dll.mdb
-/Volumes/Storage/Development/EduSim/src/EduSim.Web/EduSim.Web.Tests/bin/Debug/EduSim.dll
-/Volumes/Storage/Development/EduSim/src/EduSim.Web/EduSim.Web.Tests/bin/Debug/EduSim.dll.mdb
-/Volumes/Storage/Development/EduSim/src/EduSim.Web/EduSim.Web.Tests/bin/Debug/EntityFramework.dll

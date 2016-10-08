@@ -1,5 +1,4 @@
 /Volumes/Storage/Development/EduSim/src/EduSim.Web/EduSim.Web/obj/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
-/Volumes/Storage/Development/EduSim/src/EduSim.Web/EduSim.Web/bin/EduSim.Web.dll.config
 /Volumes/Storage/Development/EduSim/src/EduSim.Web/EduSim.Web/bin/EduSim.Web.dll.mdb
 /Volumes/Storage/Development/EduSim/src/EduSim.Web/EduSim.Web/bin/EduSim.Web.dll
 /Volumes/Storage/Development/EduSim/src/EduSim.Web/EduSim.Web/obj/Debug/EduSim.Web.dll
@@ -14,15 +13,12 @@
 /Volumes/Storage/Development/EduSim/src/EduSim.Web/EduSim.Web/bin/System.Net.Http.Formatting.dll
 /Volumes/Storage/Development/EduSim/src/EduSim.Web/EduSim.Web/bin/System.Web.Http.dll
 /Volumes/Storage/Development/EduSim/src/EduSim.Web/EduSim.Web/bin/System.Web.Http.WebHost.dll
-/Volumes/Storage/Development/EduSim/src/EduSim.Web/EduSim.Web/bin/MySql.Data.Entity.EF6.dll
 /Volumes/Storage/Development/EduSim/src/EduSim.Web/EduSim.Web/bin/Newtonsoft.Json.dll
-/Volumes/Storage/Development/EduSim/src/EduSim.Web/EduSim.Web/bin/EntityFramework.dll
-/Volumes/Storage/Development/EduSim/src/EduSim.Web/EduSim.Web/bin/EntityFramework.SqlServer.dll
 /Volumes/Storage/Development/EduSim/src/EduSim.Web/EduSim.Web/bin/Antlr3.Runtime.dll
 /Volumes/Storage/Development/EduSim/src/EduSim.Web/EduSim.Web/bin/WebGrease.dll
 /Volumes/Storage/Development/EduSim/src/EduSim.Web/EduSim.Web/bin/System.Web.Optimization.dll
-/Volumes/Storage/Development/EduSim/src/EduSim.Web/EduSim.Web/bin/MySql.Data.dll
 /Volumes/Storage/Development/EduSim/src/EduSim.Web/EduSim.Web/bin/EduSim.dll
 /Volumes/Storage/Development/EduSim/src/EduSim.Web/EduSim.Web/bin/EduSim.dll.mdb
 /Volumes/Storage/Development/EduSim/src/EduSim.Web/EduSim.Web/bin/EduSim.DataModel.EF.dll
 /Volumes/Storage/Development/EduSim/src/EduSim.Web/EduSim.Web/bin/EduSim.DataModel.EF.dll.mdb
+/Volumes/Storage/Development/EduSim/src/EduSim.Web/EduSim.Web/bin/EntityFramework.dll

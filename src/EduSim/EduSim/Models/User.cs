@@ -4,7 +4,7 @@ using System.Data.Entity;
 //using System.Data.Linq.Mapping;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using MySql.Data.Entity;
+//using MySql.Data.Entity;
 using EduSim.ModelInterfaces;
 //using MySql.Data.Entity;
 
