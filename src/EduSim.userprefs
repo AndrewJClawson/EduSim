@@ -1,12 +1,13 @@
-﻿<Properties StartupConfiguration="{862C8A85-3708-4C3E-917C-340AC9BBFB85}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="EduSim/EduSim/App.config">
+﻿<Properties StartupConfiguration="{77580DE2-9887-48E3-95B9-4131709F86E1}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="EduSim.Console/EduSim.Console/Program.cs">
     <Files>
-      <File FileName="EduSim.Web/EduSim.Web/Controllers/AccountController.cs" Line="32" Column="44" />
-      <File FileName="EduSim.Web/EduSim.Web/Views/Account/Login.cshtml" Line="1" Column="1" />
+      <File FileName="EduSim.Web/EduSim.Web/Controllers/AccountController.cs" Line="35" Column="1" />
+      <File FileName="EduSim.Web/EduSim.Web/Views/Account/Login.cshtml" Line="27" Column="45" />
       <File FileName="EduSim/EduSim/Services/AccountService.cs" Line="49" Column="1" />
       <File FileName="EduSim/EduSim/Services/UserService.cs" Line="54" Column="1" />
       <File FileName="EduSim.Console/EduSim.Console/Program.cs" Line="1" Column="14" />
-      <File FileName="EduSim/EduSim/App.config" Line="34" Column="17" />
+      <File FileName="EduSim/EduSim/app.config" Line="8" Column="23" />
+      <File FileName="EduSim/EduSim/App_old" Line="20" Column="7" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -15,14 +16,11 @@
             <Node name="EduSim" expanded="True">
               <Node name="Models" expanded="True" />
               <Node name="Services" expanded="True" />
-              <Node name="App.config" selected="True" />
             </Node>
-            <Node name="EduSim.Console" expanded="True" />
-            <Node name="EduSim.Web" expanded="True">
-              <Node name="Views" expanded="True">
-                <Node name="Account" expanded="True" />
-              </Node>
+            <Node name="EduSim.Console" expanded="True">
+              <Node name="Program.cs" selected="True" />
             </Node>
+            <Node name="EduSim.Web" expanded="True" />
           </Node>
         </State>
       </Pad>
