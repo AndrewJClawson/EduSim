@@ -1,26 +1,24 @@
 ﻿<Properties StartupConfiguration="{20FA62A5-8D4B-42DE-BB17-D1A2853C61DE}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="EduSim.Core/Models/User.cs">
     <Files>
-      <File FileName="EduSim.Sandbox/Program.cs" Line="27" Column="69" />
+      <File FileName="EduSim.Sandbox/Program.cs" Line="33" Column="79" />
       <File FileName="EduSim.Core/Contexts/EduSimContext.cs" Line="1" Column="1" />
       <File FileName="EduSim.Core/Models/Account.cs" Line="24" Column="3" />
-      <File FileName="EduSim.Core/Models/User.cs" Line="45" Column="26" />
+      <File FileName="EduSim.Core/Models/User.cs" Line="47" Column="3" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="EduSim" expanded="True">
             <Node name="EduSim.Core" expanded="True">
-              <Node name="Contexts" expanded="True" />
               <Node name="Models" expanded="True">
                 <Node name="User.cs" selected="True" />
               </Node>
-              <Node name="Services" expanded="True">
-                <Node name="Abstractions" expanded="True" />
-              </Node>
             </Node>
             <Node name="EduSim.Sandbox" expanded="True" />
-            <Node name="EduSim.Web" expanded="True" />
+            <Node name="EduSim.Web" expanded="True">
+              <Node name="Controllers" expanded="True" />
+            </Node>
           </Node>
         </State>
       </Pad>
@@ -32,8 +30,6 @@
     <BreakpointStore>
       <Breakpoint file="/Volumes/Storage/Development/EduSim/src/EduSim/EduSim/Services/AuthenticationService.cs" line="32" column="1" />
       <Breakpoint file="/Volumes/Storage/Development/EduSim/src/EduSim.Web/EduSim.Web/Controllers/AccountController.cs" line="49" column="1" />
-      <Breakpoint file="/Volumes/Storage/Development/EduSim/src/EduSim.Web/EduSim.Web/Controllers/AccountController.cs" line="35" column="1" />
-      <Breakpoint file="/Volumes/Storage/Development/EduSim/src/EduSim.Web/EduSim.Web/Controllers/AccountController.cs" line="33" column="1" />
       <Breakpoint file="/Volumes/Storage/Development/EduSim/src/EduSim/EduSim/Services/UserService.cs" line="54" column="1" />
       <Breakpoint file="/Volumes/Storage/Development/EduSim/src/EduSim.Core/Models/AccountType.cs" line="6" column="1" />
     </BreakpointStore>
