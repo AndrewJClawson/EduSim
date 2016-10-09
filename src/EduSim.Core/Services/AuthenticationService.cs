@@ -5,6 +5,7 @@ namespace EduSim.Core
 	{
 		public AuthenticationService()
 		{
+			
 		}
 	}
 }
