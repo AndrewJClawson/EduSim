@@ -143,17 +143,9 @@
     <Content Include="Views\Shared\_UserPartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\EduSim\EduSim\EduSim.csproj">
-      <Project>{2F9142E3-8B85-4CD4-A6E5-14571F6F9247}</Project>
-      <Name>EduSim</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\EduSim.Database\EduSim.Database\EduSim.Database.mdproj">
-      <Project>{A0D706E1-2DBB-4944-98DF-05918C48B08C}</Project>
-      <Name>EduSim.Database</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\EduSim.DataModel.EF\EduSim.DataModel.EF\EduSim.DataModel.EF.csproj">
-      <Project>{272FA407-37F8-400C-8F3D-ACDCA271A99E}</Project>
-      <Name>EduSim.DataModel.EF</Name>
+    <ProjectReference Include="..\..\EduSim.Core\EduSim.Core.csproj">
+      <Project>{F8285D57-0476-43E8-98C5-422B2C064F8F}</Project>
+      <Name>EduSim.Core</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
