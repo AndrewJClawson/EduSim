@@ -17,10 +17,16 @@ namespace EduSim.Sandbox
 		public static void Main(string[] args)
 		{
 			List<Account> accounts = _accountService.GetAll().ToList();
-			List<User> users = _userService.GetAll().ToList();
+			//List<User> users = _userService.GetAll().ToList();
 			foreach(Account account in accounts)
 			{
 				System.Console.WriteLine(account.AccountName);
+				System.Console.WriteLine("\n");
+			}
+
+			foreach(User user in _userService.GetAll())
+			{
+				System.Console.WriteLine(user.FirstName + " " + user.LastName);
 				System.Console.WriteLine("\n");
 			}
 

@@ -13,6 +13,7 @@ namespace EduSim.Core.Contexts
 
 		public EduSimContext() : base(nameOrConnectionString:"EduSimContext")
 		{
+			
 		}
 	}
 }

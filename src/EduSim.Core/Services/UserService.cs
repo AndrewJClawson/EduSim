@@ -16,6 +16,7 @@ namespace EduSim.Core.Services
 
 		public UserService()
 		{
+			_userRepository = new Repository<User>();
 		}
 
 		public void Add(User user)
