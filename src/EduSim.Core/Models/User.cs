@@ -42,6 +42,9 @@ namespace EduSim.Core.Models
 		[Column("is_Volunteer"), MaxLength(1)]
 		public string IsVolunteer { get; set; }
 
+		public virtual Account Account { get; set; }
+
+
 		public User()
 		{
 		}
