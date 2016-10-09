@@ -21,22 +21,14 @@ namespace EduSim.Sandbox
 			foreach(Account account in accounts)
 			{
 				System.Console.WriteLine(account.AccountName);
-				System.Console.WriteLine("\n");
-				foreach(User user in account.Users)
+				System.Console.WriteLine("Schools:");
+				foreach(School school in account.Schools)
 				{
-					System.Console.WriteLine(user.FirstName + " " + user.LastName);
+					System.Console.WriteLine(school.SchoolName);
 				}
+				System.Console.WriteLine("");
+
 			}
-
-			foreach(User user in users)
-			{
-				System.Console.WriteLine(user.LastName + ": " + user.Account.AccountName);
-			}
-
-
-
-
-
 		}
 	}
 }
