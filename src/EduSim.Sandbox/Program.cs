@@ -12,13 +12,20 @@ namespace EduSim.Sandbox
 	class MainClass
 	{
 		public static AccountService _accountService = new AccountService();
+		public static UserService _userService = new UserService();
+
 		public static void Main(string[] args)
 		{
 			List<Account> accounts = _accountService.GetAll().ToList();
+			List<User> users = _userService.GetAll().ToList();
 			foreach(Account account in accounts)
 			{
 				System.Console.WriteLine(account.AccountName);
+				System.Console.WriteLine("\n");
 			}
+
+
+
 		}
 	}
 }
