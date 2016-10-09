@@ -17,8 +17,3 @@
 /Volumes/Storage/Development/EduSim/src/EduSim.Web/EduSim.Web/bin/Antlr3.Runtime.dll
 /Volumes/Storage/Development/EduSim/src/EduSim.Web/EduSim.Web/bin/WebGrease.dll
 /Volumes/Storage/Development/EduSim/src/EduSim.Web/EduSim.Web/bin/System.Web.Optimization.dll
-/Volumes/Storage/Development/EduSim/src/EduSim.Web/EduSim.Web/bin/EduSim.dll
-/Volumes/Storage/Development/EduSim/src/EduSim.Web/EduSim.Web/bin/EduSim.dll.mdb
-/Volumes/Storage/Development/EduSim/src/EduSim.Web/EduSim.Web/bin/EduSim.DataModel.EF.dll
-/Volumes/Storage/Development/EduSim/src/EduSim.Web/EduSim.Web/bin/EduSim.DataModel.EF.dll.mdb
-/Volumes/Storage/Development/EduSim/src/EduSim.Web/EduSim.Web/bin/EntityFramework.dll

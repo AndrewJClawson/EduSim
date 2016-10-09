@@ -1,4 +1,9 @@
 ﻿using System;
+using EduSim.Core.Models;
+using EduSim.Core.Contexts;
+using System.Linq;
+using System.Data;
+using System.Data.Entity;
 
 namespace EduSim.Sandbox
 {
@@ -6,7 +11,13 @@ namespace EduSim.Sandbox
 	{
 		public static void Main(string[] args)
 		{
-			Console.WriteLine("Hello World!");
+			using(var context = new EduSimContext())
+			{
+				foreach(AccountType type in context.AccountTypes.ToList())
+				{
+					System.Console.WriteLine(type.Name);
+				}
+			}
 		}
 	}
 }
