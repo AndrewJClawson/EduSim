@@ -6,6 +6,7 @@ using System.Linq;
 using System.Data;
 using System.Data.Entity;
 using EduSim.Core.Services;
+
 namespace EduSim.Sandbox
 {
 	class MainClass
