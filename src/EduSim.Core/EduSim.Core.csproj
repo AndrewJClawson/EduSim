@@ -62,6 +62,7 @@
     <Folder Include="Contexts\" />
     <Folder Include="Repository\" />
     <Folder Include="Repository\Abstraction\" />
+    <Folder Include="Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
