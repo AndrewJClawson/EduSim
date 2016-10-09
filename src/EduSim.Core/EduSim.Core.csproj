@@ -60,6 +60,10 @@
     <Compile Include="ModelInterfaces\IUser.cs" />
     <Compile Include="Services\UserService.cs" />
     <Compile Include="Services\Abstractions\IBaseService.cs" />
+    <Compile Include="Services\AuthenticationService.cs" />
+    <Compile Include="Services\Abstractions\IAccountService.cs" />
+    <Compile Include="Services\Abstractions\IUserService.cs" />
+    <Compile Include="Services\Abstractions\IAuthenticationInterface.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

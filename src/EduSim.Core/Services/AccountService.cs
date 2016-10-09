@@ -10,7 +10,7 @@ using MySql.Data.Entity;
 
 namespace EduSim.Core.Services
 {
-	public class AccountService
+	public class AccountService : IAccountService
 	{
 		// - Member variables
 		private readonly Repository<Account> _accountRepository;
