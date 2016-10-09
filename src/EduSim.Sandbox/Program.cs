@@ -1,22 +1,22 @@
 ﻿using System;
+using System.Collections.Generic;
 using EduSim.Core.Models;
 using EduSim.Core.Contexts;
 using System.Linq;
 using System.Data;
 using System.Data.Entity;
-
+using EduSim.Core.Services;
 namespace EduSim.Sandbox
 {
 	class MainClass
 	{
+		public static AccountService _accountService = new AccountService();
 		public static void Main(string[] args)
 		{
-			using(var context = new EduSimContext())
+			List<Account> accounts = _accountService.GetAll().ToList();
+			foreach(Account account in accounts)
 			{
-				foreach(AccountType type in context.AccountTypes.ToList())
-				{
-					System.Console.WriteLine(type.Name);
-				}
+				System.Console.WriteLine(account.AccountName);
 			}
 		}
 	}

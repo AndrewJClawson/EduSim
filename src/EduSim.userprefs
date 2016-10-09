@@ -1,7 +1,9 @@
 ﻿<Properties StartupConfiguration="{20FA62A5-8D4B-42DE-BB17-D1A2853C61DE}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="EduSim.Core/Services/AccountService.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="EduSim.Core/Contexts/EduSimContext.cs">
     <Files>
-      <File FileName="EduSim.Core/Services/AccountService.cs" Line="8" Column="1" />
+      <File FileName="EduSim.Core/Services/AccountService.cs" Line="49" Column="1" />
+      <File FileName="EduSim.Sandbox/Program.cs" Line="14" Column="17" />
+      <File FileName="EduSim.Core/Contexts/EduSimContext.cs" Line="11" Column="35" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -9,11 +11,13 @@
           <Node name="EduSim" expanded="True">
             <Node name="EduSim.Core" expanded="True">
               <Node name="Constants" expanded="True" />
-              <Node name="ModelInterfaces" expanded="True" />
-              <Node name="Services" expanded="True">
-                <Node name="AccountService.cs" selected="True" />
+              <Node name="Contexts" expanded="True">
+                <Node name="EduSimContext.cs" selected="True" />
               </Node>
+              <Node name="ModelInterfaces" expanded="True" />
+              <Node name="Services" expanded="True" />
             </Node>
+            <Node name="EduSim.Sandbox" expanded="True" />
             <Node name="EduSim.Web" expanded="True">
               <Node name="Packages" expanded="True" />
             </Node>

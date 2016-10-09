@@ -8,7 +8,7 @@ using System.Data.Entity;
 
 using MySql.Data.Entity;
 
-namespace EduSim.Services
+namespace EduSim.Core.Services
 {
 	public class AccountService
 	{
