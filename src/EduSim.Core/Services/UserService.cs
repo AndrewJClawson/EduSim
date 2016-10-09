@@ -24,6 +24,20 @@ namespace EduSim.Core.Services
 			_userRepository.Add(user);
 		}
 
+		public bool Authenticate(string email, string password)
+		{
+			List<User> user = _userRepository.GetAll().Where(u => u.Email == email)
+									   .Where(u => u.Password == password).ToList();
+			if (user.Count == 1)
+			{
+				return true;
+			}
+			else
+			{
+				return false;
+			}
+		}
+
 		public void Delete(User user)
 		{
 			_userRepository.Delete(user);

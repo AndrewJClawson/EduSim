@@ -6,6 +6,7 @@ namespace EduSim.Core.Services
 	public interface IUserService
 	{
 		void Add(User user);
+		bool Authenticate(string email, string password);
 		void Delete(User user);
 		void Delete(int id);
 		List<User> GetAll();

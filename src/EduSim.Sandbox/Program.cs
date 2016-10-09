@@ -16,12 +16,8 @@ namespace EduSim.Sandbox
 
 		public static void Main(string[] args)
 		{
-			List<Account> accounts = _accountService.GetAll().ToList();
-			List<User> users = _userService.GetAll().ToList();
-			foreach(User user in users)
-			{
-				System.Console.WriteLine(user.FirstName + " " + user.LastName + ": " + user.School.SchoolName);
-			}
+			bool authenticated = _userService.Authenticate("andrewjclawson18@gmail.com", "2kegs");
+			System.Console.WriteLine(authenticated);
 		}
 	}
 }
