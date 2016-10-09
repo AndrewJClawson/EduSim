@@ -1,5 +1,5 @@
 ﻿<Properties StartupConfiguration="{862C8A85-3708-4C3E-917C-340AC9BBFB85}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="EduSim.Sandbox/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="EduSim.Console/Program.cs">
     <Files>
       <File FileName="EduSim.Sandbox/Program.cs" Line="1" Column="14" />
       <File FileName="EduSim.Core/Contexts/EduSimContext.cs" Line="1" Column="1" />
@@ -7,15 +7,12 @@
       <File FileName="EduSim.Core/Services/SchoolService.cs" Line="1" Column="1" />
       <File FileName="EduSim.Core/Services/UserService.cs" Line="1" Column="1" />
       <File FileName="EduSim.Core/Services/Abstractions/IUserService.cs" Line="1" Column="1" />
+      <File FileName="EduSim.Console/Program.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="EduSim" expanded="True">
-            <Node name="EduSim.Sandbox" expanded="True">
-              <Node name="Program.cs" selected="True" />
-            </Node>
-          </Node>
+          <Node name="EduSim" expanded="True" />
         </State>
       </Pad>
     </Pads>
@@ -32,7 +29,6 @@
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.EduSim.Sandbox PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.ItemProperties.EduSim.Console PreferredExecutionTarget="MonoDevelop.Default" />
   <DisabledProjects>
     <String>EduSims/EduSims/EduSim.csproj</String>
     <String>EduSim.Database/EduSim.Database/EduSim.Database.mdproj</String>

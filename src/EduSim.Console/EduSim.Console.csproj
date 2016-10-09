@@ -3,12 +3,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{522AF646-4142-4861-B3FF-6625F6FBBE0D}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <RootNamespace>EduSim.Database</RootNamespace>
-    <AssemblyName>EduSim.Database</AssemblyName>
+    <ProjectGuid>{39DF68CD-DC57-4D5E-B5F7-E25A7779D727}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>EduSim.Console</RootNamespace>
+    <AssemblyName>EduSim.Console</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
-    <ReleaseVersion>0.0.1</ReleaseVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -18,40 +17,21 @@
     <DefineConstants>DEBUG;</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <ConsolePause>false</ConsolePause>
+    <ExternalConsole>true</ExternalConsole>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <Optimize>true</Optimize>
     <OutputPath>bin\Release</OutputPath>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <ConsolePause>false</ConsolePause>
+    <ExternalConsole>true</ExternalConsole>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MyClass.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Tables\_account_types.sql" />
-    <None Include="Tables\account.sql" />
-    <None Include="Tables\accounts.sql" />
-    <None Include="Tables\campuses.sql" />
-    <None Include="Tables\schools.sql" />
-    <None Include="Tables\users.sql" />
-    <None Include="Scripts\create_application_tables.sql" />
-    <None Include="Scripts\create_database.sql" />
-    <None Include="Scripts\create_reference_tables.sql" />
-    <None Include="Scripts\delete_application_database.sql" />
-    <None Include="Scripts\initial_develop_data.sql" />
-    <None Include="Scripts\populate_reference_data.sql" />
-    <None Include="ReferenceData\_account_types.sql" />
-    <None Include="publish_database.sql" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Classes\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

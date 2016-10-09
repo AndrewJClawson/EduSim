@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EduSim.Core", "EduSim.Core\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EduSim.Database", "EduSim.Database\EduSim.Database.csproj", "{522AF646-4142-4861-B3FF-6625F6FBBE0D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EduSim.Console", "EduSim.Console\EduSim.Console.csproj", "{39DF68CD-DC57-4D5E-B5F7-E25A7779D727}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -64,6 +66,12 @@ Global
 		{522AF646-4142-4861-B3FF-6625F6FBBE0D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{522AF646-4142-4861-B3FF-6625F6FBBE0D}.Default|Any CPU.ActiveCfg = Debug|Any CPU
 		{522AF646-4142-4861-B3FF-6625F6FBBE0D}.Default|Any CPU.Build.0 = Debug|Any CPU
+		{39DF68CD-DC57-4D5E-B5F7-E25A7779D727}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39DF68CD-DC57-4D5E-B5F7-E25A7779D727}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39DF68CD-DC57-4D5E-B5F7-E25A7779D727}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39DF68CD-DC57-4D5E-B5F7-E25A7779D727}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39DF68CD-DC57-4D5E-B5F7-E25A7779D727}.Default|Any CPU.ActiveCfg = Debug|Any CPU
+		{39DF68CD-DC57-4D5E-B5F7-E25A7779D727}.Default|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		Policies = $0
