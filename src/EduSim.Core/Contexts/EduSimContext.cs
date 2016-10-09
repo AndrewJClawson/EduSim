@@ -10,6 +10,7 @@ namespace EduSim.Core.Contexts
 		public DbSet<AccountType> AccountTypes { get; set; }
 		public DbSet<Account> Accounts { get; set; }
 		public DbSet<User> Users { get; set; }
+		public DbSet<School> Schools { get; set; }
 
 		public EduSimContext() : base(nameOrConnectionString:"EduSimContext")
 		{

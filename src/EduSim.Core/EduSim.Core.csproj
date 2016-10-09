@@ -66,6 +66,8 @@
     <Compile Include="Services\Abstractions\IAuthenticationInterface.cs" />
     <Compile Include="ModelInterfaces\ISchool.cs" />
     <Compile Include="Models\School.cs" />
+    <Compile Include="Services\Abstractions\ISchoolService.cs" />
+    <Compile Include="Services\SchoolService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -1,11 +1,12 @@
 ﻿<Properties StartupConfiguration="{20FA62A5-8D4B-42DE-BB17-D1A2853C61DE}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="EduSim.Core/Models/Account.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="EduSim.Core/Services/UserService.cs">
     <Files>
       <File FileName="EduSim.Sandbox/Program.cs" Line="1" Column="1" />
       <File FileName="EduSim.Core/Contexts/EduSimContext.cs" Line="1" Column="1" />
-      <File FileName="EduSim.Core/Models/Account.cs" Line="1" Column="1" />
+      <File FileName="EduSim.Core/Models/Account.cs" Line="25" Column="3" />
       <File FileName="EduSim.Core/Models/User.cs" Line="1" Column="1" />
-      <File FileName="EduSim.Core/ModelInterfaces/ISchool.cs" Line="14" Column="27" />
+      <File FileName="EduSim.Core/Services/SchoolService.cs" Line="15" Column="3" />
+      <File FileName="EduSim.Core/Services/UserService.cs" Line="13" Column="41" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -13,8 +14,9 @@
           <Node name="EduSim" expanded="True">
             <Node name="EduSim.Core" expanded="True">
               <Node name="ModelInterfaces" expanded="True" />
-              <Node name="Models" expanded="True">
-                <Node name="Account.cs" selected="True" />
+              <Node name="Services" expanded="True">
+                <Node name="Abstractions" expanded="True" />
+                <Node name="UserService.cs" selected="True" />
               </Node>
             </Node>
             <Node name="EduSim.Sandbox" expanded="True" />
