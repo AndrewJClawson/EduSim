@@ -5,10 +5,13 @@ using System.Web;
 using EduSim.Web.ViewModels;
 using System.Web.Mvc;
 
+using EduSim.Core.Services;
+
 namespace EduSim.Web.Controllers
 {
     public class AccountController : Controller
     {
+		UserService _userService = new UserService();
         public ActionResult Index()
         {
 			//var loginModel = new LoginViewModel();
@@ -23,9 +26,17 @@ namespace EduSim.Web.Controllers
 			string url = string.Empty;
 			try
 			{
-				success = true;
-				UrlHelper u = new UrlHelper(this.ControllerContext.RequestContext);
-				url = u.Action("Dashboard", "Account");
+				success = _userService.Authenticate(email,password);
+				if (success)
+				{
+					UrlHelper u = new UrlHelper(this.ControllerContext.RequestContext);
+					url = u.Action("Dashboard", "Account");
+				}
+				else
+				{
+					message = "User not authenticated.";
+				}
+
 			}
 			catch (Exception e)
 			{
