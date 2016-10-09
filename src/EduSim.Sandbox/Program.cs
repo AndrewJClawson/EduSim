@@ -18,16 +18,9 @@ namespace EduSim.Sandbox
 		{
 			List<Account> accounts = _accountService.GetAll().ToList();
 			List<User> users = _userService.GetAll().ToList();
-			foreach(Account account in accounts)
+			foreach(User user in users)
 			{
-				System.Console.WriteLine(account.AccountName);
-				System.Console.WriteLine("Schools:");
-				foreach(School school in account.Schools)
-				{
-					System.Console.WriteLine(school.SchoolName);
-				}
-				System.Console.WriteLine("");
-
+				System.Console.WriteLine(user.FirstName + " " + user.LastName + ": " + user.School.SchoolName);
 			}
 		}
 	}

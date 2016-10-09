@@ -43,7 +43,7 @@ namespace EduSim.Core.Models
 		public string IsVolunteer { get; set; }
 
 		public virtual Account Account { get; set; }
-
+		public virtual School School { get; set; }
 
 		public User()
 		{
