@@ -21,9 +21,7 @@ namespace EduSim.Core.Models
 		public string AccountName { get; set; }
 
 		public virtual ICollection<User> Users { get; set; }
+		public virtual ICollection<School> Schools { get; set; }
 
-		public Account()
-		{
-		}
 	}
 }

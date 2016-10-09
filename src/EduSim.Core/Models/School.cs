@@ -32,6 +32,7 @@ namespace EduSim.Core.Models
 		public string Zip { get; set; }
 
 		public virtual Account Account { get; set; }
+
 		public virtual ICollection<User> Users { get; set; }
 
 	}

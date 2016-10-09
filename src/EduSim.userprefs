@@ -1,22 +1,21 @@
 ﻿<Properties StartupConfiguration="{20FA62A5-8D4B-42DE-BB17-D1A2853C61DE}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="EduSim.Core/ModelInterfaces/ISchool.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="EduSim.Core/Models/Account.cs">
     <Files>
       <File FileName="EduSim.Sandbox/Program.cs" Line="1" Column="1" />
       <File FileName="EduSim.Core/Contexts/EduSimContext.cs" Line="1" Column="1" />
       <File FileName="EduSim.Core/Models/Account.cs" Line="1" Column="1" />
       <File FileName="EduSim.Core/Models/User.cs" Line="1" Column="1" />
-      <File FileName="EduSim.Core/ModelInterfaces/ISchool.cs" Line="2" Column="33" />
-      <File FileName="EduSim.Core/Models/School.cs" Line="1" Column="1" />
+      <File FileName="EduSim.Core/ModelInterfaces/ISchool.cs" Line="14" Column="27" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="EduSim" expanded="True">
             <Node name="EduSim.Core" expanded="True">
-              <Node name="ModelInterfaces" expanded="True">
-                <Node name="ISchool.cs" selected="True" />
+              <Node name="ModelInterfaces" expanded="True" />
+              <Node name="Models" expanded="True">
+                <Node name="Account.cs" selected="True" />
               </Node>
-              <Node name="Models" expanded="True" />
             </Node>
             <Node name="EduSim.Sandbox" expanded="True" />
             <Node name="EduSim.Web" expanded="True">
