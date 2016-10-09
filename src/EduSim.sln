@@ -1,10 +1,6 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EduSim", "EduSim\EduSim\EduSim.csproj", "{2F9142E3-8B85-4CD4-A6E5-14571F6F9247}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EduSim.DataModel.EF", "EduSim.DataModel.EF\EduSim.DataModel.EF\EduSim.DataModel.EF.csproj", "{272FA407-37F8-400C-8F3D-ACDCA271A99E}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EduSim.Web", "EduSim.Web\EduSim.Web\EduSim.Web.csproj", "{862C8A85-3708-4C3E-917C-340AC9BBFB85}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EduSim.Web.Tests", "EduSim.Web\EduSim.Web.Tests\EduSim.Web.Tests.csproj", "{38ACA283-460F-4232-8514-E595FAB6EA01}"
@@ -13,11 +9,17 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EduSim.Tests", "EduSim.Test
 EndProject
 Project("{9344BDBB-3E7F-41FC-A0DD-8665D75EE146}") = "EduSim.Reference.Database", "EduSim.Reference.Database\EduSim.Reference.Database.mdproj", "{6786097B-5A0F-4F49-B6DA-452BF88343C3}"
 EndProject
-Project("{9344BDBB-3E7F-41FC-A0DD-8665D75EE146}") = "EduSim.Database", "EduSim.Database\EduSim.Database\EduSim.Database.mdproj", "{AEB513F5-12F1-4B5B-A5A5-1694288168BC}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EduSim.Sandbox", "EduSim.Sandbox\EduSim.Sandbox.csproj", "{20FA62A5-8D4B-42DE-BB17-D1A2853C61DE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EduSim.Core", "EduSim.Core\EduSim.Core.csproj", "{F8285D57-0476-43E8-98C5-422B2C064F8F}"
+EndProject
+Project("{9344BDBB-3E7F-41FC-A0DD-8665D75EE146}") = "EduSim", "EduSim\EduSim\EduSim.csproj", "{56BE6BF0-48E1-44E4-8B25-BA54F3C94AD0}"
+EndProject
+Project("{9344BDBB-3E7F-41FC-A0DD-8665D75EE146}") = "EduSim.DataModel.EF", "EduSim.DataModel.EF\EduSim.DataModel.EF\EduSim.DataModel.EF.csproj", "{00A5DF64-D18A-489B-9A60-D486383C9DCA}"
+EndProject
+Project("{9344BDBB-3E7F-41FC-A0DD-8665D75EE146}") = "EduSim.Database", "EduSim.Database\EduSim.Database\EduSim.Database.mdproj", "{56F2A274-63D8-4BB2-A17D-800DF80B4165}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EduSim.Database", "EduSim.Database\EduSim.Database.csproj", "{522AF646-4142-4861-B3FF-6625F6FBBE0D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,18 +28,6 @@ Global
 		Default|Any CPU = Default|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{2F9142E3-8B85-4CD4-A6E5-14571F6F9247}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2F9142E3-8B85-4CD4-A6E5-14571F6F9247}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2F9142E3-8B85-4CD4-A6E5-14571F6F9247}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2F9142E3-8B85-4CD4-A6E5-14571F6F9247}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2F9142E3-8B85-4CD4-A6E5-14571F6F9247}.Default|Any CPU.ActiveCfg = Debug|Any CPU
-		{2F9142E3-8B85-4CD4-A6E5-14571F6F9247}.Default|Any CPU.Build.0 = Debug|Any CPU
-		{272FA407-37F8-400C-8F3D-ACDCA271A99E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{272FA407-37F8-400C-8F3D-ACDCA271A99E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{272FA407-37F8-400C-8F3D-ACDCA271A99E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{272FA407-37F8-400C-8F3D-ACDCA271A99E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{272FA407-37F8-400C-8F3D-ACDCA271A99E}.Default|Any CPU.ActiveCfg = Debug|Any CPU
-		{272FA407-37F8-400C-8F3D-ACDCA271A99E}.Default|Any CPU.Build.0 = Debug|Any CPU
 		{862C8A85-3708-4C3E-917C-340AC9BBFB85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{862C8A85-3708-4C3E-917C-340AC9BBFB85}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{862C8A85-3708-4C3E-917C-340AC9BBFB85}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -62,12 +52,6 @@ Global
 		{6786097B-5A0F-4F49-B6DA-452BF88343C3}.Release|Any CPU.Build.0 = Default|Any CPU
 		{6786097B-5A0F-4F49-B6DA-452BF88343C3}.Default|Any CPU.ActiveCfg = Default|Any CPU
 		{6786097B-5A0F-4F49-B6DA-452BF88343C3}.Default|Any CPU.Build.0 = Default|Any CPU
-		{AEB513F5-12F1-4B5B-A5A5-1694288168BC}.Debug|Any CPU.ActiveCfg = Default|Any CPU
-		{AEB513F5-12F1-4B5B-A5A5-1694288168BC}.Debug|Any CPU.Build.0 = Default|Any CPU
-		{AEB513F5-12F1-4B5B-A5A5-1694288168BC}.Release|Any CPU.ActiveCfg = Default|Any CPU
-		{AEB513F5-12F1-4B5B-A5A5-1694288168BC}.Release|Any CPU.Build.0 = Default|Any CPU
-		{AEB513F5-12F1-4B5B-A5A5-1694288168BC}.Default|Any CPU.ActiveCfg = Default|Any CPU
-		{AEB513F5-12F1-4B5B-A5A5-1694288168BC}.Default|Any CPU.Build.0 = Default|Any CPU
 		{20FA62A5-8D4B-42DE-BB17-D1A2853C61DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{20FA62A5-8D4B-42DE-BB17-D1A2853C61DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{20FA62A5-8D4B-42DE-BB17-D1A2853C61DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -80,6 +64,30 @@ Global
 		{F8285D57-0476-43E8-98C5-422B2C064F8F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F8285D57-0476-43E8-98C5-422B2C064F8F}.Default|Any CPU.ActiveCfg = Debug|Any CPU
 		{F8285D57-0476-43E8-98C5-422B2C064F8F}.Default|Any CPU.Build.0 = Debug|Any CPU
+		{56BE6BF0-48E1-44E4-8B25-BA54F3C94AD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56BE6BF0-48E1-44E4-8B25-BA54F3C94AD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56BE6BF0-48E1-44E4-8B25-BA54F3C94AD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56BE6BF0-48E1-44E4-8B25-BA54F3C94AD0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56BE6BF0-48E1-44E4-8B25-BA54F3C94AD0}.Default|Any CPU.ActiveCfg = Debug|Any CPU
+		{56BE6BF0-48E1-44E4-8B25-BA54F3C94AD0}.Default|Any CPU.Build.0 = Debug|Any CPU
+		{00A5DF64-D18A-489B-9A60-D486383C9DCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00A5DF64-D18A-489B-9A60-D486383C9DCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00A5DF64-D18A-489B-9A60-D486383C9DCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00A5DF64-D18A-489B-9A60-D486383C9DCA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00A5DF64-D18A-489B-9A60-D486383C9DCA}.Default|Any CPU.ActiveCfg = Debug|Any CPU
+		{00A5DF64-D18A-489B-9A60-D486383C9DCA}.Default|Any CPU.Build.0 = Debug|Any CPU
+		{56F2A274-63D8-4BB2-A17D-800DF80B4165}.Debug|Any CPU.ActiveCfg = Default|Any CPU
+		{56F2A274-63D8-4BB2-A17D-800DF80B4165}.Debug|Any CPU.Build.0 = Default|Any CPU
+		{56F2A274-63D8-4BB2-A17D-800DF80B4165}.Release|Any CPU.ActiveCfg = Default|Any CPU
+		{56F2A274-63D8-4BB2-A17D-800DF80B4165}.Release|Any CPU.Build.0 = Default|Any CPU
+		{56F2A274-63D8-4BB2-A17D-800DF80B4165}.Default|Any CPU.ActiveCfg = Default|Any CPU
+		{56F2A274-63D8-4BB2-A17D-800DF80B4165}.Default|Any CPU.Build.0 = Default|Any CPU
+		{522AF646-4142-4861-B3FF-6625F6FBBE0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{522AF646-4142-4861-B3FF-6625F6FBBE0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{522AF646-4142-4861-B3FF-6625F6FBBE0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{522AF646-4142-4861-B3FF-6625F6FBBE0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{522AF646-4142-4861-B3FF-6625F6FBBE0D}.Default|Any CPU.ActiveCfg = Debug|Any CPU
+		{522AF646-4142-4861-B3FF-6625F6FBBE0D}.Default|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		Policies = $0
