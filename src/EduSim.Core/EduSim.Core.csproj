@@ -54,6 +54,8 @@
     <Compile Include="Models\Account.cs" />
     <Compile Include="ModelInterfaces\IAccount.cs" />
     <Compile Include="Services\AccountService.cs" />
+    <Compile Include="Constants\Constant.cs" />
+    <Compile Include="Constants\AccountType.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -66,6 +68,7 @@
     <Folder Include="Repository\" />
     <Folder Include="Repository\Abstraction\" />
     <Folder Include="Services\" />
+    <Folder Include="Constants\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
