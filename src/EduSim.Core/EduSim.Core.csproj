@@ -8,6 +8,7 @@
     <RootNamespace>EduSim.Core</RootNamespace>
     <AssemblyName>EduSim.Core</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <ReleaseVersion>0.0.1</ReleaseVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -48,6 +49,8 @@
     <Compile Include="ModelInterfaces\IAccountType.cs" />
     <Compile Include="Models\AccountType.cs" />
     <Compile Include="Contexts\EduSimContext.cs" />
+    <Compile Include="Repository\Abstraction\IRepository.cs" />
+    <Compile Include="Repository\Repository.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -57,6 +60,8 @@
     <Folder Include="ModelInterfaces\" />
     <Folder Include="Models\" />
     <Folder Include="Contexts\" />
+    <Folder Include="Repository\" />
+    <Folder Include="Repository\Abstraction\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

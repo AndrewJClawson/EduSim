@@ -1,27 +1,21 @@
 ﻿<Properties StartupConfiguration="{20FA62A5-8D4B-42DE-BB17-D1A2853C61DE}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="EduSim.Sandbox/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="EduSim.Core/Repository/Repository.cs">
     <Files>
-      <File FileName="EduSim.Sandbox/Program.cs" Line="15" Column="41" />
-      <File FileName="EduSim.Core/MyClass.cs" Line="1" Column="1" />
-      <File FileName="EduSim.Core/App.config" Line="18" Column="37" />
-      <File FileName="EduSim.Core/ModelInterfaces/IAccountType.cs" Line="2" Column="38" />
-      <File FileName="EduSim.Core/Models/AccountType.cs" Line="4" Column="35" />
-      <File FileName="EduSim.Core/Contexts/EduSimContext.cs" Line="5" Column="1" />
-      <File FileName="EduSim.Sandbox/app.config" Line="18" Column="37" />
+      <File FileName="EduSim/EduSim/App.config" Line="1" Column="1" />
+      <File FileName="EduSim/EduSim/Services/AccountService.cs" Line="49" Column="1" />
+      <File FileName="EduSim.Core/Repository/Abstraction/IRepository.cs" Line="16" Column="23" />
+      <File FileName="EduSim.Core/Repository/Repository.cs" Line="4" Column="31" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="EduSim" expanded="True">
             <Node name="EduSim.Core" expanded="True">
-              <Node name="Contexts" expanded="True" />
-              <Node name="Models" expanded="True" />
+              <Node name="Repository" expanded="True">
+                <Node name="Abstraction" expanded="True" />
+                <Node name="Repository.cs" selected="True" />
+              </Node>
             </Node>
-            <Node name="EduSim.Sandbox" expanded="True">
-              <Node name="References" expanded="True" />
-              <Node name="Program.cs" selected="True" />
-            </Node>
-            <Node name="EduSim.Web" expanded="True" />
           </Node>
         </State>
       </Pad>
@@ -36,12 +30,12 @@
       <Breakpoint file="/Volumes/Storage/Development/EduSim/src/EduSim.Web/EduSim.Web/Controllers/AccountController.cs" line="35" column="1" />
       <Breakpoint file="/Volumes/Storage/Development/EduSim/src/EduSim.Web/EduSim.Web/Controllers/AccountController.cs" line="33" column="1" />
       <Breakpoint file="/Volumes/Storage/Development/EduSim/src/EduSim/EduSim/Services/UserService.cs" line="54" column="1" />
-      <Breakpoint file="/Volumes/Storage/Development/EduSim/src/EduSim.Sandbox/Program.cs" line="15" column="1" />
       <Breakpoint file="/Volumes/Storage/Development/EduSim/src/EduSim.Core/Models/AccountType.cs" line="6" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.EduSim.Sandbox PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.EduSim.Console PreferredExecutionTarget="MonoDevelop.Default" />
   <DisabledProjects>
     <String>EduSims/EduSims/EduSim.csproj</String>
     <String>EduSim.Database/EduSim.Database/EduSim.Database.mdproj</String>
