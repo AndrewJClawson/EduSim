@@ -53,6 +53,7 @@
     <Compile Include="Repository\Repository.cs" />
     <Compile Include="Models\Account.cs" />
     <Compile Include="ModelInterfaces\IAccount.cs" />
+    <Compile Include="Services\AccountService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
