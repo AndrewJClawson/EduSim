@@ -51,6 +51,8 @@
     <Compile Include="Contexts\EduSimContext.cs" />
     <Compile Include="Repository\Abstraction\IRepository.cs" />
     <Compile Include="Repository\Repository.cs" />
+    <Compile Include="Models\Account.cs" />
+    <Compile Include="ModelInterfaces\IAccount.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
