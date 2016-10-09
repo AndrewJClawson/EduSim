@@ -56,6 +56,8 @@
     <Compile Include="Services\AccountService.cs" />
     <Compile Include="Constants\Constant.cs" />
     <Compile Include="Constants\AccountType.cs" />
+    <Compile Include="Models\User.cs" />
+    <Compile Include="ModelInterfaces\IUser.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
