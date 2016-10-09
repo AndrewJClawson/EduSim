@@ -32,6 +32,11 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Menus\Abstractions\BaseMenu.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Menus\" />
+    <Folder Include="Menus\Abstractions\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

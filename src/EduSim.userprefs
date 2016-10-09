@@ -1,18 +1,24 @@
 ﻿<Properties StartupConfiguration="{862C8A85-3708-4C3E-917C-340AC9BBFB85}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="EduSim.Console/Program.cs">
-    <Files>
-      <File FileName="EduSim.Sandbox/Program.cs" Line="1" Column="14" />
-      <File FileName="EduSim.Core/Contexts/EduSimContext.cs" Line="1" Column="1" />
-      <File FileName="EduSim.Core/Models/Account.cs" Line="1" Column="1" />
-      <File FileName="EduSim.Core/Services/SchoolService.cs" Line="1" Column="1" />
-      <File FileName="EduSim.Core/Services/UserService.cs" Line="1" Column="1" />
-      <File FileName="EduSim.Core/Services/Abstractions/IUserService.cs" Line="1" Column="1" />
-      <File FileName="EduSim.Console/Program.cs" Line="1" Column="1" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="EduSim" expanded="True" />
+          <Node name="EduSim" expanded="True">
+            <Node name="EduSim.Console" expanded="True">
+              <Node name="Menus" expanded="True">
+                <Node name="Abstractions" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="EduSim.Core" expanded="True">
+              <Node name="Contexts" expanded="True">
+                <Node name="EduSimContext.cs" selected="True" />
+              </Node>
+              <Node name="Models" expanded="True" />
+              <Node name="Services" expanded="True">
+                <Node name="Abstractions" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
         </State>
       </Pad>
     </Pads>
