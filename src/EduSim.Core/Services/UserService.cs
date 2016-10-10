@@ -26,9 +26,9 @@ namespace EduSim.Core.Services
 
 		public bool Authenticate(string email, string password)
 		{
-			List<User> user = _userRepository.GetAll().Where(u => u.Email == email)
-									   .Where(u => u.Password == password).ToList();
-			if (user.Count == 1)
+			IQueryable<User> user = _userRepository.GetAll().Where(u => u.Email == email && u.Password == password);
+			int returnCount = user.Count();
+			if (returnCount == 1)
 			{
 				return true;
 			}

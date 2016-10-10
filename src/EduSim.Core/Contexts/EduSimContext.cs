@@ -5,6 +5,7 @@ using EduSim.Core.Models;
 
 namespace EduSim.Core.Contexts
 {
+	[DbConfigurationType(typeof(MySql.Data.Entity.MySqlEFConfiguration))]
 	public partial class EduSimContext : DbContext
 	{
 		public DbSet<AccountType> AccountTypes { get; set; }

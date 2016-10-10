@@ -20,3 +20,7 @@
 /Volumes/Storage/Development/EduSim/src/EduSim.Web/EduSim.Web/bin/EduSim.Core.dll
 /Volumes/Storage/Development/EduSim/src/EduSim.Web/EduSim.Web/bin/EduSim.Core.dll.mdb
 /Volumes/Storage/Development/EduSim/src/EduSim.Web/EduSim.Web/bin/EntityFramework.dll
+/Volumes/Storage/Development/EduSim/src/EduSim.Web/EduSim.Web/bin/MySql.Data.dll
+/Volumes/Storage/Development/EduSim/src/EduSim.Web/EduSim.Web/bin/MySql.Data.Entity.EF6.dll
+/Volumes/Storage/Development/EduSim/src/EduSim.Web/EduSim.Web/bin/EntityFramework.SqlServer.dll
+/Volumes/Storage/Development/EduSim/src/EduSim.Web/EduSim.Web/bin/EduSim.Web.dll.config
