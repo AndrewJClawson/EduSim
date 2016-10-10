@@ -80,7 +80,8 @@
 				url:'@Url.Action("Authenticate","Account")',
 				type:'POST',
 				data: {'email':email,'password':password},
-				success: LoadDashboard(),
+				dataType:"json",
+				success: LoadDashboard,
 				error: function (response) {
 					alert(response.Message);
 				}
@@ -89,8 +90,16 @@
 		});
 	});
 
-	function LoadDashboard()
+	function LoadDashboard(response)
 	{
-		$("#login-form").submit();
+		if(response.Success)
+		{
+			$("#login-form").submit();
+		}
+		else
+		{
+			alert(response.Message)
+		}
+
 	}
 </script>

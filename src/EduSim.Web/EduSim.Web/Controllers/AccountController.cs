@@ -24,6 +24,7 @@ namespace EduSim.Web.Controllers
 			bool success = false;
 			string message = string.Empty;
 			string url = string.Empty;
+
 			try
 			{
 				success = _userService.Authenticate(email,password);
