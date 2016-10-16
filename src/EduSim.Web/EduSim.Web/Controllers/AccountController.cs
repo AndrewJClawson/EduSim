@@ -30,6 +30,7 @@ namespace EduSim.Web.Controllers
 				success = _userService.Authenticate(email,password);
 				if (success)
 				{
+					
 					UrlHelper u = new UrlHelper(this.ControllerContext.RequestContext);
 					url = u.Action("Dashboard", "Account");
 				}
