@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using EduSim.Core.Models;
 using EduSim.Web.ViewModels;
 using System.Web.Mvc;
 
@@ -30,7 +31,8 @@ namespace EduSim.Web.Controllers
 				success = _userService.Authenticate(email,password);
 				if (success)
 				{
-					
+					User user = _userService.GetByCredentials(email, password);
+					//sHttpContext.User = (System.Security.Principal.)user;
 					UrlHelper u = new UrlHelper(this.ControllerContext.RequestContext);
 					url = u.Action("Dashboard", "Account");
 				}

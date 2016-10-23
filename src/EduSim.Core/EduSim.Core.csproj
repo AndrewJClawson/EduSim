@@ -78,6 +78,9 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+    <None Include="Contexts\ApplicationDbContext.cs" />
+    <None Include="Models\ApplicationUser.cs" />
+    <None Include="Models\IdentityUser.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ModelInterfaces\" />

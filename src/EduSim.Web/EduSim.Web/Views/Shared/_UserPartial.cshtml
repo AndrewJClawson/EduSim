@@ -1,6 +1,7 @@
-﻿<ul class="nav navbar-nav navbar-right">
+﻿
+<ul class="nav navbar-nav navbar-right">
 	<li role="presentation" class="navbar-brand">
-		<a id="userInfo">User Info Here</a>
+		<a id="userInfo">@HttpContext.Current.Session["CurrentUser"].</a>
 	</li>
 	<li><a>Logout</a></li>
 </ul>

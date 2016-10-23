@@ -8,3 +8,5 @@
 /Volumes/Storage/Development/EduSim/src/EduSim.Core/bin/Debug/EduSim.Core.dll
 /Volumes/Storage/Development/EduSim/src/EduSim.Core/obj/Debug/EduSim.Core.dll
 /Volumes/Storage/Development/EduSim/src/EduSim.Core/obj/Debug/EduSim.Core.dll.mdb
+/Volumes/Storage/Development/EduSim/src/EduSim.Core/bin/Debug/Microsoft.AspNet.Identity.Core.dll
+/Volumes/Storage/Development/EduSim/src/EduSim.Core/bin/Debug/Microsoft.AspNet.Identity.EntityFramework.dll

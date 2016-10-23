@@ -24,3 +24,11 @@
 /Volumes/Storage/Development/EduSim/src/EduSim.Web/EduSim.Web/bin/MySql.Data.Entity.EF6.dll
 /Volumes/Storage/Development/EduSim/src/EduSim.Web/EduSim.Web/bin/EntityFramework.SqlServer.dll
 /Volumes/Storage/Development/EduSim/src/EduSim.Web/EduSim.Web/bin/EduSim.Web.dll.config
+/Volumes/Storage/Development/EduSim/src/EduSim.Web/EduSim.Web/bin/Microsoft.AspNet.Identity.Core.dll
+/Volumes/Storage/Development/EduSim/src/EduSim.Web/EduSim.Web/bin/Microsoft.AspNet.Identity.EntityFramework.dll
+/Volumes/Storage/Development/EduSim/src/EduSim.Web/EduSim.Web/bin/Owin.dll
+/Volumes/Storage/Development/EduSim/src/EduSim.Web/EduSim.Web/bin/Microsoft.Owin.dll
+/Volumes/Storage/Development/EduSim/src/EduSim.Web/EduSim.Web/bin/Microsoft.Owin.Security.dll
+/Volumes/Storage/Development/EduSim/src/EduSim.Web/EduSim.Web/bin/Microsoft.Owin.Security.Cookies.dll
+/Volumes/Storage/Development/EduSim/src/EduSim.Web/EduSim.Web/bin/Microsoft.Owin.Security.OAuth.dll
+/Volumes/Storage/Development/EduSim/src/EduSim.Web/EduSim.Web/bin/Microsoft.AspNet.Identity.Owin.dll

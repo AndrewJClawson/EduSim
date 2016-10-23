@@ -54,6 +54,11 @@ namespace EduSim.Core.Services
 			return users;
 		}
 
+		public User GetByCredentials(string email, string password)
+		{
+			User user = _userRepository.GetAll().Where(u => u.Email == email && u.Password == password).FirstOrDefault();
+			return user;
+		}
 		public User GetById(int id)
 		{
 			User user = _userRepository.GetById(id);
