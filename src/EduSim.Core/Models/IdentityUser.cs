@@ -51,4 +51,10 @@ namespace EduSim.Core.Models
 
 		[Column("access_failed_count")]
 		public virtual int AccessFailedCount { get; set; }
+	}
+
+	public class ApplicationUser : IdentityUser
+	{
+		
+	}
 }
