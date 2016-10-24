@@ -95,14 +95,14 @@
     <Compile Include="Models\School.cs" />
     <Compile Include="Services\Abstractions\ISchoolService.cs" />
     <Compile Include="Services\SchoolService.cs" />
-    <Compile Include="Models\Identity\IdentityConfig.cs" />
+    <Compile Include="Models\IdentityUser.cs" />
+    <Compile Include="Models\IdentityRole.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
     <None Include="Contexts\ApplicationDbContext.cs" />
     <None Include="Models\ApplicationUser.cs" />
-    <None Include="Models\Identity\IdentityUser.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ModelInterfaces\" />
@@ -113,7 +113,6 @@
     <Folder Include="Services\" />
     <Folder Include="Constants\" />
     <Folder Include="Services\Abstractions\" />
-    <Folder Include="Models\Identity\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
