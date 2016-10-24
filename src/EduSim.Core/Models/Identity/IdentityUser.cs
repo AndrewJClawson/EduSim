@@ -1,10 +1,12 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotation;
 using System.Collections.Generic;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 
-namespace EduSim.Core.Models
+namespace EduSim.Core.Models.Identity
 {
+	
 	public class IdentityUser : IUser
 	{
 		public IdentityUser()
