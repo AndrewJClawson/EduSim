@@ -4,6 +4,13 @@ using System.Linq;
 using System.Web;
 using EduSim.Core.Models;
 using EduSim.Web.ViewModels;
+using Microsoft.AspNet.Identity;
+using Microsoft.AspNet.Identity.EntityFramework;
+using Microsoft.Owin.Security;
+using Microsoft.Web;
+using System.Threading.Tasks;
+
+
 using System.Web.Mvc;
 
 using EduSim.Core.Services;
@@ -13,6 +20,8 @@ namespace EduSim.Web.Controllers
     public class AccountController : Controller
     {
 		UserService _userService = new UserService();
+		private ApplicationSignInManager _signInManager;
+		private ApplicationUserManager _userManager;
         public ActionResult Index()
         {
 			//var loginModel = new LoginViewModel();
@@ -20,7 +29,7 @@ namespace EduSim.Web.Controllers
         }
 
 		[HttpPost]
-		public JsonResult Authenticate(string email, string password)
+		public JsonResult AuthenticateTest(string email, string password)
 		{
 			bool success = false;
 			string message = string.Empty;
@@ -51,9 +60,14 @@ namespace EduSim.Web.Controllers
 			return Json(result, JsonRequestBehavior.AllowGet);
 		}
 
-		public ActionResult Dashboard(LoginViewModel viewModel)
+		public async Task<ActionResult> Authenticate(LoginViewModel viewModel)
 		{
+			if (ModelState.IsValid)
+			{
+				var user = await Microsoft.AspNet.Identity.UserManager.FindAsync(viewModel.Username, viewModel.Password);
+			}
 			return View("~/Views/Home/Dashboard.cshtml");
 		}
+
     }
 }

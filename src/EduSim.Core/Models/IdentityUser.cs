@@ -2,11 +2,11 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using Microsoft.AspNet.Identity;
-using Microsoft.AspNet.Identity.EntityFramework;
+//using Microsoft.AspNet.Identity.EntityFramework;
 
 namespace EduSim.Core.Models
 {
-	[Table("users")]
+	[Table("identity_users")]
 	public class IdentityUser : IUser
 	{
 		public IdentityUser()
@@ -19,7 +19,7 @@ namespace EduSim.Core.Models
 			UserName = username;
 		}
 
-		[Column("pk_user_id")]
+		[Column("pk_identity_user_id")]
 		public string Id { get; set; }
 
 		[Column("username")]
