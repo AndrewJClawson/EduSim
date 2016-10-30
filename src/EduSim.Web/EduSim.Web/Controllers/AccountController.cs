@@ -29,7 +29,7 @@ namespace EduSim.Web.Controllers
         }
 
 		[HttpPost]
-		public JsonResult AuthenticateTest(string email, string password)
+		public JsonResult Authenticate(string email, string password)
 		{
 			bool success = false;
 			string message = string.Empty;
@@ -60,7 +60,7 @@ namespace EduSim.Web.Controllers
 			return Json(result, JsonRequestBehavior.AllowGet);
 		}
 
-		public ActionResult Authenticate(LoginViewModel viewModel)
+		public ActionResult AuthenticateTest(LoginViewModel viewModel)
 		{
 			return View("~/Views/Home/Dashboard.cshtml");
 		}
