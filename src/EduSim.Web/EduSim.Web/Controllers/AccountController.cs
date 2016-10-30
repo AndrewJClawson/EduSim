@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using EduSim.Core.Models;
+using EduSim.Core.ModelInterfaces;
 using EduSim.Web.ViewModels;
-using Microsoft.AspNet.Identity;
-using Microsoft.AspNet.Identity.EntityFramework;
+//using Microsoft.AspNet.Identity;
+//using Microsoft.AspNet.Identity.EntityFramework;
 //using Microsoft.Owin.Security;
 using Microsoft.Web;
 using System.Threading.Tasks;
@@ -19,9 +20,15 @@ namespace EduSim.Web.Controllers
 {
     public class AccountController : Controller
     {
-		UserService _userService = new UserService();
+		IUserService _userService;
 		//private ApplicationSignInManager _signInManager;
 		//private ApplicationUserManager _userManager;
+
+		public AccountController(IUserService userService)
+		{
+			_userService = userService;
+		}
+
         public ActionResult Index()
         {
 			//var loginModel = new LoginViewModel();
@@ -40,7 +47,7 @@ namespace EduSim.Web.Controllers
 				success = _userService.Authenticate(email,password);
 				if (success)
 				{
-					User user = _userService.GetByCredentials(email, password);
+					IUser user = _userService.GetByCredentials(email, password);
 					//sHttpContext.User = (System.Security.Principal.)user;
 					UrlHelper u = new UrlHelper(this.ControllerContext.RequestContext);
 					url = u.Action("Dashboard", "Account");
@@ -60,7 +67,7 @@ namespace EduSim.Web.Controllers
 			return Json(result, JsonRequestBehavior.AllowGet);
 		}
 
-		public ActionResult AuthenticateTest(LoginViewModel viewModel)
+		public ActionResult Dashboard(LoginViewModel viewModel)
 		{
 			return View("~/Views/Home/Dashboard.cshtml");
 		}

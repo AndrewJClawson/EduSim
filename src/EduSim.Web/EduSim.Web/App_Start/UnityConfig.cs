@@ -3,6 +3,7 @@ using EduSim.Core.ModelInterfaces;
 using EduSim.Core.Models;
 using EduSim.Core.Contexts;
 using EduSim.Core.Repository;
+using EduSim.Core.Services;
 using Microsoft.Practices.Unity;
 using Microsoft.Practices.Unity.Configuration;
 
@@ -47,6 +48,10 @@ namespace EduSim.Web.App_Start
 			container.RegisterType<IAccount, Account>();
 			container.RegisterType<ISchool, School>();
 			container.RegisterType<IEduSimContext, EduSimContext>();
+
+			//Register service interfaces
+			container.RegisterType<IUserService, UserService>();
+			container.RegisterType<IAccountService, AccountService>();
         }
     }
 }
