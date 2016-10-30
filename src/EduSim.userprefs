@@ -1,23 +1,10 @@
 ﻿<Properties StartupConfiguration="{862C8A85-3708-4C3E-917C-340AC9BBFB85}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="EduSim.Web/EduSim.Web/Web.config">
+  <MonoDevelop.Ide.Workbench ActiveDocument="EduSim.Web/EduSim.Web/App_Start/UnityConfig.cs">
     <Files>
-      <File FileName="EduSim.Web/EduSim.Web/Controllers/AccountController.cs" Line="63" Column="39" />
       <File FileName="EduSim.Core/Models/User.cs" Line="1" Column="1" />
-      <File FileName="EduSim.Web/EduSim.Web/Models/ViewModels/LoginViewModel.cs" Line="9" Column="25" />
-      <File FileName="EduSim.Web/EduSim.Web/Views/Account/Login.cshtml" Line="56" Column="49" />
-      <File FileName="EduSim.Web/EduSim.Web/Web.config" Line="1" Column="1" />
+      <File FileName="EduSim.Web/EduSim.Web/App_Start/UnityConfig.cs" Line="49" Column="59" />
+      <File FileName="EduSim.Core/Contexts/EduSimContext.cs" Line="17" Column="45" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="EduSim" expanded="True">
-            <Node name="EduSim.Web" expanded="True">
-              <Node name="Web.config" selected="True" />
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.EduSim.Web PreferredExecutionTarget="MonoDevelop.Default" />
