@@ -6,7 +6,7 @@ using EduSim.Core.Models;
 using EduSim.Web.ViewModels;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
-using Microsoft.Owin.Security;
+//using Microsoft.Owin.Security;
 using Microsoft.Web;
 using System.Threading.Tasks;
 
@@ -20,8 +20,8 @@ namespace EduSim.Web.Controllers
     public class AccountController : Controller
     {
 		UserService _userService = new UserService();
-		private ApplicationSignInManager _signInManager;
-		private ApplicationUserManager _userManager;
+		//private ApplicationSignInManager _signInManager;
+		//private ApplicationUserManager _userManager;
         public ActionResult Index()
         {
 			//var loginModel = new LoginViewModel();
@@ -60,14 +60,18 @@ namespace EduSim.Web.Controllers
 			return Json(result, JsonRequestBehavior.AllowGet);
 		}
 
-		public async Task<ActionResult> Authenticate(LoginViewModel viewModel)
+		public ActionResult Authenticate(LoginViewModel viewModel)
 		{
-			if (ModelState.IsValid)
-			{
-				var user = await Microsoft.AspNet.Identity.UserManager.FindAsync(viewModel.Username, viewModel.Password);
-			}
 			return View("~/Views/Home/Dashboard.cshtml");
 		}
+		//public async Task<ActionResult> Authenticate(LoginViewModel viewModel)
+		//{
+		//	if (ModelState.IsValid)
+		//	{
+		//		//var user = await Microsoft.AspNet.Identity.UserManager.FindAsync(viewModel.Username, viewModel.Password);
+		//	}
+		//	return View("~/Views/Home/Dashboard.cshtml");
+		//}
 
     }
 }
