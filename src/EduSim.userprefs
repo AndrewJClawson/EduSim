@@ -1,13 +1,7 @@
 ﻿<Properties StartupConfiguration="{862C8A85-3708-4C3E-917C-340AC9BBFB85}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="EduSim.Web/EduSim.Web/Views/Account/Login.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="EduSim.Web/EduSim.Web/App_Start/UnityConfig.cs">
     <Files>
       <File FileName="EduSim.Web/EduSim.Web/App_Start/UnityConfig.cs" Line="54" Column="62" />
-      <File FileName="EduSim.Core/Contexts/EduSimContext.cs" Line="19" Column="22" />
-      <File FileName="EduSim.Core/Contexts/Abstractions/IEduSimContext.cs" Line="3" Column="3" />
-      <File FileName="EduSim.Web/EduSim.Web/Controllers/AccountController.cs" Line="50" Column="7" />
-      <File FileName="EduSim.Core/Services/Abstractions/IUserService.cs" Line="16" Column="3" />
-      <File FileName="EduSim.Core/Services/UserService.cs" Line="13" Column="15" />
-      <File FileName="EduSim.Web/EduSim.Web/Views/Account/Login.cshtml" Line="56" Column="49" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
