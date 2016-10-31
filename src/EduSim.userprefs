@@ -1,11 +1,13 @@
 ﻿<Properties StartupConfiguration="{862C8A85-3708-4C3E-917C-340AC9BBFB85}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="EduSim.Database/initialize_database.sql">
+  <MonoDevelop.Ide.Workbench ActiveDocument="EduSim.Core/App.config">
     <Files>
-      <File FileName="EduSim.Database/initialize_database.sql" Line="16" Column="1" />
+      <File FileName="EduSim.Database/publish_database.sql" Line="1" Column="1" />
       <File FileName="EduSim.Database/Scripts/populate_reference_data.sql" Line="1" Column="1" />
       <File FileName="EduSim.Database/Scripts/create_reference_tables.sql" Line="1" Column="36" />
       <File FileName="EduSim.Database/publish_test_database.sql" Line="1" Column="1" />
-      <File FileName="EduSim.Database/Scripts/create_database.sql" Line="2" Column="43" />
+      <File FileName="EduSim.Database/Scripts/create_database.sql" Line="1" Column="1" />
+      <File FileName="EduSim.Web/EduSim.Web.Tests/Controllers/HomeControllerTest.cs" Line="1" Column="1" />
+      <File FileName="EduSim.Core/App.config" Line="7" Column="136" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
