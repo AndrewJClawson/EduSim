@@ -1,4 +1,4 @@
-﻿use edusim;
+﻿
 source ./Tables/accounts.sql;
 
 source ./Tables/schools.sql;

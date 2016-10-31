@@ -1,1 +1,2 @@
 ﻿DROP DATABASE IF EXISTS edusim;
+DROP DATABASE IF EXISTS edusim_test;

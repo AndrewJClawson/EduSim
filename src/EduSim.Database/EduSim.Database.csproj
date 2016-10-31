@@ -50,6 +50,7 @@
     <None Include="ReferenceData\_account_types.sql" />
     <None Include="publish_database.sql" />
     <None Include="Scripts\setup_identity_tables.sql" />
+    <None Include="publish_test_database.sql" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Classes\" />

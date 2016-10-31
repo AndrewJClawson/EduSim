@@ -1,4 +1,4 @@
-﻿use edusim;
+﻿
 
 /* Drop database */
 source Scripts/delete_application_database.sql;
@@ -13,6 +13,13 @@ source Scripts/populate_reference_data.sql;
 
 /* create application tables */
 source Scripts/create_application_tables.sql;
+source Scripts/initial_develop_data.sql;
 
+
+
+use edusim_test;
+source Scripts/create_reference_tables.sql;
+source Scripts/populate_reference_data.sql;
+source Scripts/create_application_tables.sql;
 
 
