@@ -1,9 +1,4 @@
 /Volumes/Storage/Development/EduSim/src/EduSim.Web/EduSim.Web/obj/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
-/Volumes/Storage/Development/EduSim/src/EduSim.Web/EduSim.Web/bin/EduSim.Web.dll.config
-/Volumes/Storage/Development/EduSim/src/EduSim.Web/EduSim.Web/bin/EduSim.Web.dll.mdb
-/Volumes/Storage/Development/EduSim/src/EduSim.Web/EduSim.Web/bin/EduSim.Web.dll
-/Volumes/Storage/Development/EduSim/src/EduSim.Web/EduSim.Web/obj/Debug/EduSim.Web.dll
-/Volumes/Storage/Development/EduSim/src/EduSim.Web/EduSim.Web/obj/Debug/EduSim.Web.dll.mdb
 /Volumes/Storage/Development/EduSim/src/EduSim.Web/EduSim.Web/bin/Microsoft.Web.Infrastructure.dll
 /Volumes/Storage/Development/EduSim/src/EduSim.Web/EduSim.Web/bin/System.Web.Razor.dll
 /Volumes/Storage/Development/EduSim/src/EduSim.Web/EduSim.Web/bin/System.Web.Helpers.dll

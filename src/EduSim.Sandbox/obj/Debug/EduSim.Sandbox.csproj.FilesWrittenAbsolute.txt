@@ -1,0 +1,13 @@
+/Volumes/Storage/Development/EduSim/src/EduSim.Sandbox/obj/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/Volumes/Storage/Development/EduSim/src/EduSim.Sandbox/bin/Debug/EduSim.Sandbox.exe.config
+/Volumes/Storage/Development/EduSim/src/EduSim.Sandbox/bin/Debug/EduSim.Sandbox.exe.mdb
+/Volumes/Storage/Development/EduSim/src/EduSim.Sandbox/bin/Debug/EduSim.Sandbox.exe
+/Volumes/Storage/Development/EduSim/src/EduSim.Sandbox/obj/Debug/EduSim.Sandbox.exe
+/Volumes/Storage/Development/EduSim/src/EduSim.Sandbox/obj/Debug/EduSim.Sandbox.exe.mdb
+/Volumes/Storage/Development/EduSim/src/EduSim.Sandbox/bin/Debug/EntityFramework.dll
+/Volumes/Storage/Development/EduSim/src/EduSim.Sandbox/bin/Debug/EntityFramework.SqlServer.dll
+/Volumes/Storage/Development/EduSim/src/EduSim.Sandbox/bin/Debug/MySql.Data.dll
+/Volumes/Storage/Development/EduSim/src/EduSim.Sandbox/bin/Debug/MySql.Data.Entity.EF6.dll
+/Volumes/Storage/Development/EduSim/src/EduSim.Sandbox/bin/Debug/EduSim.Core.dll
+/Volumes/Storage/Development/EduSim/src/EduSim.Sandbox/bin/Debug/EduSim.Core.dll.mdb
+/Volumes/Storage/Development/EduSim/src/EduSim.Sandbox/bin/Debug/Microsoft.AspNet.Identity.Core.dll

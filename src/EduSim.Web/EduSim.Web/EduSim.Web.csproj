@@ -124,6 +124,7 @@
     <Reference Include="Microsoft.Practices.Unity.Mvc">
       <HintPath>..\..\packages\Unity.Mvc.4.0.1\lib\net45\Microsoft.Practices.Unity.Mvc.dll</HintPath>
     </Reference>
+    <Reference Include="System.Security" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Content\" />
@@ -185,12 +186,6 @@
     <Content Include="Scripts\jquery-3.1.1-vsdoc.js" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\EduSim.Core\EduSim.Core.csproj">
-      <Project>{F8285D57-0476-43E8-98C5-422B2C064F8F}</Project>
-      <Name>EduSim.Core</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Content\bootstrap-theme.css.map" />
     <None Include="Content\bootstrap-theme.min.css.map" />
     <None Include="Content\bootstrap.css.map" />
@@ -200,6 +195,12 @@
     <None Include="Scripts\jquery-3.1.1.slim.min.map" />
     <None Include="Scripts\jquery-3.1.1.min.map" />
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\EduSim.Core\EduSim.Core.csproj">
+      <Project>{F8285D57-0476-43E8-98C5-422B2C064F8F}</Project>
+      <Name>EduSim.Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>

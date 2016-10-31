@@ -69,6 +69,11 @@ namespace EduSim.Web.Controllers
 
 		public ActionResult Dashboard(LoginViewModel viewModel)
 		{
+			IUser user = _userService.GetByCredentials(viewModel.Username, viewModel.Password);
+			if (user != null)
+			{
+				HttpContext.User = user;
+			}
 			return View("~/Views/Home/Dashboard.cshtml");
 		}
 		//public async Task<ActionResult> Authenticate(LoginViewModel viewModel)
