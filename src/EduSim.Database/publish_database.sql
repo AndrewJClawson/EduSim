@@ -21,5 +21,6 @@ use edusim_test;
 source Scripts/create_reference_tables.sql;
 source Scripts/populate_reference_data.sql;
 source Scripts/create_application_tables.sql;
+source Scripts/integration_test_data.sql;
 
 
