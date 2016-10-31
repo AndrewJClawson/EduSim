@@ -1,10 +1,11 @@
 ﻿<Properties StartupConfiguration="{862C8A85-3708-4C3E-917C-340AC9BBFB85}|">
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="EduSim.Core/Models/User.cs">
     <Files>
       <File FileName="EduSim.Core/Repository/Repository.cs" Line="18" Column="22" />
       <File FileName="EduSim.Web/EduSim.Web/Controllers/HomeController.cs" Line="1" Column="1" />
       <File FileName="EduSim.Web/EduSim.Web/Controllers/AccountController.cs" Line="75" Column="18" />
       <File FileName="EduSim.Web/EduSim.Web/Views/Shared/_UserPartial.cshtml" Line="4" Column="49" />
+      <File FileName="EduSim.Core/Models/User.cs" Line="13" Column="25" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

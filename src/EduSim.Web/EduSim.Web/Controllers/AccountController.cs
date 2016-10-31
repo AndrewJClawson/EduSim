@@ -72,7 +72,7 @@ namespace EduSim.Web.Controllers
 			IUser user = _userService.GetByCredentials(viewModel.Username, viewModel.Password);
 			if (user != null)
 			{
-				HttpContext.User = user;
+				
 			}
 			return View("~/Views/Home/Dashboard.cshtml");
 		}

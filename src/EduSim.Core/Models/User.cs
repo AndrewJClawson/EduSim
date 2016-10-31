@@ -2,6 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using EduSim.Core.ModelInterfaces;
+using System.Security;
 
 namespace EduSim.Core.Models
 {

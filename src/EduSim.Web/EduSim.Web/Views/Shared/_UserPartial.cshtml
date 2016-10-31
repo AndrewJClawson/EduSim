@@ -1,7 +1,9 @@
-﻿
+﻿@{
+	var user = HttpContext.Current.Session.StaticObjects.GetObject("user");
+}
 <ul class="nav navbar-nav navbar-right">
 	<li role="presentation" class="navbar-brand">
-		<a id="userInfo">@HttpContext.Current.User</a>
+		<a id="userInfo"></a>
 	</li>
 	<li><a>Logout</a></li>
 </ul>
