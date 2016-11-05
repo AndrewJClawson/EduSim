@@ -52,9 +52,21 @@
     <None Include="Scripts\setup_identity_tables.sql" />
     <None Include="publish_test_database.sql" />
     <None Include="Scripts\integration_test_data.sql" />
+    <None Include="Scripts\IdentityScripts\User.sql" />
+    <None Include="Scripts\IdentityScripts\Roles.sql" />
+    <None Include="Scripts\IdentityScripts\UserClaim.sql" />
+    <None Include="Scripts\IdentityScripts\UserLogin.sql" />
+    <None Include="Scripts\IdentityScripts\UserRole.sql" />
+    <None Include="Scripts\IdentityScripts Original\Roles.sql" />
+    <None Include="Scripts\IdentityScripts Original\User.sql" />
+    <None Include="Scripts\IdentityScripts Original\UserClaim.sql" />
+    <None Include="Scripts\IdentityScripts Original\UserLogin.sql" />
+    <None Include="Scripts\IdentityScripts Original\UserRole.sql" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Classes\" />
+    <Folder Include="Scripts\IdentityScripts\" />
+    <Folder Include="Scripts\IdentityScripts Original\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -5,6 +5,7 @@ using System.Web;
 using EduSim.Core.Models;
 using EduSim.Core.ModelInterfaces;
 using EduSim.Web.ViewModels;
+using EduSim.Web.Models;
 //using Microsoft.AspNet.Identity;
 //using Microsoft.AspNet.Identity.EntityFramework;
 //using Microsoft.Owin.Security;
@@ -69,10 +70,16 @@ namespace EduSim.Web.Controllers
 
 		public ActionResult Dashboard(LoginViewModel viewModel)
 		{
-			IUser user = _userService.GetByCredentials(viewModel.Username, viewModel.Password);
-			if (user != null)
+			ApplicationUser myUser;
+			ApplicationUserStore store = new ApplicationUserStore(new Models.ApplicationDbContext());
+			ApplicationUserManager userManager = new ApplicationUserManager(store);
+			myUser = new ApplicationUser() { UserName = "TestUser", Email = "TestUser@test.com"};
+
+			var result = userManager.CreateAsync(myUser);
+
+			if (!result.Result.Succeeded)
 			{
-				
+				ViewBag["Errors"] = result.Result.Errors.First();
 			}
 			return View("~/Views/Home/Dashboard.cshtml");
 		}

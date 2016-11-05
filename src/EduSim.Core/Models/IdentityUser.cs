@@ -53,8 +53,4 @@ namespace EduSim.Core.Models
 		public virtual int AccessFailedCount { get; set; }
 	}
 
-	public class ApplicationUser : IdentityUser
-	{
-		
-	}
 }

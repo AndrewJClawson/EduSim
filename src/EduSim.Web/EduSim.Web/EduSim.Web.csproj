@@ -153,6 +153,7 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\UnityMvcActivator.cs" />
     <Compile Include="App_Start\UnityConfig.cs" />
+    <Compile Include="Models\IdentityModels.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Web.config" />

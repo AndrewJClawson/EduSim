@@ -1,10 +1,21 @@
 ﻿using System;
+using Microsoft.AspNet.Identity;
+using Microsoft.AspNet.Identity.EntityFramework;
+using EduSim.Web.Models;
 namespace EduSim.Web
 {
-	public class IdentityConfig
+	public class ApplicationUserStore : UserStore<ApplicationUser>
 	{
-		public IdentityConfig()
+		public ApplicationUserStore(ApplicationDbContext context):base(context)
 		{
+		}
+	}
+
+	public class ApplicationUserManager : UserManager<ApplicationUser>
+	{
+		public ApplicationUserManager(IUserStore<ApplicationUser> store): base(store)
+		{
+			
 		}
 	}
 }

@@ -4,7 +4,7 @@
   PRIMARY KEY (pk_role_id)
 );
 
-CREATE TABLE IF NOT EXISTS users (
+CREATE TABLE IF NOT EXISTS aspnetusers (
   pk_user_id varchar(128) NOT NULL,
   email varchar(256) DEFAULT NULL,
   email_confirmed tinyint(1) NOT NULL,
@@ -28,7 +28,7 @@ CREATE TABLE IF NOT EXISTS user_claims (
   PRIMARY KEY (pk_user_claim_id),
   UNIQUE KEY Id (pk_user_claim_id),
   KEY UserId (fk_user_id),
-  CONSTRAINT ApplicationUser_Claims FOREIGN KEY (fk_user_id) REFERENCES users (pk_user_id) ON DELETE CASCADE ON UPDATE NO ACTION
+  CONSTRAINT ApplicationUser_Claims FOREIGN KEY (fk_user_id) REFERENCES aspnetusers (pk_user_id) ON DELETE CASCADE ON UPDATE NO ACTION
 );
 
 CREATE TABLE IF NOT EXISTS user_logins (
@@ -37,7 +37,7 @@ CREATE TABLE IF NOT EXISTS user_logins (
   fk_user_id varchar(128) NOT NULL,
   PRIMARY KEY (login_provider,provider_key,fk_user_id),
   KEY ApplicationUser_Logins (fk_user_id),
-  CONSTRAINT ApplicationUser_Logins FOREIGN KEY (fk_user_id) REFERENCES users (pk_user_id) ON DELETE CASCADE ON UPDATE NO ACTION
+  CONSTRAINT ApplicationUser_Logins FOREIGN KEY (fk_user_id) REFERENCES aspnetusers (pk_user_id) ON DELETE CASCADE ON UPDATE NO ACTION
 );
 
 CREATE TABLE IF NOT EXISTS user_roles (
@@ -46,7 +46,7 @@ CREATE TABLE IF NOT EXISTS user_roles (
   PRIMARY KEY (fk_user_id,fk_role_id),
   KEY IdentityRole_Users (fk_user_id),
   KEY IdentityRole_Roles (fk_role_id),
-  CONSTRAINT IdentityRole_Users FOREIGN KEY (fk_user_id) REFERENCES users (pk_user_id) ON DELETE CASCADE ON UPDATE NO ACTION,
+  CONSTRAINT IdentityRole_Users FOREIGN KEY (fk_user_id) REFERENCES aspnetusers (pk_user_id) ON DELETE CASCADE ON UPDATE NO ACTION,
   CONSTRAINT IdentityRole_Roles FOREIGN KEY (fk_role_id) REFERENCES roles (pk_role_id) ON DELETE CASCADE ON UPDATE NO ACTION
 
 );

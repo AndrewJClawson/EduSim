@@ -115,7 +115,6 @@
     <Compile Include="Models\IdentityUser.cs" />
     <Compile Include="Models\IdentityRole.cs" />
     <Compile Include="Models\IdentityClaim.cs" />
-    <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Contexts\Abstractions\IEduSimContext.cs" />
   </ItemGroup>
   <ItemGroup>
