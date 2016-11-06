@@ -62,6 +62,7 @@
     <None Include="Scripts\IdentityScripts Original\UserClaim.sql" />
     <None Include="Scripts\IdentityScripts Original\UserLogin.sql" />
     <None Include="Scripts\IdentityScripts Original\UserRole.sql" />
+    <None Include="Scripts\IdentityScripts\Identity.sql" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Classes\" />

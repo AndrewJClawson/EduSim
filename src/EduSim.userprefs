@@ -1,13 +1,12 @@
 ﻿<Properties StartupConfiguration="{862C8A85-3708-4C3E-917C-340AC9BBFB85}|">
   <MonoDevelop.Ide.Workbench ActiveDocument="EduSim.Web/EduSim.Web/Models/IdentityModels.cs">
     <Files>
-      <File FileName="EduSim.Web/EduSim.Web/Controllers/AccountController.cs" Line="79" Column="4" />
-      <File FileName="EduSim.Database/Scripts/IdentityScripts/User.sql" Line="18" Column="3" />
-      <File FileName="EduSim.Database/Scripts/IdentityScripts/Roles.sql" Line="8" Column="3" />
-      <File FileName="EduSim.Database/Scripts/IdentityScripts/UserClaim.sql" Line="1" Column="1" />
-      <File FileName="EduSim.Database/Scripts/IdentityScripts/UserLogin.sql" Line="13" Column="41" />
-      <File FileName="EduSim.Database/Scripts/IdentityScripts/UserRole.sql" Line="17" Column="40" />
-      <File FileName="EduSim.Web/EduSim.Web/Models/IdentityModels.cs" Line="10" Column="3" />
+      <File FileName="EduSim.Web/EduSim.Web/Controllers/AccountController.cs" Line="78" Column="1" />
+      <File FileName="EduSim.Web/EduSim.Web/Models/IdentityModels.cs" Line="12" Column="2" />
+      <File FileName="EduSim.Core/Models/Account.cs" Line="1" Column="1" />
+      <File FileName="EduSim.Web/EduSim.Web/App_Start/IdentityConfig.cs" Line="7" Column="63" />
+      <File FileName="EduSim.Database/Scripts/IdentityScripts/Identity.sql" Line="51" Column="21" />
+      <File FileName="EduSim.Web/EduSim.Web/Views/Account/Login.cshtml" Line="91" Column="9" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
@@ -17,7 +16,6 @@
       <Breakpoint file="/Volumes/Storage/Development/EduSim/src/EduSim/EduSim/Services/AuthenticationService.cs" line="32" column="1" />
       <Breakpoint file="/Volumes/Storage/Development/EduSim/src/EduSim.Web/EduSim.Web/Controllers/AccountController.cs" line="101" column="1" />
       <Breakpoint file="/Volumes/Storage/Development/EduSim/src/EduSim/EduSim/Services/UserService.cs" line="54" column="1" />
-      <Breakpoint file="/Volumes/Storage/Development/EduSim/src/EduSim.Web/EduSim.Web/Controllers/AccountController.cs" line="82" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
