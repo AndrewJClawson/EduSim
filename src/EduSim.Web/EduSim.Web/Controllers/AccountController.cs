@@ -8,7 +8,7 @@ using EduSim.Web.ViewModels;
 using EduSim.Web.Models;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
-using Microsoft.Owin.Security;
+//using Microsoft.Owin.Security;
 using Microsoft.Web;
 using System.Threading.Tasks;
 
@@ -80,7 +80,7 @@ namespace EduSim.Web.Controllers
 
 			if (!result.Result.Succeeded)
 			{
-				ViewBag["Errors"] = result.Result.Errors.First();
+				return View("Login");//ViewBag["Errors"] = result.Result.Errors.First();
 			}
 			return View("~/Views/Home/Dashboard.cshtml");
 		}
