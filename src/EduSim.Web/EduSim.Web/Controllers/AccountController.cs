@@ -68,17 +68,18 @@ namespace EduSim.Web.Controllers
 		//	return Json(result, JsonRequestBehavior.AllowGet);
 		//}
 
-		public ActionResult Dashboard(LoginViewModel viewModel)
+		public async Task<ActionResult> Dashboard(LoginViewModel viewModel)
 		{
 			ApplicationUser myUser;
 			ApplicationUserStore store = new ApplicationUserStore(new ApplicationDbContext());
 			ApplicationUserManager userManager = new ApplicationUserManager(store);
-			myUser = new ApplicationUser() { UserName = "TestUser", Email = "TestUser@test.com"};
-			string passwordHash = userManager.PasswordHasher.HashPassword("testPassword");
-			myUser.PasswordHash = passwordHash;
-			var result = userManager.CreateAsync(myUser);
 
-			if (!result.Result.Succeeded)
+			//myUser = new ApplicationUser() { UserName = "TestUser", Email = "TestUser@test.com"};
+			//string passwordHash = userManager.PasswordHasher.HashPassword("testPassword");
+			//myUser.PasswordHash = passwordHash;
+			myUser = await userManager.FindAsync(viewModel.Username, viewModel.Password);
+
+			if (myUser == null)
 			{
 				return View("Login");//ViewBag["Errors"] = result.Result.Errors.First();
 			}
