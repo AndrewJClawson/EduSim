@@ -7,6 +7,8 @@ DROP TABLE users;
 CREATE TABLE roles (
   Id varchar(800) NOT NULL,
   Name varchar(256) NOT NULL,
+  Description varchar(1000),
+  AreaUsed varchar(1000),
   PRIMARY KEY (Id)
 );
 
@@ -26,7 +28,7 @@ CREATE TABLE users (
   PRIMARY KEY (Id)
 );
 
-CREATE TABLE userclaims (
+CREATE TABLE aspnetuserclaims (
   Id varchar(800) NOT NULL,
   UserId varchar(800) NOT NULL,
   ClaimType longtext,
@@ -37,7 +39,7 @@ CREATE TABLE userclaims (
   CONSTRAINT ApplicationUser_Claims FOREIGN KEY (UserId) REFERENCES users (Id) ON DELETE CASCADE ON UPDATE NO ACTION
 );
 
-CREATE TABLE userlogins (
+CREATE TABLE aspnetuserlogins (
   LoginProvider varchar(128) NOT NULL,
   ProviderKey varchar(128) NOT NULL,
   UserId varchar(800) NOT NULL,
@@ -46,7 +48,7 @@ CREATE TABLE userlogins (
   CONSTRAINT ApplicationUser_Logins FOREIGN KEY (UserId) REFERENCES users (Id) ON DELETE CASCADE ON UPDATE NO ACTION
 );
 
-CREATE TABLE userroles (
+CREATE TABLE aspnetuserroles (
   UserId varchar(800) NOT NULL,
   RoleId varchar(800) NOT NULL,
   PRIMARY KEY (UserId,RoleId),
