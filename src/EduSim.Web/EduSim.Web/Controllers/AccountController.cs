@@ -21,13 +21,13 @@ namespace EduSim.Web.Controllers
 {
     public class AccountController : Controller
     {
-		IUserService _userService;
+		//IUserService _userService;
 		//private ApplicationSignInManager _signInManager;
 		//private ApplicationUserManager _userManager;
 
 		public AccountController(IUserService userService)
 		{
-			_userService = userService;
+			//_userService = userService;
 		}
 
         public ActionResult Index()
