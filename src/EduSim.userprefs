@@ -1,12 +1,12 @@
 ﻿<Properties StartupConfiguration="{862C8A85-3708-4C3E-917C-340AC9BBFB85}|">
   <MonoDevelop.Ide.Workbench ActiveDocument="EduSim.Web/EduSim.Web/Models/IdentityModels.cs">
     <Files>
-      <File FileName="EduSim.Web/EduSim.Web/Controllers/AccountController.cs" Line="78" Column="1" />
-      <File FileName="EduSim.Web/EduSim.Web/Models/IdentityModels.cs" Line="12" Column="2" />
-      <File FileName="EduSim.Core/Models/Account.cs" Line="1" Column="1" />
-      <File FileName="EduSim.Web/EduSim.Web/App_Start/IdentityConfig.cs" Line="7" Column="63" />
-      <File FileName="EduSim.Database/Scripts/IdentityScripts/Identity.sql" Line="51" Column="21" />
-      <File FileName="EduSim.Web/EduSim.Web/Views/Account/Login.cshtml" Line="91" Column="9" />
+      <File FileName="EduSim.Web/EduSim.Web/App_Start/IdentityConfig.cs" Line="4" Column="18" />
+      <File FileName="EduSim.Database/Scripts/IdentityScripts/Identity.sql" Line="31" Column="20" />
+      <File FileName="EduSim.Core/Models/User.cs" Line="47" Column="45" />
+      <File FileName="EduSim.Core/Services/AccountService.cs" Line="1" Column="1" />
+      <File FileName="EduSim.Web/EduSim.Web/Controllers/AccountController.cs" Line="1" Column="1" />
+      <File FileName="EduSim.Web/EduSim.Web/Models/IdentityModels.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
@@ -14,8 +14,12 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Volumes/Storage/Development/EduSim/src/EduSim/EduSim/Services/AuthenticationService.cs" line="32" column="1" />
-      <Breakpoint file="/Volumes/Storage/Development/EduSim/src/EduSim.Web/EduSim.Web/Controllers/AccountController.cs" line="101" column="1" />
+      <Breakpoint file="/Volumes/Storage/Development/EduSim/src/EduSim.Web/EduSim.Web/Controllers/AccountController.cs" line="135" column="1" />
       <Breakpoint file="/Volumes/Storage/Development/EduSim/src/EduSim/EduSim/Services/UserService.cs" line="54" column="1" />
+      <Breakpoint file="/Volumes/Storage/Development/EduSim/src/EduSim.Web/EduSim.Web/Controllers/AccountController.cs" line="116" column="1" />
+      <Breakpoint file="/Volumes/Storage/Development/EduSim/src/EduSim.Web/EduSim.Web/Controllers/AccountController.cs" line="108" column="1" />
+      <Breakpoint file="/Volumes/Storage/Development/EduSim/src/EduSim.Web/EduSim.Web/Controllers/AccountController.cs" line="89" column="1" />
+      <Breakpoint file="/Volumes/Storage/Development/EduSim/src/EduSim.Web/EduSim.Web/Controllers/AccountController.cs" line="90" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
