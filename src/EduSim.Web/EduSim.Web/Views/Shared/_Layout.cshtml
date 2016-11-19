@@ -12,59 +12,46 @@
 	@Styles.Render("~/Content/bootstrap-theme.min.css")
 	@Styles.Render("~/Content/bootstrap-theme.min.css.map")
 	@Styles.Render("~/Content/App.css")
+
+	@Scripts.Render("~/Scripts/jquery-3.1.1.js")
+	@Scripts.Render("~/Scripts/jquery-3.1.1.min.js")
+	@Scripts.Render("~/Scripts/bootstrap.min.js")
+	@Scripts.Render("~/Scripts/bootstrap.js")
+
 </head>
 <body>
-	@RenderBody()
-	<div class="navbar navbar-inverse navbar-fixed-top">
-		<div class="container">
-			<div class="navbar-header">
-				@Html.ActionLink("EduSim", "Dashboard", "Account", new {@class = "navbar-brand"})
-			</div>
-			<div class="navbar-collapse collapse">
-				<ul class="nav navbar-nav">
-						
-					<li role="presentation" class="dropdown">
-						<a id="systemAdminDropdown" data-toggle="dropdown" role="button">System Admin</a>
-						<ul class="dropdown-menu">
-							<li>Account Settings</li>
-							<li>User Management</li>
-							<li>Financial Management</li>
-						</ul>
-					</li>
-						
-					<li role="presentation" class="dropdown">
-						<a id="accountAdminDropdown" data-toggle="dropdown" role="button">Account Admin</a>
-						<ul class="dropdown-menu">
-							<li>Account Settings</li>
-							<li>User Management</li>
-							<li>Financial Management</li>
-						</ul>
-					</li>
-
-					<li role="presentation" class="dropdown">
-						<a id="instructorDropdown" data-toggle="dropdown" role="button">Instructor</a>
-						<ul class="dropdown-menu">
-							<li>Gradebook</li>
-							<li>Attendance</li>
-							<li>Student Records</li>
-							<li>Reports</li>
-						</ul>
-					</li>
+	<nav class="navbar navbar-inverse">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <a class="navbar-brand">EduSim</a>
+	    </div>
+				
+	    <ul class="nav navbar-nav">
+	      <li class="dropdown" role="presentation">
+				<a id="systemAdminDropdown" class="dropdown-toggle" data-toggle="dropdown" role="button">System Admin<span class="caret"></span></a>
+				<ul class="dropdown-menu" role="menu">
+					<li><a>System Roles</a></li>
+					<li><a>System Users</a></li>
+					<li><a>System Accounts</a></li>
 				</ul>
-				@Html.Partial("_UserPartial")
-			</div>
-		</div>
-	</div>
+			</li>
+	      <li><a>Account Admin</a></li>
+	      <li><a>Page 2</a></li> 
+	    </ul>
+				
+	    <ul class="nav navbar-nav navbar-right">
+	      <li><a><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+	      <li><a><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+	    </ul>
+	  </div>
+</nav>
+
 
 	<div class="container body-content">
-
+		@RenderBody()
 	</div>
 </body>
 </html>
-@Scripts.Render("~/Scripts/jquery-3.1.1.js")
-@Scripts.Render("~/Scripts/jquery-3.1.1.min.js")
-@Scripts.Render("~/Scripts/bootstrap.min.js")
-@Scripts.Render("~/Scripts/bootstrap.js")
 
 
 
