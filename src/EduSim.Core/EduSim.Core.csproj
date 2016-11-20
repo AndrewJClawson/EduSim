@@ -113,7 +113,6 @@
     <Compile Include="Services\Abstractions\ISchoolService.cs" />
     <Compile Include="Services\SchoolService.cs" />
     <Compile Include="Models\IdentityUser.cs" />
-    <Compile Include="Models\IdentityRole.cs" />
     <Compile Include="Models\IdentityClaim.cs" />
     <Compile Include="Contexts\Abstractions\IEduSimContext.cs" />
   </ItemGroup>

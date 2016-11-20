@@ -1,25 +1,24 @@
 ﻿<Properties StartupConfiguration="{862C8A85-3708-4C3E-917C-340AC9BBFB85}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="EduSim.Web/EduSim.Web/Views/Shared/_Layout.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="EduSim.Web/EduSim.Web/Models/IdentityModels.cs">
     <Files>
       <File FileName="EduSim.Web/EduSim.Web/App_Start/IdentityConfig.cs" Line="1" Column="1" />
-      <File FileName="EduSim.Web/EduSim.Web/Controllers/AccountController.cs" Line="30" Column="6" />
-      <File FileName="EduSim.Web/EduSim.Web/Views/Shared/_UserPartial.cshtml" Line="1" Column="1" />
-      <File FileName="EduSim.Web/EduSim.Web/Views/Shared/_Layout.cshtml" Line="25" Column="30" />
+      <File FileName="EduSim.Web/EduSim.Web/Controllers/AccountController.cs" Line="18" Column="28" />
+      <File FileName="EduSim.Web/EduSim.Web/Views/Shared/_Layout.cshtml" Line="1" Column="1" />
+      <File FileName="EduSim.Web/EduSim.Web/Views/Home/Dashboard.cshtml" Line="1" Column="1" />
+      <File FileName="EduSim.Web/EduSim.Web/Models/IdentityModels.cs" Line="21" Column="33" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="EduSim" expanded="True">
             <Node name="EduSim.Web" expanded="True">
-              <Node name="Packages" expanded="True" />
               <Node name="App_Start" expanded="True" />
-              <Node name="Content" expanded="True" />
               <Node name="Controllers" expanded="True" />
-              <Node name="Scripts" expanded="True" />
+              <Node name="Models" expanded="True">
+                <Node name="IdentityModels.cs" selected="True" />
+              </Node>
               <Node name="Views" expanded="True">
-                <Node name="Shared" expanded="True">
-                  <Node name="_Layout.cshtml" selected="True" />
-                </Node>
+                <Node name="Home" expanded="True" />
               </Node>
             </Node>
           </Node>
