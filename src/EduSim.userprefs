@@ -1,27 +1,26 @@
 ﻿<Properties StartupConfiguration="{20FA62A5-8D4B-42DE-BB17-D1A2853C61DE}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="EduSim.Database/Scripts/IdentityScripts/extra_tables.sql">
+  <MonoDevelop.Ide.Workbench ActiveDocument="EduSim.Core/Models/Profile.cs">
     <Files>
-      <File FileName="EduSim.Core/Models/Profile.cs" Line="37" Column="53" />
-      <File FileName="EduSim.Sandbox/Program.cs" Line="26" Column="75" />
-      <File FileName="EduSim.Web/EduSim.Web/Controllers/SystemAdminController.cs" Line="26" Column="4" />
-      <File FileName="EduSim.Database/Scripts/IdentityScripts/Identity.sql" Line="1" Column="1" />
-      <File FileName="EduSim.Database/Scripts/IdentityScripts/extra_tables.sql" Line="34" Column="2" />
-      <File FileName="EduSim.Web/EduSim.Web/Models/IdentityModels.cs" Line="54" Column="60" />
+      <File FileName="EduSim.Core/Models/Profile.cs" Line="1" Column="1" />
+      <File FileName="EduSim.Sandbox/Program.cs" Line="1" Column="1" />
+      <File FileName="EduSim.Web/EduSim.Web/Controllers/SystemAdminController.cs" Line="1" Column="1" />
+      <File FileName="EduSim.Web/EduSim.Web/Models/IdentityModels.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="EduSim" expanded="True">
             <Node name="EduSim.Core" expanded="True">
-              <Node name="Models" expanded="True" />
+              <Node name="Models" expanded="True">
+                <Node name="Profile.cs" selected="True" />
+              </Node>
             </Node>
             <Node name="EduSim.Database" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="IdentityScripts" expanded="True">
-                  <Node name="extra_tables.sql" selected="True" />
-                </Node>
+                <Node name="IdentityScripts" expanded="True" />
               </Node>
             </Node>
+            <Node name="EduSim.Sandbox" expanded="True" />
             <Node name="EduSim.Web" expanded="True">
               <Node name="Controllers" expanded="True" />
               <Node name="Models" expanded="True" />
