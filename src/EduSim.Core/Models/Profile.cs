@@ -30,22 +30,6 @@ namespace EduSim.Core.Models
 		[Column("last_name")]
 		public string LastName { get; set; }
 
-		//[Column("email")]
-		//public string Email { get; set; }
-
-		//[Column("password")]
-		//public string Password { get; set; }
-
-		//[Column("is_admin"), MaxLength(1)]
-		//public string IsAdmin { get; set; }
-
-		//[Column("is_instructor"), MaxLength(1)]
-		//public string IsInstructor { get; set; }
-
-		//[Column("is_Volunteer"), MaxLength(1)]
-		//public string IsVolunteer { get; set; }
-
-
 		public virtual Account Account { get; set; }
 		public virtual School School { get; set; }
 
