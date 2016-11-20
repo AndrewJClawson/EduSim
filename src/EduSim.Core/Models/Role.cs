@@ -9,7 +9,10 @@ namespace EduSim.Core.Models
 	[Table("roles")]
 	public class Role
 	{
+		[Column("pk_role_id")]
 		public int RoldId { get; set; }
+
+		[Column("name")]
 		public string Name { get; set; }
 
 		public Role()

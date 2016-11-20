@@ -1,34 +1,29 @@
 ﻿<Properties StartupConfiguration="{862C8A85-3708-4C3E-917C-340AC9BBFB85}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="EduSim.Sandbox/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="EduSim.Core/Contexts/Abstractions/IEduSimContext.cs">
     <Files>
       <File FileName="EduSim.Web/EduSim.Web/Controllers/AccountController.cs" Line="30" Column="38" />
-      <File FileName="EduSim.Web/EduSim.Web/Views/Shared/_Layout.cshtml" Line="1" Column="1" />
       <File FileName="EduSim.Web/EduSim.Web/Models/IdentityModels.cs" Line="24" Column="53" />
-      <File FileName="EduSim.Web/EduSim.Web/Controllers/SystemAdminController.cs" Line="1" Column="1" />
       <File FileName="EduSim.Core/Models/Profile.cs" Line="50" Column="17" />
-      <File FileName="EduSim.Core/Models/Role.cs" Line="16" Column="4" />
-      <File FileName="EduSim.Core/ModelInterfaces/IProfile.cs" Line="5" Column="27" />
-      <File FileName="EduSim.Core/Services/Abstractions/IProfileService.cs" Line="8" Column="19" />
-      <File FileName="EduSim.Core/Services/ProfileService.cs" Line="44" Column="22" />
       <File FileName="EduSim.Core/Contexts/Abstractions/IEduSimContext.cs" Line="14" Column="26" />
-      <File FileName="EduSim.Core/Contexts/EduSimContext.cs" Line="18" Column="33" />
-      <File FileName="EduSim.Core/Models/Account.cs" Line="23" Column="30" />
-      <File FileName="EduSim.Core/Models/School.cs" Line="36" Column="47" />
-      <File FileName="EduSim.Web/EduSim.Web/App_Start/UnityConfig.cs" Line="53" Column="58" />
-      <File FileName="EduSim.Sandbox/Program.cs" Line="15" Column="44" />
+      <File FileName="EduSim.Sandbox/Program.cs" Line="20" Column="33" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="EduSim" expanded="True">
             <Node name="EduSim.Core" expanded="True">
+              <Node name="Contexts" expanded="True">
+                <Node name="Abstractions" expanded="True">
+                  <Node name="IEduSimContext.cs" selected="True" />
+                </Node>
+              </Node>
+              <Node name="ModelInterfaces" expanded="True" />
+              <Node name="Models" expanded="True" />
               <Node name="Services" expanded="True">
                 <Node name="Abstractions" expanded="True" />
               </Node>
             </Node>
-            <Node name="EduSim.Sandbox" expanded="True">
-              <Node name="Program.cs" selected="True" />
-            </Node>
+            <Node name="EduSim.Sandbox" expanded="True" />
             <Node name="EduSim.Web" expanded="True">
               <Node name="App_Start" expanded="True" />
               <Node name="Controllers" expanded="True" />
