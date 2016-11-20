@@ -18,6 +18,8 @@ namespace EduSim.Core.Contexts
 		public DbSet<Profile> Profiles { get; set;}
 		public DbSet<School> Schools { get; set; }
 
+		public DbSet<Role> Roles { get; set; }
+
 		public EduSimContext() : base(nameOrConnectionString:"EduSimContext")
 		{
 			
@@ -26,6 +28,9 @@ namespace EduSim.Core.Contexts
 		protected override void OnModelCreating(System.Data.Entity.DbModelBuilder modelBuilder)
 		{
 			base.OnModelCreating(modelBuilder);
+			//modelBuilder.Entity<Profile>()
+			//            .HasMany<Role>(p => p.Roles)
+
 
 
 

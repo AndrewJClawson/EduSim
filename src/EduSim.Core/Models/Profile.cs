@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using EduSim.Core.ModelInterfaces;
@@ -32,6 +33,8 @@ namespace EduSim.Core.Models
 
 		public virtual Account Account { get; set; }
 		public virtual School School { get; set; }
+
+		public virtual ICollection<Role> Roles { get; set;}
 
 		public Profile()
 		{

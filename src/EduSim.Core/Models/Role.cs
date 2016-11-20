@@ -6,7 +6,7 @@ using System.Security;
 
 namespace EduSim.Core.Models
 {
-	[Table("roles")]
+	[Table("_roles")]
 	public class Role : IRole
 	{
 		[Column("pk_role_id")]

@@ -18,7 +18,7 @@ namespace EduSim.Sandbox
 		{
 			using(EduSimContext context = new EduSimContext())
 			{
-				var profiles = context.Profiles.ToList();
+				var roles = context
 				foreach(var profile in profiles)
 				{
 					System.Console.WriteLine("User Id: " + profile.UserId);
