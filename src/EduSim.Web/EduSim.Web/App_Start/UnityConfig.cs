@@ -43,14 +43,14 @@ namespace EduSim.Web.App_Start
 			// TODO: Register your types here
 			// container.RegisterType<IProductRepository, ProductRepository>();
 			container.RegisterType<IRepository<Type>, Repository<Type>>();
-			container.RegisterType<IUser, User>();
+			container.RegisterType<IProfile, Profile>();
 			container.RegisterType<IAccountType, AccountType>();
 			container.RegisterType<IAccount, Account>();
 			container.RegisterType<ISchool, School>();
 			container.RegisterType<IEduSimContext, EduSimContext>();
 
 			//Register service interfaces
-			container.RegisterType<IUserService, UserService>();
+			container.RegisterType<IProfileService, ProfileService>();
 			container.RegisterType<IAccountService, AccountService>();
         }
     }

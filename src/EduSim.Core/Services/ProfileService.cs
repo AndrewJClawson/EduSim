@@ -41,7 +41,7 @@ namespace EduSim.Core.Services
 			return users;
 		}
 
-		public IProfile GetProfileForUser(string userId)
+		public IProfile GetForUser(string userId)
 		{
 			IProfile profile = _profileRepository
 				.GetAll()

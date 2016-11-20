@@ -12,12 +12,12 @@ namespace EduSim.Sandbox
 	class MainClass
 	{
 		public static AccountService _accountService = new AccountService();
-		public static UserService _userService = new UserService();
+		public static ProfileService _profileService = new ProfileService();
 
 		public static void Main(string[] args)
 		{
-			bool authenticated = _userService.Authenticate("andrewjclawson18@gmail.com", "2kegs");
-			System.Console.WriteLine(authenticated);
+			
+			System.Console.WriteLine(true);
 		}
 	}
 }
