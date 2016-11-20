@@ -13,7 +13,7 @@ source Scripts/populate_reference_data.sql;
 
 /* create application tables */
 source Scripts/create_application_tables.sql;
-source Scripts/initial_develop_data.sql;
+
 
 
 
