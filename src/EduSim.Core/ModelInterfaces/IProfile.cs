@@ -2,9 +2,9 @@
 
 namespace EduSim.Core.ModelInterfaces
 {
-	public interface IUser
+	public interface IProfile
 	{
-		int UserId { get; set; }
+		string UserId { get; set; }
 		int AccountId { get; set; }
 		int? SchoolId { get; set; }
 		int? CampusId { get; set; }

@@ -100,13 +100,13 @@
     <Compile Include="Services\AccountService.cs" />
     <Compile Include="Constants\Constant.cs" />
     <Compile Include="Constants\AccountType.cs" />
-    <Compile Include="Models\User.cs" />
-    <Compile Include="ModelInterfaces\IUser.cs" />
-    <Compile Include="Services\UserService.cs" />
+    <Compile Include="Models\Profile.cs" />
+    <Compile Include="ModelInterfaces\IProfile.cs" />
+    <Compile Include="Services\ProfileService.cs" />
     <Compile Include="Services\Abstractions\IBaseService.cs" />
     <Compile Include="Services\AuthenticationService.cs" />
     <Compile Include="Services\Abstractions\IAccountService.cs" />
-    <Compile Include="Services\Abstractions\IUserService.cs" />
+    <Compile Include="Services\Abstractions\IProfileService.cs" />
     <Compile Include="Services\Abstractions\IAuthenticationInterface.cs" />
     <Compile Include="ModelInterfaces\ISchool.cs" />
     <Compile Include="Models\School.cs" />
@@ -115,6 +115,7 @@
     <Compile Include="Models\IdentityUser.cs" />
     <Compile Include="Models\IdentityClaim.cs" />
     <Compile Include="Contexts\Abstractions\IEduSimContext.cs" />
+    <Compile Include="Models\Role.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -20,7 +20,7 @@ namespace EduSim.Core.Models
 		[Column("account_name")]
 		public string AccountName { get; set; }
 
-		public virtual ICollection<User> Users { get; set; }
+		public virtual ICollection<Profile> Profiles { get; set; }
 		public virtual ICollection<School> Schools { get; set; }
 
 	}

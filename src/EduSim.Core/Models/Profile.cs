@@ -7,11 +7,11 @@ using System.Security;
 namespace EduSim.Core.Models
 {
 	[Table("users")]
-	public class User : IUser
+	public class Profile : IProfile
 	{
 		
 		[Column("pk_user_id")]
-		public int UserId { get; set; }
+		public string UserId { get; set; }
 
 		[Column("fk_account_id")]
 		public int AccountId { get; set; }
@@ -43,10 +43,11 @@ namespace EduSim.Core.Models
 		[Column("is_Volunteer"), MaxLength(1)]
 		public string IsVolunteer { get; set; }
 
+
 		public virtual Account Account { get; set; }
 		public virtual School School { get; set; }
 
-		public User()
+		public Profile()
 		{
 		}
 	}

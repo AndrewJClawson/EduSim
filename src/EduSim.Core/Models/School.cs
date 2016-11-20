@@ -33,7 +33,7 @@ namespace EduSim.Core.Models
 
 		public virtual Account Account { get; set; }
 
-		public virtual ICollection<User> Users { get; set; }
+		public virtual ICollection<Profile> Profiles { get; set; }
 
 	}
 }
