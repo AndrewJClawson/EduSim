@@ -22,5 +22,13 @@ namespace EduSim.Core.Contexts
 		{
 			
 		}
+
+		protected override void OnModelCreating(System.Data.Entity.DbModelBuilder modelBuilder)
+		{
+			base.OnModelCreating(modelBuilder);
+
+
+
+		} 
 	}
 }
