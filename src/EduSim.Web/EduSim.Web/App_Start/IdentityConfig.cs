@@ -11,6 +11,14 @@ namespace EduSim.Web
 		}
 	}
 
+	public class ApplicationRoleStore : RoleStore<ApplicationRole>
+	{
+		public ApplicationRoleStore(ApplicationDbContext context):base(context)
+		{
+			
+		}
+	}
+
 	public class ApplicationUserManager : UserManager<ApplicationUser>
 	{
 		public ApplicationUserManager(IUserStore<ApplicationUser> store): base(store)
