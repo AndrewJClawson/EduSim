@@ -137,6 +137,7 @@
     <Folder Include="Services\Abstraction\" />
     <Folder Include="Models\Abstraction\" />
     <Folder Include="Views\SystemAdmin\" />
+    <Folder Include="Views\SystemAdmin\Roles\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\HomeController.cs" />
@@ -187,7 +188,8 @@
     <Content Include="Scripts\jquery-3.1.1.min.js" />
     <Content Include="Scripts\jquery-3.1.1.js" />
     <Content Include="Scripts\jquery-3.1.1-vsdoc.js" />
-    <Content Include="Views\SystemAdmin\Roles.cshtml" />
+    <Content Include="Views\SystemAdmin\Roles\Roles.cshtml" />
+    <Content Include="Views\SystemAdmin\Roles\_RoleListItem.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Content\bootstrap-theme.css.map" />
