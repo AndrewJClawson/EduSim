@@ -6,6 +6,8 @@ using System.Linq;
 using System.Data;
 using System.Data.Entity;
 using EduSim.Core.Services;
+using EduSim.Web;
+using EduSim.Web.Models;
 
 namespace EduSim.Sandbox
 {
@@ -16,17 +18,15 @@ namespace EduSim.Sandbox
 
 		public static void Main(string[] args)
 		{
-			using(EduSimContext context = new EduSimContext())
-			{
-				var roles = context
-				foreach(var profile in profiles)
-				{
-					System.Console.WriteLine("User Id: " + profile.UserId);
-					System.Console.WriteLine("Account Id: " + profile.AccountId);
-				}
-			}
+			ApplicationUser myUser;
+			ApplicationUserStore store = new ApplicationUserStore(new ApplicationDbContext());
+			ApplicationUserManager userManager = new EduSim.Web.ApplicationUserManager(store);
 
-			System.Console.WriteLine(true);
+			myUser = new ApplicationUser() { UserName = "aclawson", Email = "andrewjclawson18@gmail.com"};
+			string passwordHash = userManager.PasswordHasher.HashPassword("clawson1");
+			myUser.PasswordHash = passwordHash;
+
+			userManager.CreateAsync(myUser);
 		}
 	}
 }

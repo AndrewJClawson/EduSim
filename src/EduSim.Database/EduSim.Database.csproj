@@ -65,6 +65,7 @@
     <None Include="Scripts\IdentityScripts\Identity.sql" />
     <None Include="Tables\_roles.sql" />
     <None Include="ReferenceData\_roles.sql" />
+    <None Include="Scripts\IdentityScripts\extra_tables.sql" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Classes\" />
