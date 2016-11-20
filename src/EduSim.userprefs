@@ -1,5 +1,5 @@
 ﻿<Properties StartupConfiguration="{20FA62A5-8D4B-42DE-BB17-D1A2853C61DE}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="EduSim.Database/publish_database.sql">
+  <MonoDevelop.Ide.Workbench ActiveDocument="EduSim.Database/Scripts/delete_application_database.sql">
     <Files>
       <File FileName="EduSim.Core/Models/Profile.cs" Line="37" Column="53" />
       <File FileName="EduSim.Sandbox/Program.cs" Line="21" Column="24" />
@@ -13,6 +13,8 @@
       <File FileName="EduSim.Database/ReferenceData/_roles.sql" Line="4" Column="45" />
       <File FileName="EduSim.Database/publish_database.sql" Line="16" Column="1" />
       <File FileName="EduSim.Database/Scripts/initial_develop_data.sql" Line="1" Column="1" />
+      <File FileName="EduSim.Database/Scripts/IdentityScripts/Identity.sql" Line="1" Column="1" />
+      <File FileName="EduSim.Database/Scripts/delete_application_database.sql" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -20,8 +22,10 @@
           <Node name="EduSim" expanded="True">
             <Node name="EduSim.Database" expanded="True">
               <Node name="ReferenceData" expanded="True" />
-              <Node name="Scripts" expanded="True" />
-              <Node name="publish_database.sql" selected="True" />
+              <Node name="Scripts" expanded="True">
+                <Node name="IdentityScripts" expanded="True" />
+                <Node name="delete_application_database.sql" selected="True" />
+              </Node>
             </Node>
           </Node>
         </State>

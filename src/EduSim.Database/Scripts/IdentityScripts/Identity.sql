@@ -1,19 +1,8 @@
-﻿DROP TABLE userclaims;
-DROP TABLE userroles;
-DROP TABLE userlogins;
-DROP TABLE roles;
-DROP TABLE users;
-
-CREATE TABLE roles (
-  Id varchar(800) NOT NULL,
-  Name varchar(256) NOT NULL,
-  Description varchar(1000),
-  AreaUsed varchar(1000),
-  PRIMARY KEY (Id)
-);
+﻿
+DROP TABLE IF EXISTS users;
 
 CREATE TABLE users (
-  Id varchar(800) NOT NULL,
+  Id varchar(700) NOT NULL,
   Email varchar(256) DEFAULT NULL,
   EmailConfirmed tinyint(1) NOT NULL,
   PasswordHash longtext,
@@ -28,31 +17,7 @@ CREATE TABLE users (
   PRIMARY KEY (Id)
 );
 
-CREATE TABLE aspnetuserclaims (
-  Id varchar(800) NOT NULL,
-  UserId varchar(800) NOT NULL,
-  ClaimType longtext,
-  ClaimValue longtext,
-  PRIMARY KEY (Id),
-  UNIQUE KEY Id (Id),
-  KEY UserId (UserId),
-  CONSTRAINT ApplicationUser_Claims FOREIGN KEY (UserId) REFERENCES users (Id) ON DELETE CASCADE ON UPDATE NO ACTION
-);
 
-CREATE TABLE aspnetuserlogins (
-  LoginProvider varchar(128) NOT NULL,
-  ProviderKey varchar(128) NOT NULL,
-  UserId varchar(800) NOT NULL,
-  PRIMARY KEY (LoginProvider,ProviderKey,UserId),
-  KEY ApplicationUser_Logins (UserId),
-  CONSTRAINT ApplicationUser_Logins FOREIGN KEY (UserId) REFERENCES users (Id) ON DELETE CASCADE ON UPDATE NO ACTION
-);
 
-CREATE TABLE aspnetuserroles (
-  UserId varchar(800) NOT NULL,
-  RoleId varchar(800) NOT NULL,
-  PRIMARY KEY (UserId,RoleId),
-  KEY IdentityRole_Users (RoleId),
-  CONSTRAINT ApplicationUser_Roles FOREIGN KEY (UserId) REFERENCES users (Id) ON DELETE CASCADE ON UPDATE NO ACTION,
-  CONSTRAINT IdentityRole_Users FOREIGN KEY (RoleId) REFERENCES roles (Id) ON DELETE CASCADE ON UPDATE NO ACTION
-) ;
+
+
