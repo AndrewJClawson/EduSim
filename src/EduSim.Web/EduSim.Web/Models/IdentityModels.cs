@@ -52,8 +52,6 @@ namespace EduSim.Web.Models
 		{
 			base.OnModelCreating(modelBuilder);
 			modelBuilder.Entity<ApplicationUser>().ToTable("users");
-
-
 		}
 	}
 

@@ -4,7 +4,7 @@
   PRIMARY KEY (Id)
 );
 
-CREATE TABLE userclaims (
+CREATE TABLE aspnetuserclaims (
   Id int(11) NOT NULL AUTO_INCREMENT,
   UserId varchar(128) NOT NULL,
   ClaimType longtext,
@@ -12,5 +12,22 @@ CREATE TABLE userclaims (
   PRIMARY KEY (Id),
   UNIQUE KEY Id (Id),
   KEY UserId (UserId),
-  CONSTRAINT ApplicationUser_Claims FOREIGN KEY (UserId) REFERENCES users (Id) ON DELETE CASCADE ON UPDATE NO ACTION
+
+);
+
+CREATE TABLE aspnetuserlogins (
+  LoginProvider varchar(128) NOT NULL,
+  ProviderKey varchar(128) NOT NULL,
+  UserId varchar(700) NOT NULL,
+  PRIMARY KEY (LoginProvider,ProviderKey,UserId),
+  KEY ApplicationUser_Logins (UserId),
+
+);
+
+CREATE TABLE aspnetuserroles (
+  UserId varchar(700) NOT NULL,
+  RoleId varchar(128) NOT NULL,
+  PRIMARY KEY (UserId,RoleId),
+  KEY IdentityRole_Users (RoleId),
+
 );
