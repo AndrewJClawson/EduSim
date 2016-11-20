@@ -116,6 +116,8 @@
     <Compile Include="Models\IdentityClaim.cs" />
     <Compile Include="Contexts\Abstractions\IEduSimContext.cs" />
     <Compile Include="Models\Role.cs" />
+    <Compile Include="ModelInterfaces\IRole.cs" />
+    <Compile Include="Constants\Role.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
