@@ -13,5 +13,6 @@ namespace EduSim.Core.Contexts
 		DbSet<Account> Accounts { get; set;}
 		DbSet<Profile> Profiles { get; set; }
 		DbSet<School> Schools { get; set; }
+		DbSet<Role> Roles { get; set; }
 	}
 }

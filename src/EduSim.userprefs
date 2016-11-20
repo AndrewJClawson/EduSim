@@ -1,25 +1,24 @@
 ﻿<Properties StartupConfiguration="{20FA62A5-8D4B-42DE-BB17-D1A2853C61DE}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="EduSim.Core/Contexts/EduSimContext.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="EduSim.Core/Contexts/Abstractions/IEduSimContext.cs">
     <Files>
       <File FileName="EduSim.Core/Models/Profile.cs" Line="37" Column="53" />
       <File FileName="EduSim.Sandbox/Program.cs" Line="21" Column="24" />
       <File FileName="EduSim.Web/EduSim.Web/Controllers/SystemAdminController.cs" Line="1" Column="1" />
-      <File FileName="EduSim.Core/Contexts/EduSimContext.cs" Line="33" Column="16" />
+      <File FileName="EduSim.Core/Contexts/EduSimContext.cs" Line="32" Column="46" />
       <File FileName="EduSim.Web/EduSim.Web/Models/IdentityModels.cs" Line="57" Column="4" />
+      <File FileName="EduSim.Core/Contexts/Abstractions/IEduSimContext.cs" Line="16" Column="28" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="EduSim" expanded="True">
             <Node name="EduSim.Core" expanded="True">
-              <Node name="Contexts" expanded="True" />
-              <Node name="Models" expanded="True" selected="True" />
-            </Node>
-            <Node name="EduSim.Sandbox" expanded="True" />
-            <Node name="EduSim.Web" expanded="True">
-              <Node name="App_Start" expanded="True" />
-              <Node name="Controllers" expanded="True" />
-              <Node name="Models" expanded="True" />
+              <Node name="Contexts" expanded="True">
+                <Node name="Abstractions" expanded="True">
+                  <Node name="IEduSimContext.cs" selected="True" />
+                </Node>
+              </Node>
+              <Node name="Services" expanded="True" />
             </Node>
           </Node>
         </State>
