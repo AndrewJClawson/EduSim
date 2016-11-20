@@ -3,24 +3,38 @@
     <Files>
       <File FileName="EduSim.Web/EduSim.Web/App_Start/IdentityConfig.cs" Line="1" Column="1" />
       <File FileName="EduSim.Web/EduSim.Web/Controllers/AccountController.cs" Line="18" Column="28" />
+<<<<<<< HEAD
       <File FileName="EduSim.Web/EduSim.Web/Views/Shared/_Layout.cshtml" Line="37" Column="55" />
       <File FileName="EduSim.Web/EduSim.Web/Controllers/SystemAdminController.cs" Line="28" Column="68" />
       <File FileName="EduSim.Web/EduSim.Web/Views/Home/Dashboard.cshtml" Line="1" Column="1" />
       <File FileName="EduSim.Web/EduSim.Web/Models/IdentityModels.cs" Line="32" Column="60" />
+=======
+      <File FileName="EduSim.Web/EduSim.Web/Views/Shared/_Layout.cshtml" Line="1" Column="1" />
+      <File FileName="EduSim.Web/EduSim.Web/Views/Home/Dashboard.cshtml" Line="1" Column="1" />
+      <File FileName="EduSim.Web/EduSim.Web/Models/IdentityModels.cs" Line="21" Column="33" />
+>>>>>>> develop
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="EduSim" expanded="True">
             <Node name="EduSim.Web" expanded="True">
+<<<<<<< HEAD
+=======
+              <Node name="App_Start" expanded="True" />
+>>>>>>> develop
               <Node name="Controllers" expanded="True" />
               <Node name="Models" expanded="True">
                 <Node name="IdentityModels.cs" selected="True" />
               </Node>
               <Node name="Views" expanded="True">
+<<<<<<< HEAD
                 <Node name="SystemAdmin" expanded="True">
                   <Node name="Roles" expanded="True" />
                 </Node>
+=======
+                <Node name="Home" expanded="True" />
+>>>>>>> develop
               </Node>
             </Node>
           </Node>

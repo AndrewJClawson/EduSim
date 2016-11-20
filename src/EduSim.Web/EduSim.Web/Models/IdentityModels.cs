@@ -18,6 +18,11 @@ namespace EduSim.Web.Models
 		}
 	}
 
+	public class ApplicationRole : IdentityRole
+	{
+		public ApplicationRole () {}
+	}
+
 	public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
 	{
 		
@@ -30,6 +35,7 @@ namespace EduSim.Web.Models
 		{
 			base.OnModelCreating(modelBuilder);
 			modelBuilder.Entity<ApplicationUser>().ToTable("users");
+			modelBuilder.Entity<ApplicationRole>().ToTable("roles");
 
 		}
 	}
