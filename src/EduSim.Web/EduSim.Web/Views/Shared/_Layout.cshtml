@@ -2,8 +2,11 @@
 <html>
 <head>
     <title>@ViewBag.Title</title>
-
-	@Styles.Render("~/Content/bootstrap.css")
+    <script type="text/javascript" src="~/Scripts/jquery-3.1.1.js"></script>
+	<script type="text/javascript" src="~/Scripts/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="~/Scripts/bootstrap.js"></script>
+	<script type="text/javascript" src="~/Scripts/bootstrap.min.js"></script>
+ 	@Styles.Render("~/Content/bootstrap.css")
 	@Styles.Render("~/Content/bootstrap.css.map")
 	@Styles.Render("~/Content/bootstrap.min.css")
 	@Styles.Render("~/Content/bootstrap.min.css.map")
@@ -13,45 +16,54 @@
 	@Styles.Render("~/Content/bootstrap-theme.min.css.map")
 	@Styles.Render("~/Content/App.css")
 
-	@Scripts.Render("~/Scripts/jquery-3.1.1.js")
-	@Scripts.Render("~/Scripts/jquery-3.1.1.min.js")
-	@Scripts.Render("~/Scripts/bootstrap.min.js")
-	@Scripts.Render("~/Scripts/bootstrap.js")
-
 </head>
 <body>
 	<nav class="navbar navbar-inverse">
-	  <div class="container-fluid">
-	    <div class="navbar-header">
-	      <a class="navbar-brand">EduSim</a>
-	    </div>
-				
-	    <ul class="nav navbar-nav">
-	      <li class="dropdown" role="presentation">
-				<a id="systemAdminDropdown" class="dropdown-toggle" data-toggle="dropdown" role="button">System Admin<span class="caret"></span></a>
-				<ul class="dropdown-menu" role="menu">
-					<li><a>System Roles</a></li>
-					<li><a>System Users</a></li>
-					<li><a>System Accounts</a></li>
-				</ul>
-			</li>
-	      <li><a>Account Admin</a></li>
-	      <li><a>Page 2</a></li> 
-	    </ul>
-				
-	    <ul class="nav navbar-nav navbar-right">
-	      <li><a><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-	      <li><a><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-	    </ul>
-	  </div>
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">EduSim</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="#">Home</a></li>
+						
+        <li class="dropdown">
+          <a id="system-admin-dropdown" class="dropdown-toggle" data-toggle="dropdown" href="#" role="button">System Admin<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">System Roles</a></li>
+            <li><a href="#">System Users</a></li>
+            <li><a href="#">System Permissions</a></li>
+			<li><a>Accounts</a></li>
+          </ul>
+        </li>
+						
+        <li><a href="#">Page 2</a></li>
+        <li><a href="#">Page 3</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
 </nav>
-
 
 	<div class="container body-content">
 		@RenderBody()
 	</div>
+
 </body>
 </html>
 
+<script>
+	$(document).ready(function(){
+		$(".dropdown-toggle").dropdown();
+	});
+</script>
 
 
