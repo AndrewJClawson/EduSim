@@ -16,7 +16,16 @@ namespace EduSim.Sandbox
 
 		public static void Main(string[] args)
 		{
-			
+			using(EduSimContext context = new EduSimContext())
+			{
+				var profiles = context.Profiles.ToList();
+				foreach(var profile in profiles)
+				{
+					System.Console.WriteLine("User Id: " + profile.UserId);
+					System.Console.WriteLine("Account Id: " + profile.AccountId);
+				}
+			}
+
 			System.Console.WriteLine(true);
 		}
 	}

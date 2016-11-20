@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 using System.Collections.Generic;
-using EduSim.Core.ModelInterfaces;
+using EduSim.Core.Models;
 using EduSim.Core.Contexts;
 using EduSim.Core.Repository;
 using System.Data.Entity;
@@ -12,20 +12,20 @@ namespace EduSim.Core.Services
 {
 	public class ProfileService : IProfileService
 	{
-		private readonly Repository<IProfile> _profileRepository;
+		private readonly Repository<Profile> _profileRepository;
 
 		public ProfileService()
 		{
-			_profileRepository = new Repository<IProfile>();
+			_profileRepository = new Repository<Profile>();
 		}
 
-		public void Add(IProfile profile)
+		public void Add(Profile profile)
 		{
 			_profileRepository.Add(profile);
 		}
 
 
-		public void Delete(IProfile profile)
+		public void Delete(Profile profile)
 		{
 			_profileRepository.Delete(profile);
 		}
@@ -35,28 +35,28 @@ namespace EduSim.Core.Services
 			_profileRepository.Delete(id);
 		}
 
-		public List<IProfile> GetAll()
+		public List<Profile> GetAll()
 		{
-			List<IProfile> users = _profileRepository.GetAll().ToList();
-			return users;
+			List<Profile> profiles = _profileRepository.GetAll().ToList();
+			return profiles;
 		}
 
-		public IProfile GetForUser(string userId)
+		public Profile GetForUser(string userId)
 		{
-			IProfile profile = _profileRepository
+			Profile profile = _profileRepository
 				.GetAll()
 				.Where(p => p.UserId == userId)
 				.FirstOrDefault();
 			return profile;
 		}
 
-		public IProfile GetById(int id)
+		public Profile GetById(int id)
 		{
-			IProfile profile = _profileRepository.GetById(id);
+			Profile profile = _profileRepository.GetById(id);
 			return profile;
 		}
 
-		public void Update(IProfile profile)
+		public void Update(Profile profile)
 		{
 			_profileRepository.Update(profile);
 		}

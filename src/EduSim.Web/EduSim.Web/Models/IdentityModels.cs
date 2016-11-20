@@ -18,26 +18,26 @@ namespace EduSim.Web.Models
 		}
 	}
 
-	public class ApplicationRole : IdentityRole
-	{
-		public ApplicationRole () {}
-		public ApplicationRole(string name) { Name = name;}
-	}
+	//public class ApplicationRole : IdentityRole
+	//{
+	//	public ApplicationRole () {}
+	//	public ApplicationRole(string name) { Name = name;}
+	//}
 
-	public class ApplicationUserRole : IdentityUserRole
-	{
+	//public class ApplicationUserRole : IdentityUserRole
+	//{
 		
-	}
+	//}
 
-	public class ApplicationUserClaim : IdentityUserClaim
-	{
+	//public class ApplicationUserClaim : IdentityUserClaim
+	//{
 		
-	}
+	//}
 
-	public class ApplicationUserLogin : IdentityUserLogin
-	{
+	//public class ApplicationUserLogin : IdentityUserLogin
+	//{
 		
-	}
+	//}
 
 
 	public class ApplicationDbContext : IdentityDbContext<ApplicationUser>

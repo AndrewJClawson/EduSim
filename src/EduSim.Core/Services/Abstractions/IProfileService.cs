@@ -7,13 +7,13 @@ namespace EduSim.Core.Services
 {
 	public interface IProfileService
 	{
-		void Add(IProfile profile);
+		void Add(Profile profile);
 
-		void Delete(IProfile profile);
+		void Delete(Profile profile);
 		void Delete(int id);
-		List<IProfile> GetAll();
-		IProfile GetForUser(string userId);
-		IProfile GetById(int id);
-		void Update(IProfile profile);
+		List<Profile> GetAll();
+		Profile GetForUser(string userId);
+		Profile GetById(int id);
+		void Update(Profile profile);
 	}
 }

@@ -6,11 +6,13 @@ using System.Security;
 
 namespace EduSim.Core.Models
 {
-	[Table("users")]
+	[Table("profiles")]
 	public class Profile : IProfile
 	{
+		[Column("pk_profile_id")]
+		public int ProfileId { get; set; }
 		
-		[Column("pk_user_id")]
+		[Column("fk_user_id")]
 		public string UserId { get; set; }
 
 		[Column("fk_account_id")]
@@ -28,20 +30,20 @@ namespace EduSim.Core.Models
 		[Column("last_name")]
 		public string LastName { get; set; }
 
-		[Column("email")]
-		public string Email { get; set; }
+		//[Column("email")]
+		//public string Email { get; set; }
 
-		[Column("password")]
-		public string Password { get; set; }
+		//[Column("password")]
+		//public string Password { get; set; }
 
-		[Column("is_admin"), MaxLength(1)]
-		public string IsAdmin { get; set; }
+		//[Column("is_admin"), MaxLength(1)]
+		//public string IsAdmin { get; set; }
 
-		[Column("is_instructor"), MaxLength(1)]
-		public string IsInstructor { get; set; }
+		//[Column("is_instructor"), MaxLength(1)]
+		//public string IsInstructor { get; set; }
 
-		[Column("is_Volunteer"), MaxLength(1)]
-		public string IsVolunteer { get; set; }
+		//[Column("is_Volunteer"), MaxLength(1)]
+		//public string IsVolunteer { get; set; }
 
 
 		public virtual Account Account { get; set; }

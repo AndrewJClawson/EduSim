@@ -23,9 +23,7 @@ namespace EduSim.Web.Controllers
     {
         public ActionResult Roles()
         {
-			ApplicationDbContext context = new ApplicationDbContext();
-
-
+			
             return View ("/Views/SystemAdmin/Roles/Roles.cshtml");
         }
     }
