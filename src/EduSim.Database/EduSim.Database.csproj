@@ -40,7 +40,7 @@
     <None Include="Tables\accounts.sql" />
     <None Include="Tables\campuses.sql" />
     <None Include="Tables\schools.sql" />
-    <None Include="Tables\users.sql" />
+    <None Include="Tables\profiles.sql" />
     <None Include="Scripts\create_application_tables.sql" />
     <None Include="Scripts\create_database.sql" />
     <None Include="Scripts\create_reference_tables.sql" />

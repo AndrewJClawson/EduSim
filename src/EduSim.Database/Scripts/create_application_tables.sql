@@ -5,6 +5,6 @@ source ./Tables/schools.sql;
 
 source ./Tables/campuses.sql;
 
-source ./Tables/users.sql;
+source ./Tables/profiles.sql;
 
 
