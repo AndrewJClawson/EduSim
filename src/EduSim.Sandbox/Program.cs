@@ -18,15 +18,16 @@ namespace EduSim.Sandbox
 
 		public static void Main(string[] args)
 		{
-			ApplicationUser myUser;
-			ApplicationUserStore store = new ApplicationUserStore(new ApplicationDbContext());
-			ApplicationUserManager userManager = new EduSim.Web.ApplicationUserManager(store);
+			//ApplicationUser myUser;
+			//ApplicationUserStore store = new ApplicationUserStore(new ApplicationDbContext());
+			//ApplicationUserManager userManager = new EduSim.Web.ApplicationUserManager(store);
 
-			myUser = new ApplicationUser() { UserName = "aclawson", Email = "andrewjclawson18@gmail.com"};
-			string passwordHash = userManager.PasswordHasher.HashPassword("clawson1");
-			myUser.PasswordHash = passwordHash;
+			//myUser = new ApplicationUser() { UserName = "aclawson", Email = "andrewjclawson18@gmail.com"};
+			//string passwordHash = userManager.PasswordHasher.HashPassword("clawson1");
+			//myUser.PasswordHash = passwordHash;
 
-			userManager.CreateAsync(myUser);
+			//userManager.CreateAsync(myUser);
+
 		}
 	}
 }

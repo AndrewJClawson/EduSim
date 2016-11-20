@@ -1,4 +1,4 @@
-﻿<Properties StartupConfiguration="{862C8A85-3708-4C3E-917C-340AC9BBFB85}|">
+﻿<Properties StartupConfiguration="{20FA62A5-8D4B-42DE-BB17-D1A2853C61DE}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="EduSim.Database/Scripts/IdentityScripts/extra_tables.sql">
     <Files>
       <File FileName="EduSim.Core/Models/Profile.cs" Line="37" Column="53" />
