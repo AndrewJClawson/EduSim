@@ -136,6 +136,7 @@
     <Folder Include="Services\" />
     <Folder Include="Services\Abstraction\" />
     <Folder Include="Models\Abstraction\" />
+    <Folder Include="Views\SystemAdmin\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\HomeController.cs" />
@@ -154,6 +155,7 @@
     <Compile Include="App_Start\UnityMvcActivator.cs" />
     <Compile Include="App_Start\UnityConfig.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Controllers\SystemAdminController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Web.config" />
@@ -185,6 +187,7 @@
     <Content Include="Scripts\jquery-3.1.1.min.js" />
     <Content Include="Scripts\jquery-3.1.1.js" />
     <Content Include="Scripts\jquery-3.1.1-vsdoc.js" />
+    <Content Include="Views\SystemAdmin\Roles.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Content\bootstrap-theme.css.map" />
