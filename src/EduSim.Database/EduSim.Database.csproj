@@ -66,6 +66,7 @@
     <None Include="Tables\_roles.sql" />
     <None Include="ReferenceData\_roles.sql" />
     <None Include="Scripts\IdentityScripts\extra_tables.sql" />
+    <None Include="publish_auth_database.sql" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Classes\" />
