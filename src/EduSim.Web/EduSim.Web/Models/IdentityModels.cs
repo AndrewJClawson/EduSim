@@ -43,7 +43,7 @@ namespace EduSim.Web.Models
 	public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
 	{
 		
-		public ApplicationDbContext() : base("EduSimContext")
+		public ApplicationDbContext() : base("server=localhost;user id=edusim;password=store_d@t@;database=edusim_auth")
 		{
 			
 		}
