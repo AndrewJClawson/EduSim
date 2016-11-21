@@ -1,13 +1,10 @@
 ﻿<Properties StartupConfiguration="{862C8A85-3708-4C3E-917C-340AC9BBFB85}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="EduSim.Database/Tables/profiles.sql">
+  <MonoDevelop.Ide.Workbench ActiveDocument="EduSim.Core/App.config">
     <Files>
-      <File FileName="EduSim.Web/EduSim.Web/Controllers/SystemAdminController.cs" Line="33" Column="1" />
-      <File FileName="EduSim.Web/EduSim.Web/App_Start/UnityConfig.cs" Line="47" Column="51" />
+      <File FileName="EduSim.Web/EduSim.Web/Controllers/SystemAdminController.cs" Line="1" Column="1" />
       <File FileName="EduSim.Core/Services/LookupService.cs" Line="18" Column="5" />
-      <File FileName="EduSim.Web/EduSim.Web/ViewModels/Abstraction/ISystemRolesViewModel.cs" Line="4" Column="26" />
-      <File FileName="EduSim.Web/EduSim.Web/ViewModels/SystemRolesViewModel.cs" Line="8" Column="40" />
-      <File FileName="EduSim.Core/Models/Role.cs" Line="1" Column="1" />
       <File FileName="EduSim.Database/Tables/profiles.sql" Line="1" Column="1" />
+      <File FileName="EduSim.Core/App.config" Line="8" Column="12" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
