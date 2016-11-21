@@ -1,9 +1,11 @@
 using System;
+using System.Data.Entity;
 using EduSim.Core.ModelInterfaces;
 using EduSim.Core.Models;
 using EduSim.Core.Contexts;
 using EduSim.Core.Repository;
 using EduSim.Core.Services;
+using EduSim.Web.Models;
 using Microsoft.Practices.Unity;
 using Microsoft.Practices.Unity.Configuration;
 
@@ -42,9 +44,20 @@ namespace EduSim.Web.App_Start
 
 			// TODO: Register your types here
 			// container.RegisterType<IProductRepository, ProductRepository>();
+			container.RegisterType<DbContext, EduSimContext>(new HierarchicalLifetimeManager());
+			// Repositories
 			container.RegisterType<IRepository<Type>, Repository<Type>>();
+			container.RegisterType<IRepository<AccountType>, Repository<AccountType>>();
+			container.RegisterType<IRepository<Role>, Repository<Role>>();
+
 			container.RegisterType<IProfile, Profile>();
+
+			// Lookup models
+			container.RegisterType<ILookupService, LookupService>();
 			container.RegisterType<IAccountType, AccountType>();
+			container.RegisterType<IRole, Role>();
+
+			// Application models
 			container.RegisterType<IAccount, Account>();
 			container.RegisterType<ISchool, School>();
 			container.RegisterType<IEduSimContext, EduSimContext>();

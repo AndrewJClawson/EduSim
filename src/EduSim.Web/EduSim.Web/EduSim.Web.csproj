@@ -130,14 +130,13 @@
     <Folder Include="Content\" />
     <Folder Include="Models\" />
     <Folder Include="Scripts\" />
-    <Folder Include="Models\ViewModels\" />
     <Folder Include="Views\Account\" />
-    <Folder Include="Models\ViewModels\Abstraction\" />
     <Folder Include="Services\" />
     <Folder Include="Services\Abstraction\" />
     <Folder Include="Models\Abstraction\" />
     <Folder Include="Views\SystemAdmin\" />
     <Folder Include="Views\SystemAdmin\Roles\" />
+    <Folder Include="ViewModels\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\HomeController.cs" />
@@ -147,9 +146,6 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
-    <Compile Include="Models\ViewModels\AccountViewModel.cs" />
-    <Compile Include="Models\ViewModels\Abstraction\BaseViewModel.cs" />
-    <Compile Include="Models\ViewModels\LoginViewModel.cs" />
     <Compile Include="Services\Abstraction\BaseService.cs" />
     <Compile Include="Models\Abstraction\IWebAppState.cs" />
     <Compile Include="App_Start\IdentityConfig.cs" />
@@ -157,6 +153,11 @@
     <Compile Include="App_Start\UnityConfig.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Controllers\SystemAdminController.cs" />
+    <Compile Include="ViewModels\Abstraction\BaseViewModel.cs" />
+    <Compile Include="ViewModels\Abstraction\ISystemRolesViewModel.cs" />
+    <Compile Include="ViewModels\AccountViewModel.cs" />
+    <Compile Include="ViewModels\LoginViewModel.cs" />
+    <Compile Include="ViewModels\SystemRolesViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Web.config" />

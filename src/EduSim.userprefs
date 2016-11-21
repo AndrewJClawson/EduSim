@@ -1,38 +1,22 @@
-﻿<Properties StartupConfiguration="{20FA62A5-8D4B-42DE-BB17-D1A2853C61DE}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="EduSim.Core/Services/LookupService.cs">
+﻿<Properties StartupConfiguration="{862C8A85-3708-4C3E-917C-340AC9BBFB85}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="EduSim.Database/Tables/profiles.sql">
     <Files>
-      <File FileName="EduSim.Core/Models/Profile.cs" Line="1" Column="1" />
-      <File FileName="EduSim.Sandbox/Program.cs" Line="1" Column="1" />
-      <File FileName="EduSim.Web/EduSim.Web/Controllers/SystemAdminController.cs" Line="1" Column="1" />
-      <File FileName="EduSim.Web/EduSim.Web/Models/IdentityModels.cs" Line="1" Column="1" />
-      <File FileName="EduSim.Core/Services/Abstractions/ILookupService.cs" Line="8" Column="7" />
-      <File FileName="EduSim.Core/Models/Role.cs" Line="10" Column="15" />
-      <File FileName="EduSim.Core/Services/LookupService.cs" Line="17" Column="21" />
+      <File FileName="EduSim.Web/EduSim.Web/Controllers/SystemAdminController.cs" Line="33" Column="1" />
+      <File FileName="EduSim.Web/EduSim.Web/App_Start/UnityConfig.cs" Line="47" Column="51" />
+      <File FileName="EduSim.Core/Services/LookupService.cs" Line="18" Column="5" />
+      <File FileName="EduSim.Web/EduSim.Web/ViewModels/Abstraction/ISystemRolesViewModel.cs" Line="4" Column="26" />
+      <File FileName="EduSim.Web/EduSim.Web/ViewModels/SystemRolesViewModel.cs" Line="8" Column="40" />
+      <File FileName="EduSim.Core/Models/Role.cs" Line="1" Column="1" />
+      <File FileName="EduSim.Database/Tables/profiles.sql" Line="1" Column="1" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="EduSim" expanded="True">
-            <Node name="EduSim.Core" expanded="True">
-              <Node name="Constants" expanded="True" />
-              <Node name="Models" expanded="True" />
-              <Node name="Services" expanded="True">
-                <Node name="Abstractions" expanded="True" />
-                <Node name="LookupService.cs" selected="True" />
-              </Node>
-            </Node>
-            <Node name="EduSim.Web" expanded="True">
-              <Node name="Models" expanded="True" />
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.EduSim.Web PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Volumes/Storage/Development/EduSim/src/EduSim.Web/EduSim.Web/Controllers/SystemAdminController.cs" line="33" column="1" />
+      <Breakpoint file="/Volumes/Storage/Development/EduSim/src/EduSim.Web/EduSim.Web/Controllers/SystemAdminController.cs" line="35" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.EduSim.Sandbox PreferredExecutionTarget="MonoDevelop.Default" />

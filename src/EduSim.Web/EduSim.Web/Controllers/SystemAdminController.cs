@@ -21,9 +21,17 @@ namespace EduSim.Web.Controllers
 {
     public class SystemAdminController : Controller
     {
+		private ILookupService _lookupService;
+		public SystemAdminController(ILookupService lookupService)
+		{
+			_lookupService = lookupService;
+		}
+
         public ActionResult Roles()
         {
-			
+			SystemRolesViewModel viewModel = new SystemRolesViewModel();
+			viewModel.Roles = _lookupService.GetRoles();
+
             return View ("/Views/SystemAdmin/Roles/Roles.cshtml");
         }
     }

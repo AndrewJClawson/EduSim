@@ -1,5 +1,5 @@
 ﻿using System;
-namespace EduSim.Core
+namespace EduSim.Core.ModelInterfaces
 {
 	public interface IRole
 	{
