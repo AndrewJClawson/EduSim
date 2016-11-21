@@ -1,28 +1,27 @@
 ﻿<Properties StartupConfiguration="{20FA62A5-8D4B-42DE-BB17-D1A2853C61DE}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="EduSim.Core/Models/Profile.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="EduSim.Core/Services/LookupService.cs">
     <Files>
       <File FileName="EduSim.Core/Models/Profile.cs" Line="1" Column="1" />
       <File FileName="EduSim.Sandbox/Program.cs" Line="1" Column="1" />
       <File FileName="EduSim.Web/EduSim.Web/Controllers/SystemAdminController.cs" Line="1" Column="1" />
       <File FileName="EduSim.Web/EduSim.Web/Models/IdentityModels.cs" Line="1" Column="1" />
+      <File FileName="EduSim.Core/Services/Abstractions/ILookupService.cs" Line="8" Column="7" />
+      <File FileName="EduSim.Core/Models/Role.cs" Line="10" Column="15" />
+      <File FileName="EduSim.Core/Services/LookupService.cs" Line="17" Column="21" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="EduSim" expanded="True">
             <Node name="EduSim.Core" expanded="True">
-              <Node name="Models" expanded="True">
-                <Node name="Profile.cs" selected="True" />
+              <Node name="Constants" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Services" expanded="True">
+                <Node name="Abstractions" expanded="True" />
+                <Node name="LookupService.cs" selected="True" />
               </Node>
             </Node>
-            <Node name="EduSim.Database" expanded="True">
-              <Node name="Scripts" expanded="True">
-                <Node name="IdentityScripts" expanded="True" />
-              </Node>
-            </Node>
-            <Node name="EduSim.Sandbox" expanded="True" />
             <Node name="EduSim.Web" expanded="True">
-              <Node name="Controllers" expanded="True" />
               <Node name="Models" expanded="True" />
             </Node>
           </Node>

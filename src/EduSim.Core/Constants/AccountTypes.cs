@@ -1,7 +1,7 @@
 ﻿using System;
 namespace EduSim.Core.Constants
 {
-	public class AccountType
+	public class AccountTypes
 	{
 		public static Constant District
 		{

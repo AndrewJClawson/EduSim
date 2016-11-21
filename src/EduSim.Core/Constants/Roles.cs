@@ -1,7 +1,7 @@
 ﻿using System;
 namespace EduSim.Core.Constants
 {
-	public class Role
+	public class Roles
 	{
 		public static Constant SystemAdmin
 		{
