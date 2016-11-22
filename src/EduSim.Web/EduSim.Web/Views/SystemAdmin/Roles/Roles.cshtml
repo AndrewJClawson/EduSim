@@ -11,10 +11,24 @@
 </head>
 <body>
 	<h2>@ViewBag.Title</h2>
-	@foreach (var role in Model.Roles)
-	{
-		<h3><a class="btn btn-default">@role.Name</a></h3>
-	}
+	<div class="row">
+		<div class="col-md-6">
+			<h3>Roles</h3>
+			<ul class="list-group">
+				<li class="list-group-item">@Html.TextBox("new-role-input","",new {@placeholder="Add new role"}) <a class="btn"><span class="glyphicon glyphicon-plus"></span></a></li>
+				@foreach(var role in @Model.Roles)
+				{
+					<li class="list-group-item"><a class="btn btn-primary">@role.Name</a></li>
+				}
+			</ul>
+		</div>
+			
+		<div class="col-md-6">
+			<h3>Permissions</h3>
+		</div>
+
+	</div>
+
 </body>
 </html>
 

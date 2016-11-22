@@ -1,12 +1,13 @@
 ﻿<Properties StartupConfiguration="{862C8A85-3708-4C3E-917C-340AC9BBFB85}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="EduSim.Web/EduSim.Web/Views/SystemAdmin/Roles/Roles.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="EduSim.Web/EduSim.Web/Views/Shared/_Layout.cshtml">
     <Files>
       <File FileName="EduSim.Core/Services/LookupService.cs" Line="41" Column="1" />
-      <File FileName="EduSim.Web/EduSim.Web/Controllers/AccountController.cs" Line="80" Column="1" />
+      <File FileName="EduSim.Web/EduSim.Web/Controllers/AccountController.cs" Line="1" Column="1" />
       <File FileName="EduSim.Core/Models/Role.cs" Line="1" Column="1" />
-      <File FileName="EduSim.Sandbox/Program.cs" Line="18" Column="3" />
-      <File FileName="EduSim.Web/EduSim.Web/Controllers/SystemAdminController.cs" Line="35" Column="76" />
-      <File FileName="EduSim.Web/EduSim.Web/Views/SystemAdmin/Roles/Roles.cshtml" Line="1" Column="6" />
+      <File FileName="EduSim.Sandbox/Program.cs" Line="1" Column="1" />
+      <File FileName="EduSim.Web/EduSim.Web/Controllers/SystemAdminController.cs" Line="1" Column="1" />
+      <File FileName="EduSim.Web/EduSim.Web/Views/SystemAdmin/Roles/Roles.cshtml" Line="26" Column="19" />
+      <File FileName="EduSim.Web/EduSim.Web/Views/Shared/_Layout.cshtml" Line="38" Column="32" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
