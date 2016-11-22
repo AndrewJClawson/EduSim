@@ -16,17 +16,18 @@ namespace EduSim.Sandbox
 		public static AccountService _accountService = new AccountService();
 		public static ProfileService _profileService = new ProfileService();
 
+
 		public static void Main(string[] args)
 		{
-			//ApplicationUser myUser;
-			//ApplicationUserStore store = new ApplicationUserStore(new ApplicationDbContext());
-			//ApplicationUserManager userManager = new EduSim.Web.ApplicationUserManager(store);
-
-			//myUser = new ApplicationUser() { UserName = "aclawson", Email = "andrewjclawson18@gmail.com"};
-			//string passwordHash = userManager.PasswordHasher.HashPassword("clawson1");
-			//myUser.PasswordHash = passwordHash;
-
-			//userManager.CreateAsync(myUser);
+			using(var context = new EduSimContext())
+			{
+				var roles = context.Roles;
+				foreach(var role in roles)
+				{
+					System.Console.WriteLine("RoleId: " + role.RoleId.ToString());
+					System.Console.WriteLine("Role name: " + role.Name);
+				}
+			}
 
 		}
 	}

@@ -85,14 +85,7 @@ namespace EduSim.Web.Controllers
 			}
 			return View("~/Views/Home/Dashboard.cshtml");
 		}
-		//public async Task<ActionResult> Authenticate(LoginViewModel viewModel)
-		//{
-		//	if (ModelState.IsValid)
-		//	{
-		//		//var user = await Microsoft.AspNet.Identity.UserManager.FindAsync(viewModel.Username, viewModel.Password);
-		//	}
-		//	return View("~/Views/Home/Dashboard.cshtml");
-		//}
+
 
     }
 }

@@ -9,7 +9,7 @@ using Microsoft.AspNet.Identity.EntityFramework;
 
 namespace EduSim.Web.Models
 {
-	
+	[Table("users")]
 	public class ApplicationUser : IdentityUser
 	{
 		

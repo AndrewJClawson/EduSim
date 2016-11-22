@@ -1,4 +1,5 @@
-﻿@{
+﻿@model EduSim.Web.ViewModels.SystemRolesViewModel
+@{
 	ViewBag.Title = "System Roles";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
@@ -10,7 +11,10 @@
 </head>
 <body>
 	<h2>@ViewBag.Title</h2>
-	
+	@foreach (var role in Model.Roles)
+	{
+		<h3><a class="btn btn-default">@role.Name</a></h3>
+	}
 </body>
 </html>
 

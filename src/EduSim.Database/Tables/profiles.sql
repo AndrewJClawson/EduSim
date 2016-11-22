@@ -16,7 +16,7 @@
 	KEY profile_school (fk_school_id),
 	KEY profile_campus (fk_campus_id),
 
-	CONSTRAINT profile_user FOREIGN KEY (fk_user_id) REFERENCES users (Id),
+	CONSTRAINT profile_user FOREIGN KEY (fk_user_id) REFERENCES edusim_auth.users (Id),
 	CONSTRAINT profile_account FOREIGN KEY (fk_account_id) REFERENCES accounts (pk_account_id),
 	CONSTRAINT profile_school FOREIGN KEY (fk_school_id) REFERENCES schools (pk_school_id),
 	CONSTRAINT profile_campus FOREIGN KEY (fk_campus_id) REFERENCES campuses (pk_campus_id)

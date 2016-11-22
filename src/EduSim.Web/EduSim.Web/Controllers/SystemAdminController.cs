@@ -32,7 +32,7 @@ namespace EduSim.Web.Controllers
 			SystemRolesViewModel viewModel = new SystemRolesViewModel();
 			viewModel.Roles = _lookupService.GetRoles();
 
-            return View ("/Views/SystemAdmin/Roles/Roles.cshtml");
+            return View("/Views/SystemAdmin/Roles/Roles.cshtml",viewModel);
         }
     }
 }

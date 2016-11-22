@@ -13,12 +13,13 @@ namespace EduSim.Core.Contexts
 	public partial class EduSimContext : DbContext, IEduSimContext
 	{
 		public DbSet<AccountType> AccountTypes { get; set; }
+		public DbSet<Role> Roles { get; set; }
 		public DbSet<Account> Accounts { get; set; }
 		//public DbSet<IdentityUser> IdentityUsers { get; set; }
 		public DbSet<Profile> Profiles { get; set;}
 		public DbSet<School> Schools { get; set; }
 
-		public DbSet<Role> Roles { get; set; }
+
 
 		public EduSimContext() : base(nameOrConnectionString:"EduSimContext")
 		{
