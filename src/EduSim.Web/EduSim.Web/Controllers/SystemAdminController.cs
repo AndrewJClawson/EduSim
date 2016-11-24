@@ -34,5 +34,10 @@ namespace EduSim.Web.Controllers
 
             return View("/Views/SystemAdmin/Roles/Roles.cshtml",viewModel);
         }
+
+		public ActionResult Users()
+		{
+			return View("/Views/SystemAdmin/Users/Users.cshtml");
+		}
     }
 }
