@@ -34,6 +34,11 @@
     <Compile Include="MyClass.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="Menus\Abstractions\IMenuOption.cs" />
+    <Compile Include="Menus\Abstractions\IMenu.cs" />
+    <Compile Include="Menus\MenuOptions\BackupDatabase.cs" />
+    <Compile Include="Menus\Startup.cs" />
+    <Compile Include="Menus\Abstractions\BaseMenu.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Tables\_account_types.sql" />
@@ -77,6 +82,9 @@
     <Folder Include="Classes\" />
     <Folder Include="Scripts\IdentityScripts\" />
     <Folder Include="Scripts\IdentityScripts Original\" />
+    <Folder Include="Menus\" />
+    <Folder Include="Menus\Abstractions\" />
+    <Folder Include="Menus\MenuOptions\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

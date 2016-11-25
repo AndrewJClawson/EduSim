@@ -1,5 +1,5 @@
 ﻿<Properties StartupConfiguration="{522AF646-4142-4861-B3FF-6625F6FBBE0D}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="EduSim.Database/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="EduSim.Database/Menus/Abstractions/BaseMenu.cs">
     <Files>
       <File FileName="EduSim.Core/Services/LookupService.cs" Line="41" Column="1" />
       <File FileName="EduSim.Web/EduSim.Web/Controllers/AccountController.cs" Line="1" Column="1" />
@@ -7,14 +7,23 @@
       <File FileName="EduSim.Core/Models/Account.cs" Line="1" Column="1" />
       <File FileName="EduSim.Core/ModelInterfaces/IOperation.cs" Line="1" Column="1" />
       <File FileName="EduSim.Core/Contexts/EduSimContext.cs" Line="1" Column="1" />
-      <File FileName="EduSim.Database/Program.cs" Line="11" Column="2" />
-      <File FileName="EduSim.Console/Program.cs" Line="11" Column="3" />
+      <File FileName="EduSim.Database/Program.cs" Line="14" Column="1" />
+      <File FileName="EduSim.Database/Menus/Abstractions/IMenuOption.cs" Line="9" Column="19" />
+      <File FileName="EduSim.Database/Menus/Abstractions/IMenu.cs" Line="7" Column="9" />
+      <File FileName="EduSim.Database/Menus/MenuOptions/BackupDatabase.cs" Line="15" Column="68" />
+      <File FileName="EduSim.Database/Menus/Startup.cs" Line="10" Column="4" />
+      <File FileName="EduSim.Database/Menus/Abstractions/BaseMenu.cs" Line="22" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="EduSim" expanded="True">
-            <Node name="EduSim.Database" expanded="True" selected="True" />
+            <Node name="EduSim.Database" expanded="True" selected="True">
+              <Node name="Menus" expanded="True">
+                <Node name="Abstractions" expanded="True" />
+                <Node name="MenuOptions" expanded="True" />
+              </Node>
+            </Node>
           </Node>
         </State>
       </Pad>
@@ -23,11 +32,12 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.EduSim.Web PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Volumes/Storage/Development/EduSim/src/EduSim.Database/Menus/Abstractions/BaseMenu.cs" line="22" column="13" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.EduSim.Sandbox PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.ItemProperties.EduSim.Console PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.EduSim.Database PreferredExecutionTarget="MonoDevelop.Default" />
   <DisabledProjects>
     <String>EduSims/EduSims/EduSim.csproj</String>
