@@ -122,6 +122,10 @@
     <Compile Include="Services\LookupService.cs" />
     <Compile Include="Constants\ContentType.cs" />
     <Compile Include="Constants\Operation.cs" />
+    <Compile Include="ModelInterfaces\IContentType.cs" />
+    <Compile Include="Models\ContentType.cs" />
+    <Compile Include="ModelInterfaces\IOperation.cs" />
+    <Compile Include="Models\Operation.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
