@@ -8,6 +8,6 @@
 	PRIMARY KEY (pk_account_id),
 	KEY account_type (fk_account_type_id),
 
-	CONSTRAINT account_type FOREIGN KEY (fk_account_type_id) REFERENCES edusim._account_types(pk_account_type_id)
+	CONSTRAINT account_type FOREIGN KEY (fk_account_type_id) REFERENCES edusim._account_types(pk_account_type_id) ON DELETE CASCADE ON UPDATE NO ACTION
 
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
