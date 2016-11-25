@@ -120,6 +120,8 @@
     <Compile Include="Constants\Roles.cs" />
     <Compile Include="Services\Abstractions\ILookupService.cs" />
     <Compile Include="Services\LookupService.cs" />
+    <Compile Include="Constants\ContentType.cs" />
+    <Compile Include="Constants\Operation.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
