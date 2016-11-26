@@ -1,23 +1,19 @@
 ﻿<Properties StartupConfiguration="{522AF646-4142-4861-B3FF-6625F6FBBE0D}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="EduSim.Core/Contexts/EduSimContext.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="EduSim.Database/Scripts/create_reference_tables.sql">
     <Files>
       <File FileName="EduSim.Database/Program.cs" Line="1" Column="1" />
-      <File FileName="EduSim.Core/Models/ContentTypeOperation.cs" Line="14" Column="3" />
-      <File FileName="EduSim.Core/ModelInterfaces/IContentTypeOperation.cs" Line="9" Column="18" />
-      <File FileName="EduSim.Core/ModelInterfaces/ISchool.cs" Line="1" Column="1" />
-      <File FileName="EduSim.Core/Models/Profile.cs" Line="37" Column="1" />
-      <File FileName="EduSim.Core/Contexts/EduSimContext.cs" Line="17" Column="20" />
+      <File FileName="EduSim.Database/Tables/_permissions.sql" Line="6" Column="33" />
+      <File FileName="EduSim.Database/Scripts/create_reference_tables.sql" Line="6" Column="34" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="EduSim" expanded="True">
-            <Node name="EduSim.Core" expanded="True">
-              <Node name="Contexts" expanded="True">
-                <Node name="EduSimContext.cs" selected="True" />
+            <Node name="EduSim.Database" expanded="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="create_reference_tables.sql" selected="True" />
               </Node>
-              <Node name="ModelInterfaces" expanded="True" />
-              <Node name="Models" expanded="True" />
+              <Node name="Tables" expanded="True" />
             </Node>
           </Node>
         </State>

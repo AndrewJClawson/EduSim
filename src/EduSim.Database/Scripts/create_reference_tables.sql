@@ -3,3 +3,4 @@ source ./Tables/_roles.sql;
 source ./Tables/_content_types.sql;
 source ./Tables/_operations.sql;
 source ./Tables/_content_type_operations.sql;
+source ./Tables/_permissions.sql;
