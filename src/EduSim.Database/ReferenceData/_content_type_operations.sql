@@ -1,0 +1,12 @@
+﻿INSERT INTO _content_type_operations VALUES(1,1,1,"Create Account");
+INSERT INTO _content_type_operations VALUES(2,1,2,"View Account");
+INSERT INTO _content_type_operations VALUES(3,1,3,"Edit Account");
+INSERT INTO _content_type_operations VALUES(4,1,4,"Delete Account");
+INSERT INTO _content_type_operations VALUES(5,2,1,"Create User");
+INSERT INTO _content_type_operations VALUES(6,2,2,"View User");
+INSERT INTO _content_type_operations VALUES(7,2,3,"Edit User");
+INSERT INTO _content_type_operations VALUES(8,2,4,"Delete User");
+INSERT INTO _content_type_operations VALUES(9,3,1,"Create Profile");
+INSERT INTO _content_type_operations VALUES(10,3,2,"View Profile");
+INSERT INTO _content_type_operations VALUES(11,3,3,"Edit Profile");
+INSERT INTO _content_type_operations VALUES(12,3,4,"Delete Profile");
