@@ -1,25 +1,19 @@
 ﻿<Properties StartupConfiguration="{522AF646-4142-4861-B3FF-6625F6FBBE0D}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="EduSim.Core/Models/ContentType.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="EduSim.Core/Services/LookupService.cs">
     <Files>
       <File FileName="EduSim.Database/Program.cs" Line="1" Column="1" />
       <File FileName="EduSim.Core/Models/ProfilePermission.cs" Line="22" Column="53" />
       <File FileName="EduSim.Core/Models/ContentType.cs" Line="4" Column="52" />
+      <File FileName="EduSim.Core/Services/LookupService.cs" Line="51" Column="3" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="EduSim" expanded="True">
             <Node name="EduSim.Core" expanded="True">
-              <Node name="Constants" expanded="True" />
-              <Node name="ModelInterfaces" expanded="True" />
-              <Node name="Models" expanded="True">
-                <Node name="ContentType.cs" selected="True" />
+              <Node name="Services" expanded="True">
+                <Node name="LookupService.cs" selected="True" />
               </Node>
-            </Node>
-            <Node name="EduSim.Database" expanded="True">
-              <Node name="ReferenceData" expanded="True" />
-              <Node name="Scripts" expanded="True" />
-              <Node name="Tables" expanded="True" />
             </Node>
           </Node>
         </State>
