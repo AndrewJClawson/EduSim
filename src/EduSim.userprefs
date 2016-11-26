@@ -1,21 +1,16 @@
 ﻿<Properties StartupConfiguration="{522AF646-4142-4861-B3FF-6625F6FBBE0D}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="EduSim.Database/publish_database.sql">
+  <MonoDevelop.Ide.Workbench ActiveDocument="EduSim.Database/Tables/accounts.sql">
     <Files>
       <File FileName="EduSim.Database/Program.cs" Line="1" Column="1" />
       <File FileName="EduSim.Database/ReferenceData/_operations.sql" Line="4" Column="43" />
-      <File FileName="EduSim.Database/Scripts/create_reference_tables.sql" Line="4" Column="33" />
+      <File FileName="EduSim.Database/Scripts/create_reference_tables.sql" Line="5" Column="46" />
       <File FileName="EduSim.Database/Tables/profiles.sql" Line="19" Column="74" />
-      <File FileName="EduSim.Database/Tables/campuses.sql" Line="1" Column="1" />
+      <File FileName="EduSim.Database/Tables/campuses.sql" Line="15" Column="87" />
       <File FileName="EduSim.Database/Tables/_roles.sql" Line="1" Column="1" />
-      <File FileName="EduSim.Database/Tables/_operations.sql" Line="7" Column="57" />
-      <File FileName="EduSim.Database/Tables/_content_types.sql" Line="1" Column="1" />
-      <File FileName="EduSim.Database/Tables/_account_types.sql" Line="1" Column="1" />
-      <File FileName="EduSim.Database/Tables/schools.sql" Line="1" Column="1" />
-      <File FileName="EduSim.Database/Scripts/delete_application_database.sql" Line="1" Column="1" />
-      <File FileName="EduSim.Database/Scripts/integration_test_data.sql" Line="6" Column="66" />
-      <File FileName="EduSim.Database/Scripts/initial_develop_data.sql" Line="6" Column="66" />
-      <File FileName="EduSim.Database/Scripts/populate_reference_data.sql" Line="4" Column="40" />
-      <File FileName="EduSim.Database/publish_database.sql" Line="24" Column="42" />
+      <File FileName="EduSim.Database/Tables/_content_types.sql" Line="7" Column="57" />
+      <File FileName="EduSim.Database/Tables/_content_type_operations.sql" Line="7" Column="41" />
+      <File FileName="EduSim.Database/publish_database.sql" Line="16" Column="41" />
+      <File FileName="EduSim.Database/Tables/accounts.sql" Line="11" Column="149" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -24,8 +19,9 @@
             <Node name="EduSim.Database" expanded="True">
               <Node name="ReferenceData" expanded="True" />
               <Node name="Scripts" expanded="True" />
-              <Node name="Tables" expanded="True" />
-              <Node name="publish_database.sql" selected="True" />
+              <Node name="Tables" expanded="True">
+                <Node name="accounts.sql" selected="True" />
+              </Node>
             </Node>
           </Node>
         </State>

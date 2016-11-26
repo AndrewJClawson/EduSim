@@ -77,6 +77,7 @@
     <None Include="Tables\_operations.sql" />
     <None Include="ReferenceData\_content_types.sql" />
     <None Include="ReferenceData\_operations.sql" />
+    <None Include="Tables\_content_type_operations.sql" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Classes\" />
