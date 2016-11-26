@@ -1,23 +1,20 @@
 ﻿<Properties StartupConfiguration="{522AF646-4142-4861-B3FF-6625F6FBBE0D}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="EduSim.Database/Scripts/populate_reference_data.sql">
+  <MonoDevelop.Ide.Workbench ActiveDocument="EduSim.Database/ReferenceData/_permissions.sql">
     <Files>
       <File FileName="EduSim.Database/Program.cs" Line="1" Column="1" />
-      <File FileName="EduSim.Database/Tables/_permissions.sql" Line="6" Column="33" />
-      <File FileName="EduSim.Database/Scripts/create_reference_tables.sql" Line="6" Column="34" />
-      <File FileName="EduSim.Database/ReferenceData/_permissions.sql" Line="14" Column="65" />
-      <File FileName="EduSim.Database/ReferenceData/_content_type_operations.sql" Line="12" Column="70" />
-      <File FileName="EduSim.Database/Scripts/populate_reference_data.sql" Line="6" Column="40" />
+      <File FileName="EduSim.Core/Constants/Permission.cs" Line="65" Column="76" />
+      <File FileName="EduSim.Core/Constants/ContentType.cs" Line="18" Column="62" />
+      <File FileName="EduSim.Database/ReferenceData/_permissions.sql" Line="2" Column="51" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="EduSim" expanded="True">
+            <Node name="EduSim.Core" expanded="True" />
             <Node name="EduSim.Database" expanded="True">
-              <Node name="ReferenceData" expanded="True" />
-              <Node name="Scripts" expanded="True">
-                <Node name="populate_reference_data.sql" selected="True" />
+              <Node name="ReferenceData" expanded="True">
+                <Node name="_permissions.sql" selected="True" />
               </Node>
-              <Node name="Tables" expanded="True" />
             </Node>
           </Node>
         </State>
