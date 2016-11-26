@@ -1,26 +1,19 @@
 ﻿<Properties StartupConfiguration="{522AF646-4142-4861-B3FF-6625F6FBBE0D}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="EduSim.Core/Models/ProfilePermission.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="EduSim.Core/Models/ContentType.cs">
     <Files>
       <File FileName="EduSim.Database/Program.cs" Line="1" Column="1" />
-      <File FileName="EduSim.Core/Constants/Permission.cs" Line="65" Column="76" />
-      <File FileName="EduSim.Core/Constants/ContentType.cs" Line="18" Column="62" />
-      <File FileName="EduSim.Core/ModelInterfaces/IPermission.cs" Line="8" Column="28" />
-      <File FileName="EduSim.Core/Models/Permission.cs" Line="11" Column="60" />
-      <File FileName="EduSim.Core/Models/Profile.cs" Line="34" Column="35" />
-      <File FileName="EduSim.Database/Tables/profile_permissions.sql" Line="7" Column="44" />
-      <File FileName="EduSim.Database/Tables/_permissions.sql" Line="5" Column="18" />
-      <File FileName="EduSim.Database/Scripts/create_application_tables.sql" Line="10" Column="8" />
-      <File FileName="EduSim.Core/Models/ProfilePermission.cs" Line="6" Column="32" />
-      <File FileName="EduSim.Core/ModelInterfaces/IProfilePermission.cs" Line="8" Column="32" />
+      <File FileName="EduSim.Core/Models/ProfilePermission.cs" Line="22" Column="53" />
+      <File FileName="EduSim.Core/Models/ContentType.cs" Line="4" Column="52" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="EduSim" expanded="True">
             <Node name="EduSim.Core" expanded="True">
+              <Node name="Constants" expanded="True" />
               <Node name="ModelInterfaces" expanded="True" />
               <Node name="Models" expanded="True">
-                <Node name="ProfilePermission.cs" selected="True" />
+                <Node name="ContentType.cs" selected="True" />
               </Node>
             </Node>
             <Node name="EduSim.Database" expanded="True">
