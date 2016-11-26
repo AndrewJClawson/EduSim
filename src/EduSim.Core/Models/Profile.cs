@@ -31,6 +31,7 @@ namespace EduSim.Core.Models
 		[Column("last_name")]
 		public string LastName { get; set; }
 
+		public virtual ICollection<ProfilePermission> Permissions { get; set; }
 		public virtual Account Account { get; set; }
 		public virtual School School { get; set; }
 

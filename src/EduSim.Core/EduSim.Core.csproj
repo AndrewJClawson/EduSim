@@ -129,6 +129,10 @@
     <Compile Include="Models\ContentTypeOperation.cs" />
     <Compile Include="ModelInterfaces\IContentTypeOperation.cs" />
     <Compile Include="Constants\Permission.cs" />
+    <Compile Include="ModelInterfaces\IPermission.cs" />
+    <Compile Include="Models\Permission.cs" />
+    <Compile Include="Models\ProfilePermission.cs" />
+    <Compile Include="ModelInterfaces\IProfilePermission.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
