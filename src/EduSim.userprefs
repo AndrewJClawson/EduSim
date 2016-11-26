@@ -1,19 +1,34 @@
-﻿<Properties StartupConfiguration="{522AF646-4142-4861-B3FF-6625F6FBBE0D}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="EduSim.Core/Services/LookupService.cs">
+﻿<Properties StartupConfiguration="{20FA62A5-8D4B-42DE-BB17-D1A2853C61DE}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="EduSim.Core/Constants/Permission.cs">
     <Files>
-      <File FileName="EduSim.Database/Program.cs" Line="1" Column="1" />
-      <File FileName="EduSim.Core/Models/ProfilePermission.cs" Line="22" Column="53" />
+      <File FileName="EduSim.Core/Models/ProfilePermission.cs" Line="1" Column="1" />
       <File FileName="EduSim.Core/Models/ContentType.cs" Line="4" Column="52" />
-      <File FileName="EduSim.Core/Services/LookupService.cs" Line="51" Column="3" />
+      <File FileName="EduSim.Core/Services/LookupService.cs" Line="15" Column="58" />
+      <File FileName="EduSim.Sandbox/Program.cs" Line="26" Column="38" />
+      <File FileName="EduSim.Core/Services/ProfileService.cs" Line="17" Column="25" />
+      <File FileName="EduSim.Core/Contexts/EduSimContext.cs" Line="21" Column="66" />
+      <File FileName="EduSim.Core/ModelInterfaces/IContentTypeOperation.cs" Line="2" Column="19" />
+      <File FileName="EduSim.Core/UnityConfig.cs" Line="7" Column="28" />
+      <File FileName="EduSim.Core/Constants/Permission.cs" Line="65" Column="76" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="EduSim" expanded="True">
             <Node name="EduSim.Core" expanded="True">
-              <Node name="Services" expanded="True">
-                <Node name="LookupService.cs" selected="True" />
+              <Node name="Constants" expanded="True">
+                <Node name="Permission.cs" selected="True" />
               </Node>
+              <Node name="Contexts" expanded="True" />
+              <Node name="ModelInterfaces" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Repository" expanded="True" />
+              <Node name="Services" expanded="True" />
+            </Node>
+            <Node name="EduSim.Database" expanded="True" />
+            <Node name="EduSim.Sandbox" expanded="True" />
+            <Node name="EduSim.Web" expanded="True">
+              <Node name="App_Start" expanded="True" />
             </Node>
           </Node>
         </State>

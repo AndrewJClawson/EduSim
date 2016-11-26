@@ -22,3 +22,6 @@
 /Volumes/Storage/Development/EduSim/src/EduSim.Core/bin/Debug/Microsoft.Owin.dll
 /Volumes/Storage/Development/EduSim/src/EduSim.Core/bin/Debug/Microsoft.Owin.Host.SystemWeb.dll
 /Volumes/Storage/Development/EduSim/src/EduSim.Core/bin/Debug/Microsoft.Practices.ServiceLocation.dll
+/Volumes/Storage/Development/EduSim/src/EduSim.Core/bin/Debug/Microsoft.Practices.Unity.Configuration.dll
+/Volumes/Storage/Development/EduSim/src/EduSim.Core/bin/Debug/Microsoft.Practices.Unity.dll
+/Volumes/Storage/Development/EduSim/src/EduSim.Core/bin/Debug/Microsoft.Practices.Unity.RegistrationByConvention.dll

@@ -12,14 +12,20 @@ namespace EduSim.Core.Services
 	{
 		IRepository<AccountType> _accountTypeRepository;
 		IRepository<Role> _roleRepository;
+		IRepository<Models.ContentType> _contentTypeRepository;
+		IRepository<Models.ProfilePermission> _profilePermissionRepository;
 
 		public LookupService(
-			IRepository<AccountType> accountTypeRepository,
-			IRepository<Role> roleRepository
+			//IRepository<AccountType> accountTypeRepository,
+			//IRepository<Role> roleRepository,
+			//IRepository<Models.ContentType> contentTypeRepository,
+			//IRepository<Models.ProfilePermission> profilePermissionRepository
 		)
 		{
-			this._accountTypeRepository = accountTypeRepository;
-			this._roleRepository = roleRepository;
+			this._accountTypeRepository = new Repository<AccountType>();
+			this._roleRepository = new Repository<Role>();
+			this._contentTypeRepository = new Repository<Models.ContentType>();
+			this._profilePermissionRepository = new Repository<Models.ProfilePermission>();
 		}
 
 		public List<Models.AccountType> GetAccountTypes()
@@ -46,6 +52,14 @@ namespace EduSim.Core.Services
 			var role = _roleRepository.GetAll()
 			                          .Where(r => r.Name == rolename).ToList().FirstOrDefault();
 			return role;
+		}
+
+		public ProfilePermission GetPermission(string name)
+		{
+			var permission = _profilePermissionRepository.GetAll()
+														 .Where(p => p.Permission.Name == name)
+			                                             .FirstOrDefault();
+			return permission;
 		}
 	}
 }

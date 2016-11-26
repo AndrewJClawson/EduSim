@@ -13,10 +13,12 @@ namespace EduSim.Core.Services
 	public class ProfileService : IProfileService
 	{
 		private readonly Repository<Profile> _profileRepository;
+		private readonly Repository<ProfilePermission> _profilePermissionRepository;
 
 		public ProfileService()
 		{
 			_profileRepository = new Repository<Profile>();
+			_profilePermissionRepository = new Repository<ProfilePermission>();
 		}
 
 		public void Add(Profile profile)

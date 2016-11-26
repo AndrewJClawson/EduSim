@@ -1,5 +1,5 @@
 ﻿using System;
-using EduSim.Models;
+using EduSim.Core.Models;
 namespace EduSim.Core.ModelInterfaces
 {
 	public class IContentTypeOperation
