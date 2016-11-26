@@ -80,6 +80,7 @@
     <None Include="Tables\_content_type_operations.sql" />
     <None Include="ReferenceData\_content_type_operations.sql" />
     <None Include="Tables\_permissions.sql" />
+    <None Include="ReferenceData\_permissions.sql" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Classes\" />
