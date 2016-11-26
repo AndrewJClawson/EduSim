@@ -12,12 +12,16 @@ namespace EduSim.Core.Contexts
 	[DbConfigurationType(typeof(MySql.Data.Entity.MySqlEFConfiguration))]
 	public partial class EduSimContext : DbContext, IEduSimContext
 	{
+		// Look up models
 		public DbSet<AccountType> AccountTypes { get; set; }
 		public DbSet<ContentType> ContentTypes { get; set; }
 		public DbSet<Operation> Operations { get; set; }
+		public DbSet<ContentTypeOperation> ContentTypeOperations { get; set; }
+
 		public DbSet<Role> Roles { get; set; }
+
+		// Application API models
 		public DbSet<Account> Accounts { get; set; }
-		//public DbSet<IdentityUser> IdentityUsers { get; set; }
 		public DbSet<Profile> Profiles { get; set;}
 		public DbSet<School> Schools { get; set; }
 
@@ -31,11 +35,6 @@ namespace EduSim.Core.Contexts
 		protected override void OnModelCreating(System.Data.Entity.DbModelBuilder modelBuilder)
 		{
 			base.OnModelCreating(modelBuilder);
-			//modelBuilder.Entity<Profile>()
-			//            .HasMany<Role>(p => p.Roles)
-
-
-
 
 		} 
 	}
