@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.Http;
+using System.Web.Mvc;
 //using EduSim.Core.Models;
 using EduSim.Core.ModelInterfaces;
 using EduSim.Web.ViewModels;
@@ -21,13 +23,13 @@ namespace EduSim.Web.Controllers
 {
     public class AccountController : Controller
     {
-		//IProfileService _profileService;
+		IProfileService _profileService;
 		//private ApplicationSignInManager _signInManager;
 		//private ApplicationUserManager _userManager;
 
 		public AccountController(IProfileService profileService)
 		{
-			//_profileService = profileService;
+			_profileService = profileService;
 		}
 
         public ActionResult Index()
@@ -35,38 +37,6 @@ namespace EduSim.Web.Controllers
 			//var loginModel = new LoginViewModel();
 			return View("Login");
         }
-
-		//[HttpPost]
-		//public JsonResult Authenticate(string email, string password)
-		//{
-		//	bool success = false;
-		//	string message = string.Empty;
-		//	string url = string.Empty;
-
-		//	try
-		//	{
-		//		success = _userService.Authenticate(email,password);
-		//		if (success)
-		//		{
-		//			IUser user = _userService.GetByCredentials(email, password);
-		//			//sHttpContext.User = (System.Security.Principal.)user;
-		//			UrlHelper u = new UrlHelper(this.ControllerContext.RequestContext);
-		//			url = u.Action("Dashboard", "Account");
-		//		}
-		//		else
-		//		{
-		//			message = "User not authenticated.";
-		//		}
-
-		//	}
-		//	catch (Exception e)
-		//	{
-		//		message = e.GetBaseException().Message;
-		//		success = false;
-		//	}
-		//	var result = new { Success = success, Message = message, Url = url };
-		//	return Json(result, JsonRequestBehavior.AllowGet);
-		//}
 
 		public async Task<ActionResult> Dashboard(LoginViewModel viewModel)
 		{
@@ -81,9 +51,16 @@ namespace EduSim.Web.Controllers
 
 			if (myUser == null)
 			{
+				
 				return View("Login");//ViewBag["Errors"] = result.Result.Errors.First();
 			}
-			return View("~/Views/Home/Dashboard.cshtml");
+			else{
+				var profile = _profileService.GetForUser(myUser.Id);
+				System.Web.HttpContext.Current.Session["CurrentUser"] = myUser;
+
+				return View("~/Views/Home/Dashboard.cshtml");
+			}
+
 		}
 
 

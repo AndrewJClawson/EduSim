@@ -1,6 +1,7 @@
 ﻿using System;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
+using System.Web;
 using System.ComponentModel.DataAnnotations.Schema;
 using EduSim.Core;
 using EduSim.Core.Contexts;
@@ -13,8 +14,14 @@ namespace EduSim.Web.Models
 	public class ApplicationUser : IdentityUser
 	{
 		
-		public ApplicationUser()
+		public static ApplicationUser Current
 		{
+			get
+			{
+				var user = HttpContext.Current.Session["CurrentUser"] as ApplicationUser;
+				return user;
+			}
+
 		}
 	}
 

@@ -1,4 +1,11 @@
 ﻿<!DOCTYPE html>
+@using EduSim.Core.Models
+@using EduSim.Web.Models
+@using System.Web
+
+@{
+	var CurrentUser = EduSim.Web.Models.ApplicationUser.Current;
+}
 <html>
 <head>
     <title>@ViewBag.Title</title>
@@ -45,8 +52,9 @@
         <li><a href="#">Instructor</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
+		<li><a class="navbar-brand">@CurrentUser.UserName</a></li>
         <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-out"></span>Logout</a></li>
       </ul>
     </div>
   </div>
