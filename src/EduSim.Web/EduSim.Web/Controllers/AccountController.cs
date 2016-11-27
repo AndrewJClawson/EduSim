@@ -57,10 +57,16 @@ namespace EduSim.Web.Controllers
 			else{
 				var profile = _profileService.GetForUser(myUser.Id);
 				System.Web.HttpContext.Current.Session["CurrentUser"] = myUser;
-
+				System.Web.HttpContext.Current.Session["CurrentProfile"] = profile;
 				return View("~/Views/Home/Dashboard.cshtml");
 			}
 
+		}
+
+		public ActionResult Logout()
+		{
+			System.Web.HttpContext.Current.Session["CurrentUser"] = null;
+			return RedirectToAction("Index");
 		}
 
 

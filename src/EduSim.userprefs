@@ -1,10 +1,12 @@
 ﻿<Properties StartupConfiguration="{862C8A85-3708-4C3E-917C-340AC9BBFB85}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="EduSim.Web/EduSim.Web/Models/IdentityModels.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="EduSim.Web/EduSim.Web/App_Start/RouteConfig.cs">
     <Files>
       <File FileName="EduSim.Web/EduSim.Web/Controllers/SystemAdminController.cs" Line="40" Column="57" />
-      <File FileName="EduSim.Web/EduSim.Web/Controllers/AccountController.cs" Line="58" Column="24" />
-      <File FileName="EduSim.Web/EduSim.Web/Views/Shared/_Layout.cshtml" Line="15" Column="47" />
-      <File FileName="EduSim.Web/EduSim.Web/Models/IdentityModels.cs" Line="54" Column="7" />
+      <File FileName="EduSim.Web/EduSim.Web/Controllers/AccountController.cs" Line="69" Column="25" />
+      <File FileName="EduSim.Web/EduSim.Web/Views/Shared/_Layout.cshtml" Line="58" Column="109" />
+      <File FileName="EduSim.Web/EduSim.Web/Models/IdentityModels.cs" Line="24" Column="4" />
+      <File FileName="EduSim.Web/EduSim.Web/Views/Home/Index.cshtml" Line="1" Column="1" />
+      <File FileName="EduSim.Web/EduSim.Web/App_Start/RouteConfig.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -13,11 +15,10 @@
             <Node name="EduSim.Core" expanded="True" />
             <Node name="EduSim.Sandbox" expanded="True" />
             <Node name="EduSim.Web" expanded="True">
-              <Node name="App_Start" expanded="True" />
-              <Node name="Controllers" expanded="True" />
-              <Node name="Models" expanded="True">
-                <Node name="IdentityModels.cs" selected="True" />
+              <Node name="App_Start" expanded="True">
+                <Node name="RouteConfig.cs" selected="True" />
               </Node>
+              <Node name="Models" expanded="True" />
               <Node name="ViewModels" expanded="True" />
               <Node name="Views" expanded="True">
                 <Node name="Home" expanded="True" />
@@ -34,7 +35,6 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Volumes/Storage/Development/EduSim/src/EduSim.Sandbox/Program.cs" line="26" column="1" />
-      <Breakpoint file="/Volumes/Storage/Development/EduSim/src/EduSim.Web/EduSim.Web/Controllers/AccountController.cs" line="60" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

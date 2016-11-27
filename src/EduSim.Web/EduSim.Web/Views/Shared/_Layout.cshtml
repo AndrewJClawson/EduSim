@@ -54,7 +54,8 @@
       <ul class="nav navbar-nav navbar-right">
 		<li><a class="navbar-brand">@CurrentUser.UserName</a></li>
         <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-log-out"></span>Logout</a></li>
+		<li><a href='@Url.Action("Logout","Account")'><span class="glyphicon glyphicon-log-out"></span>Log out</a></li>
+        
       </ul>
     </div>
   </div>
