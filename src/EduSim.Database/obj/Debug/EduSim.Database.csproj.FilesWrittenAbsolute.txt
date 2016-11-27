@@ -1,0 +1,5 @@
+/Volumes/Storage/Development/EduSim/src/EduSim.Database/obj/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/Volumes/Storage/Development/EduSim/src/EduSim.Database/bin/Debug/EduSim.Database.exe.mdb
+/Volumes/Storage/Development/EduSim/src/EduSim.Database/bin/Debug/EduSim.Database.exe
+/Volumes/Storage/Development/EduSim/src/EduSim.Database/obj/Debug/EduSim.Database.exe
+/Volumes/Storage/Development/EduSim/src/EduSim.Database/obj/Debug/EduSim.Database.exe.mdb

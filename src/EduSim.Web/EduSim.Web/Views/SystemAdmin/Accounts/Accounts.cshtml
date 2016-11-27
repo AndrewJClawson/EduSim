@@ -1,5 +1,7 @@
-﻿@{
-    Layout = null;
+﻿@model EduSim.Web.ViewModels.SystemAccountsViewModel
+@{
+	ViewBag.Title = "Accounts";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <!DOCTYPE html>
@@ -8,6 +10,23 @@
     <title>Accounts</title>
 </head>
 <body>
+	<h2>@ViewBag.Title</h2>
+	<div class="row">
+		<div class="col-md-6">
+			<h3>Accounts</h3>
+			<div class="form-group">
+			@Html.LabelFor(m => m.AccountList,"Accounts: ")
+			@Html.DropDownListFor(m => m.SelectedAccountId, Model.AccountDropDown,"Select an account...")
+			</div>
+
+
+		</div>
+			
+		<div class="col-md-6">
+			<h3>Details</h3>
+		</div>
+
+	</div>
+
 </body>
 </html>
-

@@ -138,6 +138,7 @@
     <Folder Include="Views\SystemAdmin\Roles\" />
     <Folder Include="ViewModels\" />
     <Folder Include="Views\SystemAdmin\Users\" />
+    <Folder Include="Views\SystemAdmin\Accounts\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\HomeController.cs" />
@@ -160,6 +161,8 @@
     <Compile Include="ViewModels\LoginViewModel.cs" />
     <Compile Include="ViewModels\SystemRolesViewModel.cs" />
     <Compile Include="ViewModels\DashboardViewModel.cs" />
+    <Compile Include="ViewModels\SystemAccountsViewModel.cs" />
+    <Compile Include="App_Start\BundleConfig.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Web.config" />
@@ -1741,6 +1744,7 @@
     <Content Include="Content\kendo\2016.3.1118-source\mobile\android\actionsheet.less" />
     <Content Include="Content\kendo\2016.3.1118-source\gulpfile.js" />
     <Content Include="Content\kendo\2016.3.1118-source\common\transitions.less" />
+    <Content Include="Views\SystemAdmin\Accounts\Accounts.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Content\bootstrap-theme.css.map" />

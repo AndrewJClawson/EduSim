@@ -22,9 +22,11 @@ namespace EduSim.Web.Controllers
     public class SystemAdminController : Controller
     {
 		private ILookupService _lookupService;
-		public SystemAdminController(ILookupService lookupService)
+		private IAccountService _accountService;
+		public SystemAdminController(ILookupService lookupService, IAccountService accountService)
 		{
 			_lookupService = lookupService;
+			_accountService = accountService;
 		}
 
         public ActionResult Roles()
@@ -38,6 +40,14 @@ namespace EduSim.Web.Controllers
 		public ActionResult Users()
 		{
 			return View("/Views/SystemAdmin/Users/Users.cshtml");
+		}
+
+		public ActionResult Accounts()
+		{
+			SystemAccountsViewModel viewModel = new SystemAccountsViewModel();
+			viewModel.AccountList = _accountService.GetAll();
+			//viewModel.SetUIComponents();
+			return View("/Views/SystemAdmin/Accounts/Accounts.cshtml", viewModel);
 		}
     }
 }
