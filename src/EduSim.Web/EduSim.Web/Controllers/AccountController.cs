@@ -73,18 +73,12 @@ namespace EduSim.Web.Controllers
 			return RedirectToAction("Index");
 		}
 
-		public ActionResult LoadDetailsPartial(int accountId)
+		public ActionResult Details(int accountId)
 		{
-			var account = _accountService.GetById(accountId);
-			if(account != null)
-			{
-				AccountDetailsViewModel viewModel = new AccountDetailsViewModel();
-				viewModel.AccountId = accountId;
-				viewModel.Account = account;
-				viewModel.AccountTypeList = _lookupService.GetAccountTypes();
-			}
+			AccountDetailsViewModel viewModel = ViewModelFactory.CreateAccountDetailsViewModel(
+				_accountService, _lookupService, accountId); 
 
-			return PartialView();
+			return PartialView("/Views/Account/_AccountDetailsPartial.cshtml", viewModel);
 		}
 
     }

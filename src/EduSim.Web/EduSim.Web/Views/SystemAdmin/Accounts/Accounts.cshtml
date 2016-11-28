@@ -12,20 +12,32 @@
 <body>
 	<h2>@ViewBag.Title</h2>
 	<div class="row">
-		<div class="col-md-6">
+		<div class="col-md-4">
 			<h3>Accounts</h3>
 			<div class="form-group">
 			@*@Html.LabelFor(m => m.AccountList,"Accounts: ")*@
 			<button class="btn btn-primary">Create new account <span class="glyphicon glyphicon-plus"></span></button> <br /> <br/>
 			@Html.DropDownListFor(m => m.SelectedAccountId, Model.AccountDropDown,"Select an account...")
-
 			</div>
+			<br /> <br />
+
+			<div class="dropdown">
+				  <button class="btn btn-default dropdown-toggle" type="button" id="account-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+				    Account Options
+				    <span class="caret"></span>
+				  </button>
+				  <ul class="dropdown-menu" aria-labelledby="account-options">
+				    <li><a href="#">Details</a></li>
+				    <li><a href="#">Schools</a></li>
+				    <li><a href="#">Users</a></li>
+
+				  </ul>
+			</div>
+			
 		</div>
-		<div class="col-md-6">
-			<h3>Details</h3>
-			<div id="account-details-div">
 
-			</div>
+		<div class="col-md-8" id="account-details-div">
+			
 		</div>
 	</div>
 </body>
@@ -33,6 +45,16 @@
 
 <script>
 	$(document).ready(function() {
-		
-	});s
+		$("#SelectedAccountId").change(function(){
+			var _accountId = $("#SelectedAccountId").val();
+			$.ajax({
+				type:"POST",
+				url: '@Url.Action("Details","Account")',
+				data: {accountId:_accountId},
+				success: function(result) {
+					$("#account-details-div").html(result);
+				}
+			});
+		});
+	});
 </script>
