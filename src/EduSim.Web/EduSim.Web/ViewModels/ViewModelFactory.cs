@@ -15,17 +15,27 @@ namespace EduSim.Web.ViewModels
 			return systemAccountsVM;
 		}
 
-		public static AccountDetailsViewModel CreateAccountDetailsViewModel(IAccountService accountService, ILookupService lookupService, int accountId)
+		public static AccountDetailsViewModel CreateAccountDetailsViewModel(IAccountService accountService, ILookupService lookupService, int? accountId)
 		{
 			AccountDetailsViewModel accountDetailsVM = new AccountDetailsViewModel();
-			if (accountId != 0)
+			if (accountId != null)
 			{
-				
+
 				accountDetailsVM.AccountId = accountId;
-				accountDetailsVM.Account = accountService.GetById(accountId);
+				accountDetailsVM.Account = accountService.GetById((int)accountId);
 
 
 			}
+			else
+			{
+				accountDetailsVM.AccountId = EduSim.Core.Constants.Account.NewAccount.Id;
+				accountDetailsVM.Account = new EduSim.Core.Models.Account()
+				{
+					AccountName = string.Empty,
+
+				};
+			}
+
 			accountDetailsVM.AccountTypeList = lookupService.GetAccountTypes();
 
 			return accountDetailsVM;

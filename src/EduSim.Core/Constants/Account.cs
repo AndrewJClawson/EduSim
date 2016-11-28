@@ -1,7 +1,6 @@
 ﻿using System;
-using EduSim.Core.Constants;
 
-namespace EduSim.Core.Contants
+namespace EduSim.Core.Constants
 {
 	public class Account
 	{
