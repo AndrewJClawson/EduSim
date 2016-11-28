@@ -8,7 +8,8 @@ namespace EduSim.Web.ViewModels
 {
 	public class AccountDetailsViewModel
 	{
-		public int AccountId { get; set; }
+		public int? AccountId { get; set; }
+		public int? AccountTypeId { get; set;}
 		public Account Account { get; set; }
 		public List<AccountType> AccountTypeList { get; set; }
 

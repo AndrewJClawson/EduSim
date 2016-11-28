@@ -1,31 +1,35 @@
 ﻿<Properties StartupConfiguration="{862C8A85-3708-4C3E-917C-340AC9BBFB85}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="EduSim.Web/EduSim.Web/ViewModels/AccountDetailsViewModel.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="EduSim.Web/EduSim.Web/Views/SystemAdmin/Accounts/Accounts.cshtml">
     <Files>
-      <File FileName="EduSim.Web/EduSim.Web/Controllers/SystemAdminController.cs" Line="49" Column="6" />
-      <File FileName="EduSim.Web/EduSim.Web/Controllers/AccountController.cs" Line="72" Column="23" />
-      <File FileName="EduSim.Web/EduSim.Web/Views/Shared/_Layout.cshtml" Line="25" Column="36" />
-      <File FileName="EduSim.Web/EduSim.Web/Models/IdentityModels.cs" Line="24" Column="4" />
-      <File FileName="EduSim.Web/EduSim.Web/Views/SystemAdmin/Accounts/Accounts.cshtml" Line="36" Column="3" />
-      <File FileName="EduSim.Web/EduSim.Web/ViewModels/SystemAccountsViewModel.cs" Line="20" Column="3" />
-      <File FileName="EduSim.Web/EduSim.Web/Views/SystemAdmin/Accounts/_AccountDetailsPartial.cshtml" Line="1" Column="53" />
-      <File FileName="EduSim.Web/EduSim.Web/ViewModels/AccountDetailsViewModel.cs" Line="2" Column="32" />
+      <File FileName="EduSim.Web/EduSim.Web/Controllers/SystemAdminController.cs" Line="50" Column="51" />
+      <File FileName="EduSim.Web/EduSim.Web/Controllers/AccountController.cs" Line="87" Column="69" />
+      <File FileName="EduSim.Web/EduSim.Web/Views/SystemAdmin/Accounts/Accounts.cshtml" Line="50" Column="98" />
+      <File FileName="EduSim.Web/EduSim.Web/ViewModels/AccountDetailsViewModel.cs" Line="13" Column="56" />
+      <File FileName="EduSim.Web/EduSim.Web/ViewModels/ViewModelFactory.cs" Line="18" Column="64" />
+      <File FileName="EduSim.Core/Constants/Account.cs" Line="10" Column="61" />
+      <File FileName="EduSim.Web/EduSim.Web/Views/Account/Login.cshtml" Line="89" Column="7" />
+      <File FileName="EduSim.Web/EduSim.Web/Views/Account/_AccountDetailsPartial.cshtml" Line="3" Column="24" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="EduSim" expanded="True">
+            <Node name="EduSim.Core" expanded="True">
+              <Node name="Constants" expanded="True" />
+            </Node>
             <Node name="EduSim.Sandbox" expanded="True" />
             <Node name="EduSim.Web" expanded="True">
-              <Node name="App_Start" expanded="True" />
               <Node name="Controllers" expanded="True" />
               <Node name="Models" expanded="True" />
-              <Node name="ViewModels" expanded="True">
-                <Node name="AccountDetailsViewModel.cs" selected="True" />
-              </Node>
+              <Node name="ViewModels" expanded="True" />
               <Node name="Views" expanded="True">
+                <Node name="Account" expanded="True" />
+                <Node name="Home" expanded="True" />
                 <Node name="Shared" expanded="True" />
                 <Node name="SystemAdmin" expanded="True">
-                  <Node name="Accounts" expanded="True" />
+                  <Node name="Accounts" expanded="True">
+                    <Node name="Accounts.cshtml" selected="True" />
+                  </Node>
                 </Node>
               </Node>
             </Node>

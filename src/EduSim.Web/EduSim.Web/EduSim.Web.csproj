@@ -164,6 +164,7 @@
     <Compile Include="ViewModels\SystemAccountsViewModel.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="ViewModels\AccountDetailsViewModel.cs" />
+    <Compile Include="ViewModels\ViewModelFactory.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Web.config" />
@@ -1746,7 +1747,7 @@
     <Content Include="Content\kendo\2016.3.1118-source\gulpfile.js" />
     <Content Include="Content\kendo\2016.3.1118-source\common\transitions.less" />
     <Content Include="Views\SystemAdmin\Accounts\Accounts.cshtml" />
-    <Content Include="Views\SystemAdmin\Accounts\_AccountDetailsPartial.cshtml" />
+    <Content Include="Views\Account\_AccountDetailsPartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Content\bootstrap-theme.css.map" />

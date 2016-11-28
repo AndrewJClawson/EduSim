@@ -143,6 +143,7 @@
     <Compile Include="Models\ProfilePermission.cs" />
     <Compile Include="ModelInterfaces\IProfilePermission.cs" />
     <Compile Include="UnityConfig.cs" />
+    <Compile Include="Constants\Account.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

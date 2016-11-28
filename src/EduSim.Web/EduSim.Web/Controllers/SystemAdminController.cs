@@ -44,9 +44,9 @@ namespace EduSim.Web.Controllers
 
 		public ActionResult Accounts()
 		{
-			SystemAccountsViewModel viewModel = new SystemAccountsViewModel();
-			viewModel.AccountList = _accountService.GetAll();
-			//viewModel.SetUIComponents();
+			SystemAccountsViewModel viewModel
+				= ViewModelFactory.CreateSystemAccountsListViewModel(_accountService);
+
 			return View("/Views/SystemAdmin/Accounts/Accounts.cshtml", viewModel);
 		}
     }
