@@ -28,14 +28,17 @@
 		<li class="list-group-item col-md-8"><a class="btn btn-primary">Add new school to this account  <span class="glyphicon glyphicon-plus"></span></a></li>
 		@foreach(var school in Model.Account.Schools)
 		{
-			<li class="list-group-item col-md-8">@school.SchoolName  <button class="btn btn-success pull-right">School Details</button> <button class="btn btn-danger pull-right">Delete</button></li>
+			<li class="list-group-item col-md-8">@school.SchoolName  <button class="btn btn-success">School Details</button> <button class="btn btn-danger pull-right">Delete</button></li>
 		}
 	</ul>
 </div>
 }
 
 <script>
-	$("#save-account-details-button").click(function(){
-		$("#account-detail-form").submit();
+	$(documnent).ready(function(){
+		$("#save-account-details-button").click(function(){
+			$("#account-detail-form").submit();
+		});
 	});
+
 </script>
