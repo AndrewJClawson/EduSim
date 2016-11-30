@@ -22,12 +22,12 @@
 	@Styles.Render("~/Content/bootstrap-theme.min.css")
 	@Styles.Render("~/Content/bootstrap-theme.min.css.map")
 	@Styles.Render("~/Content/App.css")
-	@Scripts.Render("~/bundles/kendo")
+
 
 </head>
 <body>
 	<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
+  
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
         <span class="icon-bar"></span>
@@ -38,8 +38,10 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        
-        <li class="dropdown">
+        <li class="dropdown"><a class="dropdown-toggle" role="button" id="system-admin">System Admin</a></li>
+		<li class="drowpdown"><a class="dropdown-toggle" role="button" id="account-admin">Account Admin</a></li>
+		<li class="dropdown"><a class="dropdown-toggle" role="button" id="instructor">Instructor</a></li>
+        <!--<li class="dropdown">
           <a id="system-admin-dropdown" class="dropdown-toggle" data-toggle="dropdown" href="#" role="button">System Admin<span class="caret"></span></a>
           <ul class="dropdown-menu">
 			<li>@Html.ActionLink("Accounts","Accounts","SystemAdmin")</li>
@@ -48,10 +50,9 @@
             <li><a class="btn">System Permissions</a></li>
 			
           </ul>
-        </li>
+        </li>-->
 						
-        <li><a href="#">Account Admin</a></li>
-        <li><a href="#">Instructor</a></li>
+        
       </ul>
       <ul class="nav navbar-nav navbar-right">
 		<li><a class="navbar-brand">@CurrentUser.UserName</a></li>
@@ -60,10 +61,17 @@
         
       </ul>
     </div>
-  </div>
+
+	<div class="collapse navbar-collapse nav option-bar" id="dashboard-option-bar">
+		<ul class="nav navbar-nav" id="option-bar-items">
+			<li></li>
+		</ul>
+	</div>
+  
 </nav>
 
 	<div class="container body-content">
+		
 		@RenderBody()
 	</div>
 
@@ -72,7 +80,35 @@
 
 <script>
 	$(document).ready(function(){
-		$(".dropdown-toggle").dropdown();
+		$("#system-admin").click(function(){
+			$.ajax({
+				url:'@Url.Action("SystemAdmin","Menu")',
+				type:"POST",
+				success:function(result){
+					$("#option-bar-items").html(result);
+				}
+			});
+		});
+
+		$("#account-admin").click(function(){
+			$.ajax({
+				url:'@Url.Action("AccountAdmin","Menu")',
+				type:"POST",
+				success: function(result){
+					$("#option-bar-items").html(result);
+				}
+			});
+		});
+
+		$("#instructor").click(function(){
+			$.ajax({
+				url:'@Url.Action("Instructor","Menu")',
+				type:"POST",
+				success: function(result) {
+					$("#option-bar-items").html(result);
+				}
+			});
+		});
 	});
 </script>
 

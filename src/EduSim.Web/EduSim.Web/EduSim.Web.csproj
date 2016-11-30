@@ -139,6 +139,7 @@
     <Folder Include="ViewModels\" />
     <Folder Include="Views\SystemAdmin\Users\" />
     <Folder Include="Views\SystemAdmin\Accounts\" />
+    <Folder Include="Views\Home\OptionMenus\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\HomeController.cs" />
@@ -165,6 +166,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="ViewModels\AccountDetailsViewModel.cs" />
     <Compile Include="ViewModels\ViewModelFactory.cs" />
+    <Compile Include="Controllers\MenuController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Web.config" />
@@ -1748,6 +1750,9 @@
     <Content Include="Content\kendo\2016.3.1118-source\common\transitions.less" />
     <Content Include="Views\SystemAdmin\Accounts\Accounts.cshtml" />
     <Content Include="Views\Account\_AccountDetailsPartial.cshtml" />
+    <Content Include="Views\Home\OptionMenus\_AccountAdminMenu.cshtml" />
+    <Content Include="Views\Home\OptionMenus\_SystemAdminMenu.cshtml" />
+    <Content Include="Views\Home\OptionMenus\_InstructorMenu.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Content\bootstrap-theme.css.map" />

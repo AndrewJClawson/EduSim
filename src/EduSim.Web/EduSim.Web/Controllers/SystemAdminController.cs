@@ -49,5 +49,10 @@ namespace EduSim.Web.Controllers
 
 			return View("/Views/SystemAdmin/Accounts/Accounts.cshtml", viewModel);
 		}
+
+		public ActionResult DashboardMenu()
+		{
+			return PartialView("~/Views/SystemAdmin/_SystemAdminMenu.cshtml");
+		}
     }
 }
