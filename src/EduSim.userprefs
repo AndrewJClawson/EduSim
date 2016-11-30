@@ -1,13 +1,14 @@
 ﻿<Properties StartupConfiguration="{862C8A85-3708-4C3E-917C-340AC9BBFB85}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="EduSim.Web/EduSim.Web/Views/Home/OptionMenus/_InstructorMenu.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="EduSim.Web/EduSim.Web/Views/Home/OptionMenus/_AccountAdminMenu.cshtml">
     <Files>
-      <File FileName="EduSim.Web/EduSim.Web/Controllers/SystemAdminController.cs" Line="55" Column="70" />
+      <File FileName="EduSim.Web/EduSim.Web/Controllers/SystemAdminController.cs" Line="1" Column="1" />
       <File FileName="EduSim.Core/Constants/Account.cs" Line="1" Column="14" />
       <File FileName="EduSim.Web/EduSim.Web/Views/Account/_AccountDetailsPartial.cshtml" Line="31" Column="91" />
-      <File FileName="EduSim.Web/EduSim.Web/Views/Shared/_Layout.cshtml" Line="98" Column="42" />
-      <File FileName="EduSim.Web/EduSim.Web/Controllers/MenuController.cs" Line="27" Column="74" />
-      <File FileName="EduSim.Web/EduSim.Web/Views/Home/OptionMenus/_AccountAdminMenu.cshtml" Line="4" Column="42" />
-      <File FileName="EduSim.Web/EduSim.Web/Views/Home/OptionMenus/_InstructorMenu.cshtml" Line="1" Column="26" />
+      <File FileName="EduSim.Web/EduSim.Web/Views/Shared/_Layout.cshtml" Line="119" Column="38" />
+      <File FileName="EduSim.Web/EduSim.Web/Controllers/MenuController.cs" Line="1" Column="1" />
+      <File FileName="EduSim.Web/EduSim.Web/Views/Home/OptionMenus/_SystemAdminMenu.cshtml" Line="5" Column="33" />
+      <File FileName="EduSim.Web/EduSim.Web/Views/Home/OptionMenus/_InstructorMenu.cshtml" Line="5" Column="32" />
+      <File FileName="EduSim.Web/EduSim.Web/Views/Home/OptionMenus/_AccountAdminMenu.cshtml" Line="5" Column="32" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -24,7 +25,7 @@
                 <Node name="Account" expanded="True" />
                 <Node name="Home" expanded="True">
                   <Node name="OptionMenus" expanded="True">
-                    <Node name="_InstructorMenu.cshtml" selected="True" />
+                    <Node name="_AccountAdminMenu.cshtml" selected="True" />
                   </Node>
                 </Node>
                 <Node name="Shared" expanded="True" />

@@ -63,9 +63,11 @@
     </div>
 
 	<div class="collapse navbar-collapse nav option-bar" id="dashboard-option-bar">
-		<ul class="nav navbar-nav" id="option-bar-items">
-			<li></li>
+		<ul class="nav navbar-nav navbar-right" id="option-bar-items">
+			
+
 		</ul>
+
 	</div>
   
 </nav>
@@ -80,12 +82,14 @@
 
 <script>
 	$(document).ready(function(){
+		$("#option-bar-list").hide();
 		$("#system-admin").click(function(){
 			$.ajax({
 				url:'@Url.Action("SystemAdmin","Menu")',
 				type:"POST",
 				success:function(result){
 					$("#option-bar-items").html(result);
+
 				}
 			});
 		});
@@ -96,6 +100,7 @@
 				type:"POST",
 				success: function(result){
 					$("#option-bar-items").html(result);
+
 				}
 			});
 		});
@@ -106,10 +111,16 @@
 				type:"POST",
 				success: function(result) {
 					$("#option-bar-items").html(result);
+
 				}
 			});
 		});
+
 	});
+
+	function CloseOptionBar() {
+		$("#option-bar-items").html("");
+	}
 </script>
 
 
