@@ -14,15 +14,12 @@ using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.Web;
 using System.Threading.Tasks;
 
-
-using System.Web.Mvc;
-
 using EduSim.Core.Services;
 
 namespace EduSim.Web.Controllers
 {
-    public class AccountController : Controller
-    {
+	public class AccountController : Controller
+	{
 		IProfileService _profileService;
 		ILookupService _lookupService;
 		IAccountService _accountService;
@@ -36,11 +33,11 @@ namespace EduSim.Web.Controllers
 			_lookupService = lookupService;
 		}
 
-        public ActionResult Index()
-        {
+		public ActionResult Index()
+		{
 			//var loginModel = new LoginViewModel();
 			return View("Login");
-        }
+		}
 
 		public async Task<ActionResult> Dashboard(LoginViewModel viewModel)
 		{
@@ -55,10 +52,10 @@ namespace EduSim.Web.Controllers
 
 			if (myUser == null)
 			{
-				
+
 				return View("Login");//ViewBag["Errors"] = result.Result.Errors.First();
 			}
-			else{
+			else {
 				var profile = _profileService.GetForUser(myUser.Id);
 				System.Web.HttpContext.Current.Session["CurrentUser"] = myUser;
 				System.Web.HttpContext.Current.Session["CurrentProfile"] = profile;
@@ -76,11 +73,12 @@ namespace EduSim.Web.Controllers
 		public ActionResult Details(int? accountId)
 		{
 			AccountDetailsViewModel viewModel = ViewModelFactory.CreateAccountDetailsViewModel(
-				_accountService, _lookupService, accountId); 
+				_accountService, _lookupService, accountId);
 
 			return PartialView("/Views/Account/_AccountDetailsPartial.cshtml", viewModel);
 		}
 
+		[HttpPost]
 		public ActionResult Save(AccountDetailsViewModel accountViewModel)
 		{
 			if (accountViewModel.Account.AccountId > 0)

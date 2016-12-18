@@ -3,7 +3,7 @@
 <div class="row">
 	<h3 id="account-title">@Model.Account.AccountName</h3>
 </div>
-@using(Html.BeginForm("Save","Account", FormMethod.Post, new {id="account-detail-form"}))
+@using(Html.BeginForm("Save","Account", FormMethod.Post))
 {
 	
 <div class="row">
@@ -18,7 +18,7 @@
 		@Html.Label("Account Type: ")
 		@Html.DropDownListFor(Model => Model.Account.AccountTypeId, Model.AccountTypePicker,"Select an account type...")
 	</div>
-	<button id="save-account-details-button" class="btn btn-success">Save</button>
+	<input type="submit" id="save-account-details-button" class="btn btn-success" value="Save"/>
 	<button class="btn btn-danger">Cancel</button>
 </div>
 
