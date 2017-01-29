@@ -78,7 +78,7 @@ namespace EduSim.Web.Controllers
 			return PartialView("/Views/Account/_AccountDetailsPartial.cshtml", viewModel);
 		}
 
-		[HttpPost]
+
 		public ActionResult Save(AccountDetailsViewModel accountViewModel)
 		{
 			if (accountViewModel.Account.AccountId > 0)

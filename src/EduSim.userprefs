@@ -1,45 +1,22 @@
 ﻿<Properties StartupConfiguration="{862C8A85-3708-4C3E-917C-340AC9BBFB85}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="EduSim.Web/EduSim.Web/Views/Account/_AccountDetailsPartial.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="EduSim.Web/EduSim.Web/Models/IdentityModels.cs">
     <Files>
       <File FileName="EduSim.Web/EduSim.Web/Controllers/SystemAdminController.cs" Line="1" Column="1" />
-      <File FileName="EduSim.Web/EduSim.Web/Views/Account/_AccountDetailsPartial.cshtml" Line="6" Column="63" />
+      <File FileName="EduSim.Web/EduSim.Web/Views/Account/_AccountDetailsPartial.cshtml" Line="6" Column="58" />
       <File FileName="EduSim.Web/EduSim.Web/Views/Shared/_Layout.cshtml" Line="123" Column="3" />
-      <File FileName="EduSim.Web/EduSim.Web/Controllers/AccountController.cs" Line="84" Column="55" />
+      <File FileName="EduSim.Web/EduSim.Web/Controllers/AccountController.cs" Line="51" Column="1" />
+      <File FileName="EduSim.Core/Contexts/EduSimContext.cs" Line="1" Column="1" />
+      <File FileName="EduSim.Core/App.config" Line="8" Column="98" />
+      <File FileName="EduSim.Core/Contexts/ApplicationDbContext.cs" Line="1" Column="1" />
+      <File FileName="EduSim.Web/EduSim.Web/Models/IdentityModels.cs" Line="1" Column="1" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="EduSim" expanded="True">
-            <Node name="EduSim.Core" expanded="True">
-              <Node name="Constants" expanded="True" />
-            </Node>
-            <Node name="EduSim.Sandbox" expanded="True" />
-            <Node name="EduSim.Web" expanded="True">
-              <Node name="Controllers" expanded="True">
-                <Node name="AccountController.cs" selected="True" />
-              </Node>
-              <Node name="Models" expanded="True" />
-              <Node name="Views" expanded="True">
-                <Node name="Account" expanded="True" />
-                <Node name="Home" expanded="True">
-                  <Node name="OptionMenus" expanded="True" />
-                </Node>
-                <Node name="Shared" expanded="True" />
-                <Node name="SystemAdmin" expanded="True">
-                  <Node name="Accounts" expanded="True" />
-                </Node>
-              </Node>
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.EduSim.Web PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Volumes/Storage/Development/EduSim/src/EduSim.Web/EduSim.Web/Controllers/AccountController.cs" line="85" column="1" />
+      <Breakpoint file="/Users/andrewclawson/Documents/Projects/EduSim/src/EduSim.Web/EduSim.Web/Controllers/AccountController.cs" line="51" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
