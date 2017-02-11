@@ -54,7 +54,7 @@ namespace EduSim.Web.App_Start
 			container.RegisterType<IProfile, Profile>();
 
 			// Lookup models
-			container.RegisterType<ILookupService, LookupService>();
+
 			container.RegisterType<IAccountType, AccountType>();
 			container.RegisterType<IRole, Role>();
 

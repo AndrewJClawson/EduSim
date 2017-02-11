@@ -87,7 +87,7 @@ namespace EduSim.Web.Controllers
 			}
 			else
 			{
-				_accountService.Create(accountViewModel.Account.AccountName, accountViewModel.Account.AccountTypeId);	
+				//_accountService.Create(accountViewModel.Account.AccountName, accountViewModel.Account.AccountTypeId);	
 			}
 			return View("~/Views/Home/Dashboard.cshtml");
 		}
