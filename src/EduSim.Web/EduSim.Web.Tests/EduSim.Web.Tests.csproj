@@ -77,18 +77,42 @@
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>..\..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data">
+      <HintPath>..\..\packages\MySql.Data.6.9.9\lib\net45\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data.Entity.EF6">
+      <HintPath>..\..\packages\MySql.Data.Entity.6.9.9\lib\net45\MySql.Data.Entity.EF6.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\HomeControllerTest.cs" />
+    <Compile Include="Services\AccountService\IntegrationTests\AccountTypeRequirements.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\EduSim.Web\EduSim.Web.csproj">
       <Project>{862C8A85-3708-4C3E-917C-340AC9BBFB85}</Project>
       <Name>EduSim.Web</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\EduSim.Core\EduSim.Core.csproj">
+      <Project>{F8285D57-0476-43E8-98C5-422B2C064F8F}</Project>
+      <Name>EduSim.Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Services\" />
+    <Folder Include="Services\AccountService\" />
+    <Folder Include="Services\AccountService\UnitTests\" />
+    <Folder Include="Services\AccountService\IntegrationTests\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

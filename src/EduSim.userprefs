@@ -1,14 +1,13 @@
 ﻿<Properties StartupConfiguration="{862C8A85-3708-4C3E-917C-340AC9BBFB85}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="EduSim.Web/EduSim.Web/Models/IdentityModels.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="EduSim.Web/EduSim.Web/Services/AccountService.cs">
     <Files>
-      <File FileName="EduSim.Web/EduSim.Web/Controllers/SystemAdminController.cs" Line="1" Column="1" />
       <File FileName="EduSim.Web/EduSim.Web/Views/Account/_AccountDetailsPartial.cshtml" Line="6" Column="58" />
-      <File FileName="EduSim.Web/EduSim.Web/Views/Shared/_Layout.cshtml" Line="123" Column="3" />
+      <File FileName="EduSim.Web/EduSim.Web/Views/SystemAdmin/Accounts/Accounts.cshtml" Line="1" Column="36" />
       <File FileName="EduSim.Web/EduSim.Web/Controllers/AccountController.cs" Line="51" Column="1" />
-      <File FileName="EduSim.Core/Contexts/EduSimContext.cs" Line="1" Column="1" />
-      <File FileName="EduSim.Core/App.config" Line="8" Column="98" />
-      <File FileName="EduSim.Core/Contexts/ApplicationDbContext.cs" Line="1" Column="1" />
-      <File FileName="EduSim.Web/EduSim.Web/Models/IdentityModels.cs" Line="1" Column="1" />
+      <File FileName="EduSim.Core/OldServices/LookupService.cs" Line="1" Column="1" />
+      <File FileName="EduSim.Core/Services/Abstractions/IAccountService.cs" Line="9" Column="14" />
+      <File FileName="EduSim.Core/Constants/AccountTypes.cs" Line="1" Column="1" />
+      <File FileName="EduSim.Web/EduSim.Web/Services/AccountService.cs" Line="17" Column="4" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
@@ -16,7 +15,6 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Volumes/Storage/Development/EduSim/src/EduSim.Web/EduSim.Web/Controllers/AccountController.cs" line="85" column="1" />
-      <Breakpoint file="/Users/andrewclawson/Documents/Projects/EduSim/src/EduSim.Web/EduSim.Web/Controllers/AccountController.cs" line="51" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

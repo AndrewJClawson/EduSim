@@ -1,16 +1,13 @@
-﻿using System;
+﻿using EduSim.Core.Models;
+using System;
 using System.Collections.Generic;
-using EduSim.Core.Models;
 
-namespace EduSim.Core.Services
+namespace EduSim.Core.Services.Abstractions
 {
 	public interface IAccountService
 	{
-		void Create(string name, int typeId);
-		void Delete(Account account);
-		void Delete(int id);
-		List<Account> GetAll();
-		Account GetById(int id);
-		void Update(Account accont);
+		IEnumerable<AccountType> GetAccountTypes();
+		IEnumerable<Account> GetAccounts();
+		Account GetAccountById(int accountId);
 	}
 }
