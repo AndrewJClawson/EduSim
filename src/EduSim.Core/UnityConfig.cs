@@ -57,7 +57,7 @@ namespace EduSim.Core
 			container.RegisterType<IProfile, Profile>();
 
 			// Lookup models
-			container.RegisterType<ILookupService, LookupService>();
+
 			container.RegisterType<IAccountType, AccountType>();
 			container.RegisterType<IRole, Role>();
 
@@ -67,7 +67,7 @@ namespace EduSim.Core
 			container.RegisterType<IEduSimContext, EduSimContext>();
 
 			//Register service interfaces
-			container.RegisterType<IProfileService, ProfileService>();
+
 			container.RegisterType<IAccountService, AccountService>();
         }
     }

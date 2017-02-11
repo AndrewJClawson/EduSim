@@ -106,29 +106,18 @@
     <Compile Include="Repository\Repository.cs" />
     <Compile Include="Models\Account.cs" />
     <Compile Include="ModelInterfaces\IAccount.cs" />
-    <Compile Include="OldServices\AccountService.cs" />
     <Compile Include="Constants\Constant.cs" />
     <Compile Include="Constants\AccountTypes.cs" />
     <Compile Include="Models\Profile.cs" />
     <Compile Include="ModelInterfaces\IProfile.cs" />
-    <Compile Include="OldServices\ProfileService.cs" />
-    <Compile Include="OldServices\Abstractions\IBaseService.cs" />
-    <Compile Include="OldServices\AuthenticationService.cs" />
-    <Compile Include="OldServices\Abstractions\IAccountService.cs" />
-    <Compile Include="OldServices\Abstractions\IProfileService.cs" />
-    <Compile Include="OldServices\Abstractions\IAuthenticationInterface.cs" />
     <Compile Include="ModelInterfaces\ISchool.cs" />
     <Compile Include="Models\School.cs" />
-    <Compile Include="OldServices\Abstractions\ISchoolService.cs" />
-    <Compile Include="OldServices\SchoolService.cs" />
     <Compile Include="Models\IdentityUser.cs" />
     <Compile Include="Models\IdentityClaim.cs" />
     <Compile Include="Contexts\Abstractions\IEduSimContext.cs" />
     <Compile Include="Models\Role.cs" />
     <Compile Include="ModelInterfaces\IRole.cs" />
     <Compile Include="Constants\Roles.cs" />
-    <Compile Include="OldServices\Abstractions\ILookupService.cs" />
-    <Compile Include="OldServices\LookupService.cs" />
     <Compile Include="Constants\ContentType.cs" />
     <Compile Include="Constants\Operation.cs" />
     <Compile Include="ModelInterfaces\IContentType.cs" />
@@ -144,15 +133,29 @@
     <Compile Include="ModelInterfaces\IProfilePermission.cs" />
     <Compile Include="UnityConfig.cs" />
     <Compile Include="Constants\Account.cs" />
-    <Compile Include="Services\Abstractions\IAccountService.cs" />
     <Compile Include="Repository\Abstraction\IUnitOfWork.cs" />
     <Compile Include="Repository\UnitOfWork.cs" />
+    <Compile Include="Services\AccountService.cs" />
+    <Compile Include="Services\Abstractions\IAccountService.cs" />
+    <Compile Include="Services\Abstractions\IProfileService.cs" />
+    <Compile Include="Services\ProfileService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
     <None Include="Contexts\ApplicationDbContext.cs" />
     <None Include="Contexts\MySqlHistoryContext.cs" />
+    <None Include="OldServices\Abstractions\IBaseService.cs" />
+    <None Include="OldServices\Abstractions\IAccountService.cs" />
+    <None Include="OldServices\Abstractions\IProfileService.cs" />
+    <None Include="OldServices\Abstractions\IAuthenticationInterface.cs" />
+    <None Include="OldServices\Abstractions\ISchoolService.cs" />
+    <None Include="OldServices\Abstractions\ILookupService.cs" />
+    <None Include="OldServices\AccountService.cs" />
+    <None Include="OldServices\ProfileService.cs" />
+    <None Include="OldServices\AuthenticationService.cs" />
+    <None Include="OldServices\SchoolService.cs" />
+    <None Include="OldServices\LookupService.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ModelInterfaces\" />
@@ -164,8 +167,6 @@
     <Folder Include="Constants\" />
     <Folder Include="OldServices\Abstractions\" />
     <Folder Include="Contexts\Abstractions\" />
-    <Folder Include="Services\" />
-    <Folder Include="Services\Abstractions\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

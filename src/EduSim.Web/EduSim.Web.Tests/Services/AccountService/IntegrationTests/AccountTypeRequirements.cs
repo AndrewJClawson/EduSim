@@ -1,4 +1,5 @@
 ﻿using EduSim.Core.Constants;
+using EduSim.Core.Contexts;
 using EduSim.Core.Services.Abstractions;
 using EduSim.Core.Models;
 using EduSim.Core.ModelInterfaces;
@@ -16,12 +17,14 @@ namespace EduSim.Web.Tests
 	[Category("BusinessRequirements")]
 	public class AccountTypeRequirements
 	{
+		private IEduSimContext eduSimContext;
 		private IAccountService SUT;
 
 		[SetUp]
 		public void Setup()
 		{
-			SUT = new AccountService();
+			eduSimContext = new EduSimContext();
+			SUT = new AccountService(eduSimContext);
 		}
 
 		[TearDown]
