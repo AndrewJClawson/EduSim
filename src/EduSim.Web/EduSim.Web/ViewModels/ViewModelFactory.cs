@@ -2,6 +2,9 @@
 using EduSim.Core.Constants;
 using EduSim.Core.Models;
 using EduSim.Core.Services;
+using System.Collections.Generic;
+using System.Linq;
+
 namespace EduSim.Web.ViewModels
 {
 	public class ViewModelFactory
@@ -10,12 +13,12 @@ namespace EduSim.Web.ViewModels
 		{
 			SystemAccountsViewModel systemAccountsVM = new SystemAccountsViewModel()
 			{
-				AccountList = accountService.GetAll()
-			};
+				AccountList = accountService.GetAccounts().ToList()
+		};
 			return systemAccountsVM;
 		}
 
-		public static AccountDetailsViewModel CreateAccountDetailsViewModel(IAccountService accountService, ILookupService lookupService, int? accountId)
+		public static AccountDetailsViewModel CreateAccountDetailsViewModel(IAccountService accountService, int? accountId)
 		{
 			AccountDetailsViewModel accountDetailsVM = new AccountDetailsViewModel();
 			if (accountId != null)
@@ -36,7 +39,7 @@ namespace EduSim.Web.ViewModels
 				};
 			}
 
-			accountDetailsVM.AccountTypeList = lookupService.GetAccountTypes();
+			accountDetailsVM.AccountTypeList = accountService.GetAccountTypes().ToList();
 
 			return accountDetailsVM;
 		}

@@ -44,7 +44,8 @@ namespace EduSim.Web.App_Start
 
 			// TODO: Register your types here
 			// container.RegisterType<IProductRepository, ProductRepository>();
-			container.RegisterType<DbContext, EduSimContext>(new HierarchicalLifetimeManager());
+			container.RegisterType<EduSimContext, EduSimContext>(new PerRequestLifetimeManager());
+			//container.RegisterType<DbContext, EduSimContext>(new HierarchicalLifetimeManager());
 			// Repositories
 			container.RegisterType<IRepository<Type>, Repository<Type>>();
 			container.RegisterType<IRepository<AccountType>, Repository<AccountType>>();

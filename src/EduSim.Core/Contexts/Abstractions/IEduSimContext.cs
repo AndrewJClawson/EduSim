@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Data.Entity;
+using System.Data.Entity.Infrastructure;
 //using MySql.Data.Entity;
 using EduSim.Core.Models;
 using EduSim.Core.ModelInterfaces;
@@ -16,5 +17,6 @@ namespace EduSim.Core.Contexts
 		DbSet<Profile> Profiles { get; set; }
 		DbSet<School> Schools { get; set; }
 
+		int SaveChanges();
 	}
 }

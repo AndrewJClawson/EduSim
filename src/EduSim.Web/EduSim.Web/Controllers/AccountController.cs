@@ -21,16 +21,16 @@ namespace EduSim.Web.Controllers
 	public class AccountController : Controller
 	{
 		IProfileService _profileService;
-		ILookupService _lookupService;
+
 		IAccountService _accountService;
 		//private ApplicationSignInManager _signInManager;
 		//private ApplicationUserManager _userManager;
 
-		public AccountController(IAccountService accountService, IProfileService profileService, ILookupService lookupService)
+		public AccountController(IAccountService accountService, IProfileService profileService)
 		{
 			_accountService = accountService;
 			_profileService = profileService;
-			_lookupService = lookupService;
+
 		}
 
 		public ActionResult Index()
@@ -72,10 +72,10 @@ namespace EduSim.Web.Controllers
 
 		public ActionResult Details(int? accountId)
 		{
-			AccountDetailsViewModel viewModel = ViewModelFactory.CreateAccountDetailsViewModel(
-				_accountService, _lookupService, accountId);
+			//AccountDetailsViewModel viewModel = ViewModelFactory.CreateAccountDetailsViewModel(
+				//_accountService,accountId);
 
-			return PartialView("/Views/Account/_AccountDetailsPartial.cshtml", viewModel);
+			return PartialView("/Views/Account/_AccountDetailsPartial.cshtml");
 		}
 
 

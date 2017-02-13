@@ -165,8 +165,8 @@
     <Compile Include="ViewModels\SystemAccountsViewModel.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="ViewModels\AccountDetailsViewModel.cs" />
-    <Compile Include="ViewModels\ViewModelFactory.cs" />
     <Compile Include="Controllers\MenuController.cs" />
+    <Compile Include="ViewModels\ViewModelFactory.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Web.config" />

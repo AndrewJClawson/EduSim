@@ -9,7 +9,8 @@ namespace EduSim.Core.Services
 		void Create(string name, int typeId);
 		void Delete(Account account);
 		void Delete(int id);
-		List<Account> GetAll();
+		IEnumerable<Account> GetAccounts();
+		IEnumerable<AccountType> GetAccountTypes();
 		Account GetById(int id);
 		void Update(Account accont);
 	}
