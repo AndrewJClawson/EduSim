@@ -12,41 +12,45 @@ namespace EduSim.Core.Services
 {
 	public class ProfileService : IProfileService
 	{
-		private readonly Repository<Profile> _profileRepository;
-		private readonly Repository<ProfilePermission> _profilePermissionRepository;
-
-		public ProfileService()
+		//private readonly Repository<Profile> _profileRepository;
+		//private readonly Repository<ProfilePermission> _profilePermissionRepository;
+		private EduSimContext _context;
+		public ProfileService(EduSimContext context)
 		{
-			_profileRepository = new Repository<Profile>();
-			_profilePermissionRepository = new Repository<ProfilePermission>();
+			context = _context;
+			//_profileRepository = new Repository<Profile>();
+			//_profilePermissionRepository = new Repository<ProfilePermission>();
 		}
 
 		public void Add(Profile profile)
 		{
-			_profileRepository.Add(profile);
+			_context.Profiles.Add(profile);
+			_context.SaveChanges();
 		}
 
 
 		public void Delete(Profile profile)
 		{
-			_profileRepository.Delete(profile);
+			_context.Entry(profile).State = EntityState.Deleted;
+			_context.Profiles.Attach(profile);
+			_context.Profiles.Remove(profile);
+			_context.SaveChanges();
 		}
 
 		public void Delete(int id)
 		{
-			_profileRepository.Delete(id);
+			Profile profile = _context.Profiles.Find(id);
+			Delete(profile);
 		}
 
-		public List<Profile> GetAll()
+		public System.Collections.Generic.IEnumerable<Profile> GetProfiles()
 		{
-			List<Profile> profiles = _profileRepository.GetAll().ToList();
-			return profiles;
+			return _context.Profiles;
 		}
 
 		public Profile GetForUser(string userId)
 		{
-			Profile profile = _profileRepository
-				.GetAll()
+			Profile profile = _context.Profiles
 				.Where(p => p.UserId == userId)
 				.FirstOrDefault();
 			return profile;
@@ -54,13 +58,15 @@ namespace EduSim.Core.Services
 
 		public Profile GetById(int id)
 		{
-			Profile profile = _profileRepository.GetById(id);
+			Profile profile = _context.Profiles.Find(id);
 			return profile;
 		}
 
 		public void Update(Profile profile)
 		{
-			_profileRepository.Update(profile);
+			_context.Entry(profile).State = EntityState.Modified;
+			_context.Profiles.Attach(profile);
+			_context.SaveChanges();
 		}
 	}
 }

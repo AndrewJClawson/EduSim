@@ -11,7 +11,7 @@ namespace EduSim.Core.Services
 
 		void Delete(Profile profile);
 		void Delete(int id);
-		List<Profile> GetAll();
+		IEnumerable<Profile> GetProfiles();
 		Profile GetForUser(string userId);
 		Profile GetById(int id);
 		void Update(Profile profile);
