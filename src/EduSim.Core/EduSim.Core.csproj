@@ -143,6 +143,8 @@
     <Compile Include="ModelInterfaces\IProfilePermission.cs" />
     <Compile Include="UnityConfig.cs" />
     <Compile Include="Constants\Account.cs" />
+    <Compile Include="Services\Abstractions\IPermissionService.cs" />
+    <Compile Include="Services\PermissionService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

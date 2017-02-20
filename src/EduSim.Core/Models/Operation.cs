@@ -2,7 +2,7 @@
 using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-namespace EduSim.Core
+namespace EduSim.Core.Models
 {
 	[Table("_operations")]
 	public class Operation : IOperation
