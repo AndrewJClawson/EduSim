@@ -1,19 +1,16 @@
 ﻿<Properties StartupConfiguration="{862C8A85-3708-4C3E-917C-340AC9BBFB85}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="EduSim.Core/Services/ProfileService.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="EduSim.Core/Models/ContentTypeOperation.cs">
     <Files>
       <File FileName="EduSim.Core/Services/Abstractions/IAccountService.cs" Line="1" Column="1" />
       <File FileName="EduSim.Web/EduSim.Web/Controllers/AccountController.cs" Line="53" Column="1" />
       <File FileName="EduSim.Web/EduSim.Web/App_Start/UnityConfig.cs" Line="1" Column="1" />
       <File FileName="EduSim.Core/Services/AccountService.cs" Line="1" Column="1" />
       <File FileName="EduSim.Core/Contexts/Abstractions/IEduSimContext.cs" Line="1" Column="1" />
-      <File FileName="EduSim.Core/Contexts/EduSimContext.cs" Line="14" Column="64" />
-      <File FileName="EduSim.Core/Services/LookupService.cs" Line="11" Column="41" />
-      <File FileName="EduSim.Core/Repository/Repository.cs" Line="1" Column="1" />
-      <File FileName="EduSim.Core/Services/Abstractions/ILookupService.cs" Line="12" Column="34" />
-      <File FileName="EduSim.Web/EduSim.Web/ViewModels/ViewModelFactory.cs" Line="1" Column="1" />
+      <File FileName="EduSim.Core/Contexts/EduSimContext.cs" Line="14" Column="3" />
       <File FileName="EduSim.Web/EduSim.Web/Controllers/SystemAdminController.cs" Line="48" Column="7" />
       <File FileName="EduSim.Core/Services/Abstractions/IProfileService.cs" Line="14" Column="38" />
-      <File FileName="EduSim.Core/Services/ProfileService.cs" Line="56" Column="4" />
+      <File FileName="EduSim.Core/Models/ContentTypeOperation.cs" Line="12" Column="25" />
+      <File FileName="EduSim.Core/ModelInterfaces/IContentTypeOperation.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

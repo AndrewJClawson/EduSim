@@ -136,9 +136,8 @@
     <Compile Include="ModelInterfaces\IOperation.cs" />
     <Compile Include="Models\Operation.cs" />
     <Compile Include="Models\ContentTypeOperation.cs" />
-    <Compile Include="ModelInterfaces\IContentTypeOperation.cs" />
-    <Compile Include="Constants\Permission.cs" />
     <Compile Include="ModelInterfaces\IPermission.cs" />
+    <Compile Include="Constants\Permission.cs" />
     <Compile Include="Models\Permission.cs" />
     <Compile Include="Models\ProfilePermission.cs" />
     <Compile Include="ModelInterfaces\IProfilePermission.cs" />

@@ -1,10 +1,11 @@
 ﻿using System;
+using EduSim.Core.Models;
 namespace EduSim.Core.ModelInterfaces
 {
-	public interface IPermission
+	public class IPermission
 	{
 		int PermissionId { get; set; }
-		int ContentTypeOperationId { get; set; }
-		string Name { get; set; }
+		int ContentTypeId { get; set; }
+		int OperationId { get; set; }
 	}
 }
