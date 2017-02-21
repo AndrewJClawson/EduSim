@@ -16,7 +16,7 @@ namespace EduSim.Core.Contexts
 		public DbSet<AccountType> AccountTypes { get; set; }
 		public DbSet<ContentType> ContentTypes { get; set; }
 		public DbSet<Operation> Operations { get; set; }
-		public DbSet<ContentTypeOperation> ContentTypeOperations { get; set; }
+
 		public DbSet<Permission> Permissions { get; set; }
 		public DbSet<ProfilePermission> ProfilePermissions { get; set; }
 

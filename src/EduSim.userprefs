@@ -1,8 +1,8 @@
 ﻿<Properties StartupConfiguration="{862C8A85-3708-4C3E-917C-340AC9BBFB85}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="EduSim.Web/EduSim.Web/App_Start/UnityConfig.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="EduSim.Core/Services/ProfileService.cs">
     <Files>
       <File FileName="EduSim.Core/Services/AccountService.cs" Line="1" Column="1" />
-      <File FileName="EduSim.Core/Contexts/Abstractions/IEduSimContext.cs" Line="16" Column="44" />
+      <File FileName="EduSim.Core/Contexts/Abstractions/IEduSimContext.cs" Line="11" Column="33" />
       <File FileName="EduSim.Core/Services/PermissionService.cs" Line="11" Column="46" />
       <File FileName="EduSim.Core/Models/Permission.cs" Line="24" Column="51" />
       <File FileName="EduSim.Core/Contexts/EduSimContext.cs" Line="39" Column="39" />
@@ -10,8 +10,8 @@
       <File FileName="EduSim.Core/Services/Abstractions/IPermissionService.cs" Line="8" Column="19" />
       <File FileName="EduSim.Web/EduSim.Web/Controllers/MenuController.cs" Line="1" Column="1" />
       <File FileName="EduSim.Web/EduSim.Web/Controllers/AccountController.cs" Line="59" Column="1" />
-      <File FileName="EduSim.Core/Services/ProfileService.cs" Line="52" Column="4" />
-      <File FileName="EduSim.Web/EduSim.Web/App_Start/UnityConfig.cs" Line="69" Column="68" />
+      <File FileName="EduSim.Core/Services/ProfileService.cs" Line="20" Column="23" />
+      <File FileName="EduSim.Web/EduSim.Web/App_Start/UnityConfig.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

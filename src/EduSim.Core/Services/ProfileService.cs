@@ -17,7 +17,7 @@ namespace EduSim.Core.Services
 		private EduSimContext _context;
 		public ProfileService(EduSimContext context)
 		{
-			context = _context;
+			_context = context;
 			//_profileRepository = new Repository<Profile>();
 			//_profilePermissionRepository = new Repository<ProfilePermission>();
 		}
