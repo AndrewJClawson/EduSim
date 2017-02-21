@@ -44,7 +44,7 @@ namespace EduSim.Web.App_Start
 
 			// TODO: Register your types here
 			// container.RegisterType<IProductRepository, ProductRepository>();
-			container.RegisterType<EduSimContext, EduSimContext>(new PerRequestLifetimeManager());
+			container.RegisterType<EduSimContext, EduSimContext>(new HierarchicalLifetimeManager());
 			//container.RegisterType<DbContext, EduSimContext>(new HierarchicalLifetimeManager());
 			// Repositories
 			container.RegisterType<IRepository<Type>, Repository<Type>>();
@@ -61,11 +61,12 @@ namespace EduSim.Web.App_Start
 			// Application models
 			container.RegisterType<IAccount, Account>();
 			container.RegisterType<ISchool, School>();
-			container.RegisterType<IEduSimContext, EduSimContext>();
+			//container.RegisterType<IEduSimContext, EduSimContext>();
 
 			//Register service interfaces
 			container.RegisterType<IProfileService, ProfileService>();
 			container.RegisterType<IAccountService, AccountService>();
+			container.RegisterType<IPermissionService, PermissionService>();
         }
     }
 }

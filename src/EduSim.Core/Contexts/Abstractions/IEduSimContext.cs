@@ -10,9 +10,11 @@ namespace EduSim.Core.Contexts
 {
 	public interface IEduSimContext
 	{
-		DbSet<AccountType> AccountTypes { get; set;}
+		DbSet<AccountType> AccountTypes { get; set; }
 		DbSet<Role> Roles { get; set; }
-
+		DbSet<ContentType> ContentTypes {get;set;}
+		DbSet<Operation> Operations { get; set; }
+		DbSet<Permission> Permissions { get; set; }
 		DbSet<Account> Accounts { get; set;}
 		DbSet<Profile> Profiles { get; set; }
 		DbSet<School> Schools { get; set; }

@@ -59,7 +59,7 @@ namespace EduSim.Core.Services
 
 		public Models.Permission GetPermission(int contentTypeId, int operationId)
 		{
-			return _context.Permissions.Where(p => ;
+			return _context.Permissions.Where(p => p.ContentTypeId == contentTypeId && p.OperationId == operationId).FirstOrDefault();
 		}
 	}
 }

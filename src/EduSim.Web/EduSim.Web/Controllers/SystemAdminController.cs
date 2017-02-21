@@ -21,18 +21,20 @@ namespace EduSim.Web.Controllers
 {
     public class SystemAdminController : Controller
     {
-		private ILookupService _lookupService;
+		//private ILookupService _lookupService;
 		private IAccountService _accountService;
-		public SystemAdminController(ILookupService lookupService, IAccountService accountService)
+		private IPermissionService _permissionService;
+		public SystemAdminController(IAccountService accountService, IPermissionService permissionService)
 		{
-			_lookupService = lookupService;
+			//_lookupService = lookupService;
 			_accountService = accountService;
+			_permissionService = permissionService;
 		}
 
         public ActionResult Roles()
         {
 			SystemRolesViewModel viewModel = new SystemRolesViewModel();
-			viewModel.Roles = _lookupService.GetRoles();
+			viewModel.Roles = _permissionService.GetRoles().ToList();
 
             return View("/Views/SystemAdmin/Roles/Roles.cshtml",viewModel);
         }
