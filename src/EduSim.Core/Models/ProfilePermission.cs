@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace EduSim.Core.Models
 {
-	[Table("profile_permissions")]
+	[Table("profile_x_permissions")]
 	public class ProfilePermission : IProfilePermission
 	{
 		[Column("pk_profile_permission_id")]
