@@ -1,6 +1,6 @@
-﻿source ./Tables/_permissions.sql;
+﻿source ./Tables/data_lookup/_permissions.sql;
 
-CREATE TABLE IF NOT EXISTS profile_permissions
+CREATE TABLE IF NOT EXISTS profile_x_permissions
 (
 	pk_profile_permission_id int(11) unsigned NOT NULL AUTO_INCREMENT,
 	fk_profile_id int(11) unsigned NOT NULL,

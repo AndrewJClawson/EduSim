@@ -1,6 +1,6 @@
-﻿source ./Tables/_account_types.sql;
-source ./Tables/_roles.sql;
-source ./Tables/_content_types.sql;
-source ./Tables/_operations.sql;
+﻿source ./Tables/data_lookup/_account_types.sql;
+source ./Tables/data_lookup/_roles.sql;
+source ./Tables/data_lookup/_content_types.sql;
+source ./Tables/data_lookup/_operations.sql;
 
-source ./Tables/_permissions.sql;
+source ./Tables/data_lookup/_permissions.sql;

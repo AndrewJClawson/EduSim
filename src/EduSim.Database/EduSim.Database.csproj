@@ -41,19 +41,12 @@
     <Compile Include="Menus\Abstractions\BaseMenu.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Tables\_account_types.sql" />
-    <None Include="Tables\account.sql" />
-    <None Include="Tables\accounts.sql" />
-    <None Include="Tables\campuses.sql" />
-    <None Include="Tables\schools.sql" />
-    <None Include="Tables\profiles.sql" />
     <None Include="Scripts\create_application_tables.sql" />
     <None Include="Scripts\create_database.sql" />
     <None Include="Scripts\create_reference_tables.sql" />
     <None Include="Scripts\delete_application_database.sql" />
     <None Include="Scripts\initial_develop_data.sql" />
     <None Include="Scripts\populate_reference_data.sql" />
-    <None Include="ReferenceData\_account_types.sql" />
     <None Include="publish_database.sql" />
     <None Include="Scripts\setup_identity_tables.sql" />
     <None Include="publish_test_database.sql" />
@@ -69,19 +62,27 @@
     <None Include="Scripts\IdentityScripts Original\UserLogin.sql" />
     <None Include="Scripts\IdentityScripts Original\UserRole.sql" />
     <None Include="Scripts\IdentityScripts\Identity.sql" />
-    <None Include="Tables\_roles.sql" />
-    <None Include="ReferenceData\_roles.sql" />
     <None Include="Scripts\IdentityScripts\extra_tables.sql" />
     <None Include="publish_auth_database.sql" />
-    <None Include="Tables\_content_types.sql" />
-    <None Include="Tables\_operations.sql" />
-    <None Include="ReferenceData\_content_types.sql" />
-    <None Include="ReferenceData\_operations.sql" />
-    <None Include="Tables\_content_type_operations.sql" />
-    <None Include="ReferenceData\_content_type_operations.sql" />
-    <None Include="Tables\_permissions.sql" />
-    <None Include="ReferenceData\_permissions.sql" />
-    <None Include="Tables\profile_permissions.sql" />
+    <None Include="Tables\data_lookup\_account_types.sql" />
+    <None Include="Tables\data_lookup\_content_type_operations.sql" />
+    <None Include="Tables\data_lookup\_content_types.sql" />
+    <None Include="Tables\data_lookup\_operations.sql" />
+    <None Include="Tables\data_lookup\_permissions.sql" />
+    <None Include="Tables\data_lookup\_roles.sql" />
+    <None Include="Tables\dbo\account.sql" />
+    <None Include="Tables\dbo\accounts.sql" />
+    <None Include="Tables\dbo\campuses.sql" />
+    <None Include="Tables\dbo\profile_x_permissions.sql" />
+    <None Include="Tables\dbo\profiles.sql" />
+    <None Include="Tables\dbo\schools.sql" />
+    <None Include="ReferenceData\data_lookup\_account_types.sql" />
+    <None Include="ReferenceData\data_lookup\_content_type_operations.sql" />
+    <None Include="ReferenceData\data_lookup\_content_types.sql" />
+    <None Include="ReferenceData\data_lookup\_operations.sql" />
+    <None Include="ReferenceData\data_lookup\_permissions.sql" />
+    <None Include="ReferenceData\data_lookup\_roles.sql" />
+    <None Include="ReferenceData\dbo\profile_x_permissions.sql" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Classes\" />
@@ -90,6 +91,10 @@
     <Folder Include="Menus\" />
     <Folder Include="Menus\Abstractions\" />
     <Folder Include="Menus\MenuOptions\" />
+    <Folder Include="Tables\dbo\" />
+    <Folder Include="Tables\data_lookup\" />
+    <Folder Include="ReferenceData\data_lookup\" />
+    <Folder Include="ReferenceData\dbo\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

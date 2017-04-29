@@ -1,12 +1,12 @@
 ﻿
-source ./Tables/accounts.sql;
+source ./Tables/dbo/accounts.sql;
 
-source ./Tables/schools.sql;
+source ./Tables/dbo/schools.sql;
 
-source ./Tables/campuses.sql;
+source ./Tables/dbo/campuses.sql;
 
-source ./Tables/profiles.sql;
+source ./Tables/dbo/profiles.sql;
 
-source ./Tables/profile_permissions.sql;
+source ./Tables/dbo/profile_x_permissions.sql;
 
 
