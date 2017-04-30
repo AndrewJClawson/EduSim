@@ -6,6 +6,7 @@ INSERT INTO campuses VALUES (1,1,"First Campus","345 Fake St.","My City","CO","8
 INSERT INTO profiles VALUES (1,"e1e6f670-1bf0-44cc-a34e-7d7f443567dc",1,1,1,"Andrew","Clawson");
 
 
+
 #INSERT INTO profile_x_permissions VALUES(1,1,1);
 #INSERT INTO profile_x_permissions VALUES(2,1,2);
 #INSERT INTO profile_x_permissions VALUES(3,1,3);
