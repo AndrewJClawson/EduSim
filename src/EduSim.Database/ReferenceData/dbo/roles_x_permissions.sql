@@ -1,1 +1,12 @@
-﻿
+﻿INSERT INTO roles_x_permissions (fk_role_id, fk_permission_id) VALUES (1,1);
+INSERT INTO roles_x_permissions (fk_role_id, fk_permission_id) VALUES (1,2);
+INSERT INTO roles_x_permissions (fk_role_id, fk_permission_id) VALUES (1,3);
+INSERT INTO roles_x_permissions (fk_role_id, fk_permission_id) VALUES (1,4);
+INSERT INTO roles_x_permissions (fk_role_id, fk_permission_id) VALUES (1,5);
+INSERT INTO roles_x_permissions (fk_role_id, fk_permission_id) VALUES (1,6);
+INSERT INTO roles_x_permissions (fk_role_id, fk_permission_id) VALUES (1,7);
+INSERT INTO roles_x_permissions (fk_role_id, fk_permission_id) VALUES (1,8);
+INSERT INTO roles_x_permissions (fk_role_id, fk_permission_id) VALUES (1,9);
+INSERT INTO roles_x_permissions (fk_role_id, fk_permission_id) VALUES (1,10);
+INSERT INTO roles_x_permissions (fk_role_id, fk_permission_id) VALUES (1,11);
+INSERT INTO roles_x_permissions (fk_role_id, fk_permission_id) VALUES (1,12);

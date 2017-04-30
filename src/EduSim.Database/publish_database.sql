@@ -15,6 +15,9 @@ source Scripts/populate_reference_data.sql;
 source Scripts/create_application_tables.sql;
 source Scripts/initial_develop_data.sql;
 
+# DBO data below here
+source ReferenceData/dbo/roles_x_permissions.sql;
+
 
 
 
