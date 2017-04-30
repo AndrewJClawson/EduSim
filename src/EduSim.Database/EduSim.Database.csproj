@@ -84,6 +84,7 @@
     <None Include="ReferenceData\data_lookup\_roles.sql" />
     <None Include="ReferenceData\dbo\roles_x_permissions.sql" />
     <None Include="Tables\dbo\profiles_x_roles.sql" />
+    <None Include="ReferenceData\dbo\profiles_x_roles.sql" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Classes\" />

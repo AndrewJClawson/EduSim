@@ -17,6 +17,7 @@ source Scripts/initial_develop_data.sql;
 
 # DBO data below here
 source ReferenceData/dbo/roles_x_permissions.sql;
+source ReferenceData/dbo/profiles_x_roles.sql;
 
 
 
