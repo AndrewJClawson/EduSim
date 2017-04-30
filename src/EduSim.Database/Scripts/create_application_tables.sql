@@ -9,4 +9,4 @@ source ./Tables/dbo/profiles.sql;
 
 source ./Tables/dbo/roles_x_permissions.sql;
 
-
+source ./Tables/dbo/profiles_x_roles.sql;
