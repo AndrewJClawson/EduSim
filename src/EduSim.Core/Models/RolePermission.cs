@@ -5,14 +5,11 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace EduSim.Core.Models
 {
-	[Table("profile_x_permissions")]
-	public class ProfilePermission : IProfilePermission
+	[Table("role_x_permissions")]
+	public class RolePermission : IRolePermission
 	{
-		[Column("pk_profile_permission_id")]
-		public int ProfilePermissionId { get; set; }
-
-		[Column("fk_profile_id")]
-		public int ProfileId { get; set; }
+		[Column("fk_role_id")]
+		public int RoleId { get; set; }
 
 		[Column("fk_permission_id")]
 		public int PermissionId { get; set; }
