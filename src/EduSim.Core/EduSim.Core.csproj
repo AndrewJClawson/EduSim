@@ -145,6 +145,8 @@
     <Compile Include="Constants\Account.cs" />
     <Compile Include="Services\Abstractions\IPermissionService.cs" />
     <Compile Include="Services\PermissionService.cs" />
+    <Compile Include="ModelInterfaces\IProfileRole.cs" />
+    <Compile Include="Models\ProfileRole.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

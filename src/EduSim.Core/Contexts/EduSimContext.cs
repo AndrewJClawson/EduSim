@@ -37,7 +37,10 @@ namespace EduSim.Core.Contexts
 		protected override void OnModelCreating(System.Data.Entity.DbModelBuilder modelBuilder)
 		{
 			
-			modelBuilder.Entity<RolePermission>().HasKey(a => new { a.RoleId, a.PermissionId });
+			modelBuilder.Entity<RolePermission>()
+			            .HasKey(a => new { a.RoleId, a.PermissionId });
+			modelBuilder.Entity<ProfileRole>()
+						.HasKey(p => new { p.ProfileId, p.RoleId });
 			base.OnModelCreating(modelBuilder);
 		} 
 	}
