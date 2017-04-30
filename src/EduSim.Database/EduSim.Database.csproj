@@ -73,7 +73,7 @@
     <None Include="Tables\dbo\account.sql" />
     <None Include="Tables\dbo\accounts.sql" />
     <None Include="Tables\dbo\campuses.sql" />
-    <None Include="Tables\dbo\profile_x_permissions.sql" />
+    <None Include="Tables\dbo\roles_x_permissions.sql" />
     <None Include="Tables\dbo\profiles.sql" />
     <None Include="Tables\dbo\schools.sql" />
     <None Include="ReferenceData\data_lookup\_account_types.sql" />
@@ -82,7 +82,7 @@
     <None Include="ReferenceData\data_lookup\_operations.sql" />
     <None Include="ReferenceData\data_lookup\_permissions.sql" />
     <None Include="ReferenceData\data_lookup\_roles.sql" />
-    <None Include="ReferenceData\dbo\profile_x_permissions.sql" />
+    <None Include="ReferenceData\dbo\roles_x_permissions.sql" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Classes\" />
