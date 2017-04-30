@@ -52,7 +52,7 @@ namespace EduSim.Core
 			container.RegisterType<IRepository<Operation>, Repository<Operation>>();
 			container.RegisterType<IRepository<ContentTypeOperation>, Repository<ContentTypeOperation>>();
 			container.RegisterType<IRepository<Permission>, Repository<Permission>>();
-			container.RegisterType<IRepository<ProfilePermission>, Repository<ProfilePermission>>();
+			container.RegisterType<IRepository<RolePermission>, Repository<RolePermission>>();
 
 			container.RegisterType<IProfile, Profile>();
 
