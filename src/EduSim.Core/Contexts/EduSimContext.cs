@@ -27,6 +27,9 @@ namespace EduSim.Core.Contexts
 		public DbSet<Profile> Profiles { get; set;}
 		public DbSet<School> Schools { get; set; }
 
+		// Academic Models
+		public DbSet<ISubject> Subjects { get; set; }
+
 
 
 		public EduSimContext() : base(nameOrConnectionString:"EduSimContext")
