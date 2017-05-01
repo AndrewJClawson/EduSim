@@ -151,6 +151,8 @@
     <Compile Include="Models\Subject.cs" />
     <Compile Include="ModelInterfaces\IAcademicYear.cs" />
     <Compile Include="Models\AcademicYear.cs" />
+    <Compile Include="Services\Abstractions\IAcademicService.cs" />
+    <Compile Include="Services\AcademicService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
