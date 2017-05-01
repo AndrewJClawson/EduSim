@@ -18,7 +18,7 @@ namespace EduSim.Core.Contexts
 		public DbSet<Operation> Operations { get; set; }
 
 		public DbSet<Permission> Permissions { get; set; }
-		public DbSet<ProfilePermission> ProfilePermissions { get; set; }
+		public DbSet<RolePermission> RolePermissions { get; set; }
 
 		public DbSet<Role> Roles { get; set; }
 
@@ -26,6 +26,9 @@ namespace EduSim.Core.Contexts
 		public DbSet<Account> Accounts { get; set; }
 		public DbSet<Profile> Profiles { get; set;}
 		public DbSet<School> Schools { get; set; }
+
+		// Academic Models
+		public DbSet<ISubject> Subjects { get; set; }
 
 
 
@@ -36,6 +39,11 @@ namespace EduSim.Core.Contexts
 
 		protected override void OnModelCreating(System.Data.Entity.DbModelBuilder modelBuilder)
 		{
+			
+			modelBuilder.Entity<RolePermission>()
+			            .HasKey(a => new { a.RoleId, a.PermissionId });
+			modelBuilder.Entity<ProfileRole>()
+						.HasKey(p => new { p.ProfileId, p.RoleId });
 			base.OnModelCreating(modelBuilder);
 		} 
 	}

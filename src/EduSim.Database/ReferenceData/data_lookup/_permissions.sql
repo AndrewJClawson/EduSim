@@ -9,6 +9,6 @@ INSERT INTO _permissions VALUES (7,2,3,"Can edit users.");
 INSERT INTO _permissions VALUES (8,2,4,"Can delete users.");
 
 INSERT INTO _permissions VALUES (9,3,1,"Can create profiles.");
-INSERT INTO _permissions VALUES (10,3,210,"Can view profiles.");
+INSERT INTO _permissions VALUES (10,3,2,"Can view profiles.");
 INSERT INTO _permissions VALUES (11,3,3,"Can edit profiles.");
 INSERT INTO _permissions VALUES (12,3,4,"Can delete profiles.");

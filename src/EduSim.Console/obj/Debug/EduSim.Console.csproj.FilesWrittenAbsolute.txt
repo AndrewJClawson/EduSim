@@ -3,3 +3,8 @@
 /Volumes/Storage/Development/EduSim/src/EduSim.Console/bin/Debug/EduSim.Console.exe
 /Volumes/Storage/Development/EduSim/src/EduSim.Console/obj/Debug/EduSim.Console.exe
 /Volumes/Storage/Development/EduSim/src/EduSim.Console/obj/Debug/EduSim.Console.exe.mdb
+/Users/andrewclawson/Documents/Projects/EduSim/src/EduSim.Console/obj/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/Users/andrewclawson/Documents/Projects/EduSim/src/EduSim.Console/bin/Debug/EduSim.Console.exe.mdb
+/Users/andrewclawson/Documents/Projects/EduSim/src/EduSim.Console/bin/Debug/EduSim.Console.exe
+/Users/andrewclawson/Documents/Projects/EduSim/src/EduSim.Console/obj/Debug/EduSim.Console.exe
+/Users/andrewclawson/Documents/Projects/EduSim/src/EduSim.Console/obj/Debug/EduSim.Console.exe.mdb

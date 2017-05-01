@@ -1,0 +1,1 @@
+﻿INSERT INTO profiles_x_roles (fk_profile_id, fk_role_id) VALUES (1,1)
