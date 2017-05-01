@@ -85,6 +85,10 @@
     <None Include="ReferenceData\dbo\roles_x_permissions.sql" />
     <None Include="Tables\dbo\profiles_x_roles.sql" />
     <None Include="ReferenceData\dbo\profiles_x_roles.sql" />
+    <None Include="Tables\dbo\courses.sql" />
+    <None Include="Tables\data_lookup\_subjects.sql" />
+    <None Include="ReferenceData\data_lookup\_subjects.sql" />
+    <None Include="Tables\dbo\academic_years.sql" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Classes\" />
