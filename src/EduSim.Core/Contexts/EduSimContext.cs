@@ -28,7 +28,8 @@ namespace EduSim.Core.Contexts
 		public DbSet<School> Schools { get; set; }
 
 		// Academic Models
-		public DbSet<ISubject> Subjects { get; set; }
+		public DbSet<Subject> Subjects { get; set; }
+		public DbSet<AcademicYear> AcademicYears { get; set; }
 
 
 

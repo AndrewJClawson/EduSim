@@ -1,5 +1,6 @@
 ﻿using System;
-namespace EduSim.Core
+
+namespace EduSim.Core.Services
 {
 	public class AuthenticationService
 	{
