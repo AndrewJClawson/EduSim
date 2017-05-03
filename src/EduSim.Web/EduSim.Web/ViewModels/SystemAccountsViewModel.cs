@@ -10,8 +10,6 @@ namespace EduSim.Web.ViewModels
 	{
 		public int SelectedAccountId { get; set; }
 		public List<Account> AccountList { get; set; }
-		public List<AccountType> AccountTypeList { get; set; }
-		public int SelectedAccountTypeId { get; set; }
 		public IEnumerable<SelectListItem> AccountDropDown
 		{
 			get
@@ -19,7 +17,5 @@ namespace EduSim.Web.ViewModels
 				return new SelectList(AccountList, "AccountId", "AccountName");
 			}
 		}
-
-
 	}
 }

@@ -140,7 +140,6 @@
     <Folder Include="Views\SystemAdmin\Users\" />
     <Folder Include="Views\SystemAdmin\Accounts\" />
     <Folder Include="Views\Home\OptionMenus\" />
-    <Folder Include="Scripts\systemadmin\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\HomeController.cs" />
@@ -1754,8 +1753,6 @@
     <Content Include="Views\Home\OptionMenus\_AccountAdminMenu.cshtml" />
     <Content Include="Views\Home\OptionMenus\_SystemAdminMenu.cshtml" />
     <Content Include="Views\Home\OptionMenus\_InstructorMenu.cshtml" />
-    <Content Include="Scripts\systemadmin\systemadmin.js" />
-    <Content Include="Scripts\systemadmin\systemadmin.accounts.js" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Content\bootstrap-theme.css.map" />

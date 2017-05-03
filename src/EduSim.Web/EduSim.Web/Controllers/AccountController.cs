@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Http;
 using System.Web.Mvc;
-using EduSim.Core.Models;
+//using EduSim.Core.Models;
 using EduSim.Core.ModelInterfaces;
 using EduSim.Web.ViewModels;
 using EduSim.Web.Models;
@@ -78,29 +78,6 @@ namespace EduSim.Web.Controllers
 			return PartialView("/Views/Account/_AccountDetailsPartial.cshtml");
 		}
 
-		public JsonResult GetDetails(int accountId)
-		{
-			bool success = false;
-			string message = string.Empty;
-			Account account = null;
-			try
-			{
-				if (accountId != 0)
-				{
-					account = _accountService.GetById(accountId);
-					if (account != null)
-					{
-						success = true;
-					}
-				}
-			}
-			catch (Exception e)
-			{
-				message = e.Message;
-			}
-			return null;
-
-		}
 
 		public ActionResult Save(AccountDetailsViewModel accountViewModel)
 		{
@@ -114,7 +91,6 @@ namespace EduSim.Web.Controllers
 			}
 			return View("~/Views/Home/Dashboard.cshtml");
 		}
-
 
     }
 }
