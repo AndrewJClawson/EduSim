@@ -9,9 +9,47 @@
 <html>
 <head>
     <title>Accounts</title>
+	<script src="~/Scripts/SystemAdmin/systemadmin.accounts.js"></script>
 </head>
 <body>
 	<h2>@ViewBag.Title</h2>
+	<div class="row">
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				Accounts
+			</div>
+
+			<div class="panel-body">
+				<div class="col-md-6">
+					Use the selector on the right to select an account or add a new account.
+				</div>
+				<div class="col-md-6">
+					@Html.DropDownListFor(m => m.SelectedAccountId, Model.AccountDropDown, "Select an account...")
+					<a id="new-account-button" class="btn btn-primary">Add Account</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				Account Details
+			</div>
+			<div class="panel-body">
+				<div class="form-horizontal col-md-6">
+					<div class="form-group">
+						@Html.Label("Account Name")
+						<input id="AccountName" style="width:400px;"/>
+					</div>
+
+					<div class="form-group">
+						@Html.Label("Account Type")
+						@Html.DropDownList("AccountTypeList")
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	<div class="row">
 		<div class="col-md-4">
 			<h3>Accounts</h3>
