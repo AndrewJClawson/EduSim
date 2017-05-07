@@ -5,12 +5,14 @@
 	}
 
 	function loadAccountDetails() {
-		var id = $("#SelectedAccountId");
+		var id = $("#SelectedAccountId").val();
 		var postData = { accountId: id };
-		$.ajax({
+		// don't make ajax call if id = 0.
+		if (id != 0) {
+			$.ajax({
 			contentType: "application/json; charset=utf-8",
 			type: "POST",
-			url: "/Account/GetDetails",
+			url: "/Account/Details",
 			data: postData,
 			success: function(result) {
 				if (result.Success) {
@@ -21,7 +23,9 @@
 				}
 			}
 
-		});
+			});
+		}
+
 	}
 
 	$

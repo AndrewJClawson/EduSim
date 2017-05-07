@@ -1759,7 +1759,7 @@
     <Content Include="Scripts\SystemAdmin\systemadmin.accounts.js" />
     <Content Include="Views\SystemAdmin\Accounts\AccountDetailsPartial.cshtml" />
     <Content Include="Views\SystemAdmin\Index.cshtml" />
-    <Content Include="Scripts\NavMenu\navmenu.dashborad.js" />
+    <Content Include="Scripts\NavMenu\navmenu.dashboard.js" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Content\bootstrap-theme.css.map" />
