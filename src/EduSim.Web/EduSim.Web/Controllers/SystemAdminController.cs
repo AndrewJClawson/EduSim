@@ -48,7 +48,7 @@ namespace EduSim.Web.Controllers
 		{
 			SystemAccountsViewModel viewModel
 				= ViewModelFactory.CreateSystemAccountsListViewModel(_accountService);
-
+			ViewData["AccountTypes"] = new SelectList(_accountService.GetAccountTypes(), "AccountTypeId", "Name");
 			return View("/Views/SystemAdmin/Accounts/Accounts.cshtml", viewModel);
 		}
 

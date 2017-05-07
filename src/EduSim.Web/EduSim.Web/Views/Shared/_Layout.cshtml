@@ -83,38 +83,6 @@
 <script>
 	$(document).ready(function(){
 		$("#option-bar-list").hide();
-		$("#system-admin").click(function(){
-			$.ajax({
-				url:'@Url.Action("SystemAdmin","Menu")',
-				type:"POST",
-				success:function(result){
-					$("#option-bar-items").html(result);
-
-				}
-			});
-		});
-
-		$("#account-admin").click(function(){
-			$.ajax({
-				url:'@Url.Action("AccountAdmin","Menu")',
-				type:"POST",
-				success: function(result){
-					$("#option-bar-items").html(result);
-
-				}
-			});
-		});
-
-		$("#instructor").click(function(){
-			$.ajax({
-				url:'@Url.Action("Instructor","Menu")',
-				type:"POST",
-				success: function(result) {
-					$("#option-bar-items").html(result);
-
-				}
-			});
-		});
 
 	});
 

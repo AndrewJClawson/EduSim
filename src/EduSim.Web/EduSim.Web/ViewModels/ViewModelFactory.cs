@@ -14,7 +14,7 @@ namespace EduSim.Web.ViewModels
 			SystemAccountsViewModel systemAccountsVM = new SystemAccountsViewModel()
 			{
 				AccountList = accountService.GetAccounts().ToList()
-		};
+			};
 			return systemAccountsVM;
 		}
 

@@ -141,6 +141,7 @@
     <Folder Include="Views\SystemAdmin\Accounts\" />
     <Folder Include="Views\Home\OptionMenus\" />
     <Folder Include="Scripts\SystemAdmin\" />
+    <Folder Include="Scripts\NavMenu\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\HomeController.cs" />
@@ -1757,6 +1758,8 @@
     <Content Include="Views\Home\OptionMenus\_InstructorMenu.cshtml" />
     <Content Include="Scripts\SystemAdmin\systemadmin.accounts.js" />
     <Content Include="Views\SystemAdmin\Accounts\AccountDetailsPartial.cshtml" />
+    <Content Include="Views\SystemAdmin\Index.cshtml" />
+    <Content Include="Scripts\NavMenu\navmenu.dashborad.js" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Content\bootstrap-theme.css.map" />

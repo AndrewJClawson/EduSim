@@ -12,6 +12,8 @@
 	<script src="~/Scripts/SystemAdmin/systemadmin.accounts.js"></script>
 </head>
 <body>
+	@Html.Partial("~/Views/Home/OptionMenus/_SystemAdminMenu.cshtml")
+
 	<h2>@ViewBag.Title</h2>
 	<div class="row">
 		<div class="panel panel-primary">
@@ -24,7 +26,7 @@
 					Use the selector on the right to select an account or add a new account.
 				</div>
 				<div class="col-md-6">
-					@Html.DropDownListFor(m => m.SelectedAccountId, Model.AccountDropDown, "Select an account...")
+					@Html.DropDownListFor(m => m.SelectedAccountId, Model.AccountDropDown, "Select an account...", new {@class="dropdown"})
 					<a id="new-account-button" class="btn btn-primary">Add Account</a>
 				</div>
 			</div>
@@ -44,7 +46,7 @@
 
 					<div class="form-group">
 						@Html.Label("Account Type")
-						@Html.DropDownList("AccountTypeList")
+						@Html.DropDownList("AccountTypes")
 					</div>
 				</div>
 			</div>
